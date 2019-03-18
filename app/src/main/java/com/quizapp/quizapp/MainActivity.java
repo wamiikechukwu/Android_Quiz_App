@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -46,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
 
         radioGroup_ID = findViewById(R.id.radioGroup_ID);
 
-
         //setQuestion();
 
     }
-        public void nextQuestionButton(View view){
+
+    public void nextQuestionButton(View view) {
 
         if (totalQuestionsAnswered <= 4) {
 
@@ -66,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clearSelection() {
-        ;
+        radioGroup_ID.clearCheck();
     }
 
     public int answersOption() {
@@ -103,20 +102,24 @@ public class MainActivity extends AppCompatActivity {
         answerC.setText(q.getOptionThreeFromTheArray());
         answerD.setText(q.getOptionFourFromTheArray());
 
+        radioGroup_ID.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                int option = answersOption();
+                if (option == 4) {
+                    Toast.makeText(MainActivity.this, "Please select an option", Toast.LENGTH_LONG).show();
+                } else {
+                    boolean isAnswerCorrectOrNot = q.checkAnswer(option);
+                    if (isAnswerCorrectOrNot) {
+                        q.increaseScoreByOne();
+                        scoresTotalCorrectAnswer = q.getScore();
+                    }
+                }
+            }
 
-
-        boolean isAnswerCorrectOrNot = q.checkAnswer(answersOption());
-
-        if (isAnswerCorrectOrNot) {
-            q.increaseScoreByOne();
-        }
-        if (answersOption() == 4) {
-            Toast.makeText(MainActivity.this, "Please select an option", Toast.LENGTH_LONG).show();
-        }
-        scoresTotalCorrectAnswer = q.getScore();
+        });
 
         clearSelection();
     }
-
 
 }

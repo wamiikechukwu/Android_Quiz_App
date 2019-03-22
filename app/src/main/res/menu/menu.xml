@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu1"
+        android:icon="@drawable/ic_add_icon"
+        android:orderInCategory="1"
+        android:title="More"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu2"
+        android:orderInCategory="2"
+        android:title="Contact Us"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu3"
+        android:orderInCategory="3"
+        android:title="Set BG colour"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu4"
+        android:orderInCategory="4"
+        android:title="Setting"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu5"
+        android:orderInCategory="5"
+        android:title="Help"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/submenu1"
+                android:title="sub item 1"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/submenu2"
+                android:title="sub item 2"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/submenu3"
+                android:title="sub item 3"
+                app:showAsAction="never" />
+        </menu>
+
+    </item>
+
+</menu>

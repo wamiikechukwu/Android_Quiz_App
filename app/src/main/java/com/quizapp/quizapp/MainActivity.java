@@ -3,9 +3,13 @@ package com.quizapp.quizapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -21,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     RadioButton answerD;
 
     RadioGroup radioGroup_ID;
+
+    ScrollView ScrollViewLayout;
 
     int scoresTotalCorrectAnswer = 0;
 
@@ -45,8 +51,58 @@ public class MainActivity extends AppCompatActivity {
 
         radioGroup_ID = findViewById(R.id.radioGroup_ID);
 
+        ScrollViewLayout = findViewById(R.id.ScrollViewLayout);
+
         //setQuestion();
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()) {
+
+            case R.id.menu1:
+                Toast.makeText(this, "More clicked", Toast.LENGTH_LONG).show();
+                return true;
+
+            case R.id.menu2:
+                Toast.makeText(this, "Contact us clicked", Toast.LENGTH_LONG).show();
+                return true;
+
+            case R.id.menu3:
+                changeBackGroundColour();
+                return true;
+
+            case R.id.menu4:
+                Intent intent = new Intent(this, AnswerActivity.class);
+                startActivity(intent);
+
+                return true;
+
+            case R.id.menu5:
+                Toast.makeText(this, "Help clicked", Toast.LENGTH_LONG).show();
+                return true;
+
+            case R.id.submenu1:
+                Toast.makeText(this, "sub item 1", Toast.LENGTH_LONG).show();
+
+            case R.id.submenu2:
+                Toast.makeText(this, "sub item 2", Toast.LENGTH_LONG).show();
+
+            case R.id.submenu3:
+                Toast.makeText(this, "sub item 2", Toast.LENGTH_LONG).show();
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     public void nextQuestionButton(View view) {
@@ -120,6 +176,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
         clearSelection();
+    }
+
+    public void changeBackGroundColour() {
+        ScrollViewLayout.setBackgroundColor(2);
     }
 
 }

@@ -1,6 +1,7 @@
 package com.quizapp.quizapp;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -9,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     RadioGroup radioGroup_ID;
 
-    ScrollView ScrollViewLayout;
+    ScrollView scrollViewLayout;
+    RelativeLayout answerActivity;
 
     int scoresTotalCorrectAnswer = 0;
 
@@ -51,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
         radioGroup_ID = findViewById(R.id.radioGroup_ID);
 
-        ScrollViewLayout = findViewById(R.id.ScrollViewLayout);
+        scrollViewLayout = findViewById(R.id.scrollViewLayout);
+        answerActivity = findViewById(R.id.answerActivity);
 
         //setQuestion();
 
@@ -179,7 +183,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changeBackGroundColour() {
-        ScrollViewLayout.setBackgroundColor(2);
+        scrollViewLayout.setBackgroundColor(Color.parseColor("#FFA41111"));
+        answerActivity.setBackgroundColor(Color.parseColor("#FFA41111"));
     }
 
 }

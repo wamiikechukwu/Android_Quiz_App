@@ -1,7 +1,6 @@
 package com.quizapp.quizapp;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -82,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.menu3:
-                changeBackGroundColour();
                 return true;
 
             case R.id.menu4:
@@ -182,9 +180,5 @@ public class MainActivity extends AppCompatActivity {
         clearSelection();
     }
 
-    public void changeBackGroundColour() {
-        scrollViewLayout.setBackgroundColor(Color.parseColor("#FFA41111"));
-        answerActivity.setBackgroundColor(Color.parseColor("#FFA41111"));
-    }
 
 }

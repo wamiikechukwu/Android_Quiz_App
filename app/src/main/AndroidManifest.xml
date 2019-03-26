@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".AnswerActivity" />
+        <activity android:name=".splashScreen"></activity>
     </application>
 
 </manifest>

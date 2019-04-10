@@ -56,9 +56,12 @@ public class MainActivity extends AppCompatActivity {
         scrollViewLayout = findViewById(R.id.scrollViewLayout);
         answerActivity = findViewById(R.id.answerActivity);
 
-        //setQuestion();
+        setQuestion();
 
     }
+
+    //This @Override method here inflate/add the menu to the activity
+    //and this must be added uto every activity you want the menu to appear on
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -66,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
+
+    //This @Override method tells the menu what to do  or displays when a user clicks on it
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -84,9 +89,8 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.menu4:
-                Intent intent = new Intent(this, AnswerActivity.class);
+                Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
-
                 return true;
 
             case R.id.menu5:

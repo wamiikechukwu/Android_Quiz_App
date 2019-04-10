@@ -73,9 +73,9 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
                     android:padding="5dp"
+                    android:text=""
                     android:textColor="@android:color/black"
-                    android:textSize="17sp"
-                    android:text="" />
+                    android:textSize="17sp" />
 
                 <RadioButton
                     android:id="@+id/answerB"
@@ -84,9 +84,9 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
                     android:padding="5dp"
+                    android:text=""
                     android:textColor="@android:color/black"
-                    android:textSize="17sp"
-                    android:text="" />
+                    android:textSize="17sp" />
 
                 <RadioButton
                     android:id="@+id/answerC"
@@ -106,9 +106,9 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
                     android:padding="5dp"
+                    android:text=""
                     android:textColor="@android:color/black"
-                    android:textSize="17sp"
-                    android:text="" />
+                    android:textSize="17sp" />
             </RadioGroup>
         </LinearLayout>
 
@@ -125,11 +125,11 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:gravity="center_horizontal|center_vertical"
                 android:background="#FF8D8B8A"
+                android:gravity="center_horizontal|center_vertical"
+                android:onClick="nextQuestionButton"
                 android:text="@string/Next"
-                android:textSize="15sp"
-                android:onClick="nextQuestionButton"/>
+                android:textSize="15sp" />
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>

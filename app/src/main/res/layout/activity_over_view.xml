@@ -1,8 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".overView">
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/overViewStartQuiz"
+        android:layout_width="@dimen/overViewMainButton"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/startQuiz_MarginFromTop"
+        android:padding="@dimen/overView_Padding"
+        android:text="@string/overView_StartQuiz"
+        android:theme="@style/PrimaryFlatButton"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/overViewDidYouKnow"
+        android:layout_width="@dimen/overView_LayoutWidth"
+        android:layout_height="@dimen/overView_LayoutHeight"
+        android:layout_margin="@dimen/overView_Margin"
+        android:layout_below="@id/overViewStartQuiz"
+        android:padding="@dimen/overView_Padding"
+        android:textStyle="bold"
+        android:theme="@style/PrimaryFlatButton"
+        android:textSize="16sp"
+        android:text="@string/overView_DidYouKnow" />
+
+    <Button
+        android:id="@+id/overViewAfricaNews"
+        android:layout_width="@dimen/overView_LayoutWidth"
+        android:layout_height="@dimen/overView_LayoutHeight"
+        android:padding="@dimen/overView_Padding"
+        android:layout_margin="@dimen/overView_Margin"
+        android:layout_below="@id/overViewStartQuiz"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:theme="@style/PrimaryFlatButton"
+        android:textSize="16sp"
+        android:text="@string/overView_AfricaNews"/>
+
+    <Button
+        android:id="@+id/overViewMisconceptionsOfAfrica"
+        android:layout_width="@dimen/overViewMainButton"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/overView_Padding"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/overViewAfricaNews"
+        android:textStyle="bold"
+        android:theme="@style/PrimaryFlatButton"
+        android:textSize="19sp"
+        android:text="@string/overView_MisconceptionsOfAfrica" />
+
+</RelativeLayout>

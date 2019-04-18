@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="overViewMainButton">300dp</dimen>
+    <dimen name="overView_LayoutWidth">150dp</dimen>
+    <dimen name="overView_LayoutHeight">55dp</dimen>
+    <dimen name="overView_Margin">15dp</dimen>
+    <dimen name="overView_Padding">15dp</dimen>
+    <dimen name="startQuiz_MarginFromTop">190dp</dimen>
+</resources>

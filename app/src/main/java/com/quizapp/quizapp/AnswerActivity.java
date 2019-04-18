@@ -20,6 +20,7 @@ public class AnswerActivity extends AppCompatActivity {
 
         textview.setText(data);
 
+
     }
 
     @Override

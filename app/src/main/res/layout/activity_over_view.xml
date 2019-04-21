@@ -5,54 +5,67 @@
     android:layout_height="match_parent"
     tools:context=".overView">
 
+    <ImageView
+        android:id="@+id/overViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/splash_screen_imageDescription"
+        android:scaleType="fitXY"
+        android:src="@drawable/background" />
+
     <Button
         android:id="@+id/overViewStartQuiz"
+        style="@style/Widget.Button"
         android:layout_width="@dimen/overViewMainButton"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/startQuiz_MarginFromTop"
+        android:fontFamily="@font/ateecafont"
         android:padding="@dimen/overView_Padding"
         android:text="@string/overView_StartQuiz"
-        android:theme="@style/PrimaryFlatButton"
         android:textSize="25sp"
+        android:onClick="questionInto"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/overViewDidYouKnow"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/overView_LayoutWidth"
         android:layout_height="@dimen/overView_LayoutHeight"
-        android:layout_margin="@dimen/overView_Margin"
         android:layout_below="@id/overViewStartQuiz"
+        android:layout_margin="@dimen/overView_Margin"
+        android:fontFamily="@font/ateecafont"
         android:padding="@dimen/overView_Padding"
-        android:textStyle="bold"
-        android:theme="@style/PrimaryFlatButton"
+        android:text="@string/overView_DidYouKnow"
         android:textSize="16sp"
-        android:text="@string/overView_DidYouKnow" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/overViewAfricaNews"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="@dimen/overView_LayoutWidth"
         android:layout_height="@dimen/overView_LayoutHeight"
-        android:padding="@dimen/overView_Padding"
-        android:layout_margin="@dimen/overView_Margin"
-        android:layout_below="@id/overViewStartQuiz"
         android:layout_alignParentEnd="true"
-        android:textStyle="bold"
-        android:theme="@style/PrimaryFlatButton"
+        android:layout_below="@id/overViewStartQuiz"
+        android:layout_margin="@dimen/overView_Margin"
+        android:fontFamily="@font/ateecafont"
+        android:padding="@dimen/overView_Padding"
+        android:text="@string/overView_AfricaNews"
         android:textSize="16sp"
-        android:text="@string/overView_AfricaNews"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/overViewMisconceptionsOfAfrica"
+        style="@style/Widget.Button"
         android:layout_width="@dimen/overViewMainButton"
         android:layout_height="wrap_content"
-        android:padding="@dimen/overView_Padding"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/overViewAfricaNews"
-        android:textStyle="bold"
-        android:theme="@style/PrimaryFlatButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ateecafont"
+        android:padding="@dimen/overView_Padding"
+        android:text="@string/overView_MisconceptionsOfAfrica"
         android:textSize="19sp"
-        android:text="@string/overView_MisconceptionsOfAfrica" />
+        android:textStyle="bold" />
 
 </RelativeLayout>

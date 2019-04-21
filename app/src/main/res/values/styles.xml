@@ -8,11 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="PrimaryFlatButton" parent="Theme.AppCompat.Light">
-        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
-        <item name="colorControlHighlight">@color/colorAccent</item>
-        <item name="colorAccent">@color/colorPrimary</item>
+    <style name="Widget.Button" parent="android:Widget">
+        <item name="android:background">@drawable/buttonshape</item>
     </style>
-
 
 </resources>

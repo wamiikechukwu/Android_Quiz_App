@@ -71,12 +71,7 @@ public class Questions {
         return answersToTheQuestions[position][3];
     }
 
-    public boolean checkAnswer(int option) {
-        if (option == questionsCorrectAnswers[position]) {
-            return true;
-        }
-        return false;
-    }
+    String quest;
 
     public void increaseScoreByOne() {
         score++;
@@ -86,5 +81,7 @@ public class Questions {
         return score;
     }
 
-
+    public boolean checkAnswer(int option) {
+        return option == questionsCorrectAnswers[position];
+    }
 }

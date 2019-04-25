@@ -1,12 +1,15 @@
 package com.quizapp.quizapp;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
@@ -19,6 +22,8 @@ import java.util.Random;
 public class MainActivity extends AppCompatActivity {
 
     TextView testQuestion;
+
+    ProgressBar pBar;
 
     RadioButton answerA;
     RadioButton answerB;
@@ -39,12 +44,15 @@ public class MainActivity extends AppCompatActivity {
     Questions q = new Questions();
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         testQuestion = findViewById(R.id.testQuestion);
+
+        pBar = findViewById(R.id.progressBar);
 
         answerA = findViewById(R.id.answerA);
         answerB = findViewById(R.id.answerB);
@@ -78,33 +86,13 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.menu1:
-                Toast.makeText(this, "More clicked", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
                 return true;
 
             case R.id.menu2:
                 Toast.makeText(this, "Contact us clicked", Toast.LENGTH_LONG).show();
                 return true;
-
-            case R.id.menu3:
-                return true;
-
-            case R.id.menu4:
-                Intent intent = new Intent(this, SettingsActivity.class);
-                startActivity(intent);
-                return true;
-
-            case R.id.menu5:
-                Toast.makeText(this, "Help clicked", Toast.LENGTH_LONG).show();
-                return true;
-
-            case R.id.submenu1:
-                Toast.makeText(this, "sub item 1", Toast.LENGTH_LONG).show();
-
-            case R.id.submenu2:
-                Toast.makeText(this, "sub item 2", Toast.LENGTH_LONG).show();
-
-            case R.id.submenu3:
-                Toast.makeText(this, "sub item 2", Toast.LENGTH_LONG).show();
 
             default:
                 return super.onOptionsItemSelected(item);
@@ -113,10 +101,22 @@ public class MainActivity extends AppCompatActivity {
 
     public void nextQuestionButton(View view) {
 
-        if (totalQuestionsAnswered <= 4) {
+        SharedPreferences sharedPref = getSharedPreferences("QuestNumb", Context.MODE_PRIVATE);
+
+        int name = sharedPref.getInt("Numb", 0);
+
+        // set the maximum value the progress bar can contain
+        pBar.setMax(name);
+
+        if (totalQuestionsAnswered < name) {
 
             setQuestion();
 
+            //incrementing the progress bar by 1
+
+            pBar.incrementProgressBy(1);
+
+            //incrementing the total number of questions answered by 1
             totalQuestionsAnswered++;
 
         } else {
@@ -183,6 +183,5 @@ public class MainActivity extends AppCompatActivity {
 
         clearSelection();
     }
-
 
 }

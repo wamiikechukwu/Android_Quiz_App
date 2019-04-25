@@ -16,11 +16,10 @@ public class AnswerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_answer);
 
         textview = findViewById(R.id.textview);
+
         String data = getIntent().getStringExtra("nextLayout");
 
         textview.setText(data);
-
-
     }
 
     @Override

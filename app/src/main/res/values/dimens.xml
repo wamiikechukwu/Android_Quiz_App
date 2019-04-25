@@ -8,4 +8,6 @@
     <dimen name="startQuiz_MarginFromTop">190dp</dimen>
     <dimen name="splash_screen_textSize">30sp</dimen>
     <dimen name="splash_screen_layoutHeight">45dp</dimen>
+    <dimen name="activityMain_Top">10dp</dimen>
+    <dimen name="activityMain">20dp</dimen>
 </resources>

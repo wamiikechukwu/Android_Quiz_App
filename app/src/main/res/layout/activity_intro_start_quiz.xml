@@ -9,20 +9,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/splash_screen_imageDescription"
-            android:scaleType="fitXY"
-            android:src="@drawable/background" />
 
         <TextView
             android:id="@+id/heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"
-            android:fontFamily="@font/ateecafont"
             android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"
             android:text="@string/about_africa_quiz"
             android:textAlignment="center"
             android:textColor="#FF000000"
@@ -54,7 +47,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Number of questions"
+            android:text="@string/number_of_questions"
             android:textColor="#FF000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -65,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/text"
             android:layout_marginBottom="20dp"
-            android:layout_toRightOf="@id/questionSection">
+            android:layout_toEndOf="@id/questionSection">
 
         </Spinner>
 
@@ -77,7 +70,7 @@
             android:layout_marginBottom="23dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Select Difficulty"
+            android:text="@string/select_difficulty"
             android:textColor="#FF000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -87,8 +80,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/questionSection"
-            android:layout_marginLeft="35dp"
-            android:layout_toRightOf="@id/difficult">
+            android:layout_marginStart="35dp"
+            android:layout_toEndOf="@id/difficult">
 
         </Spinner>
 
@@ -100,7 +93,11 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:onClick="quizQuestions"
-            android:text="START QUIZ" />
+            android:text="@string/start_quiz"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
 
     </RelativeLayout>
 </ScrollView>

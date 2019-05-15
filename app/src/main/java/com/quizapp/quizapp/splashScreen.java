@@ -8,8 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 public class splashScreen extends AppCompatActivity {
 
     //Seconds after which the splash screens disappears
-
-    int secondsToDelay = 3;
+    int secondsToDelay = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

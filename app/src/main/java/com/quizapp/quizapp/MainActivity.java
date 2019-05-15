@@ -21,6 +21,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    //initialized  global variable
     TextView testQuestion;
 
     ProgressBar pBar;
@@ -33,8 +34,10 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroup_ID;
 
     ScrollView scrollViewLayout;
+
     RelativeLayout answerActivity;
 
+    //variables for storing data
     int scoresTotalCorrectAnswer = 0;
 
     int totalQuestionsAnswered = 1;
@@ -49,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Getting the view reference
         testQuestion = findViewById(R.id.testQuestion);
 
         pBar = findViewById(R.id.progressBar);
@@ -68,8 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //This @Override method here inflate/add the menu to the activity
-    //and this must be added uto every activity you want the menu to appear on
-
+    //and this must be added unto every activity you want the menu to appear on
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -78,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //This @Override method tells the menu what to do  or displays when a user clicks on it
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 

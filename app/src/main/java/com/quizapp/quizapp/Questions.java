@@ -2,8 +2,8 @@ package com.quizapp.quizapp;
 
 public class Questions {
 
-    int position;
-    int score = 0;
+    private int position;
+    private int score = 0;
 
     String[] questionsToBeAsked = {
 
@@ -70,8 +70,6 @@ public class Questions {
     public String getOptionFourFromTheArray() {
         return answersToTheQuestions[position][3];
     }
-
-    String quest;
 
     public void increaseScoreByOne() {
         score++;

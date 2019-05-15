@@ -95,9 +95,13 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="overView_DidYouKnow">DID YOU KNOW?</string>
-    <string name="text_description">Africa Quiz is a quiz game that aim at testing the user’s knowledge about the continent <b>Africa</b>, the questions covered in the quiz ranges from countries name, their capital down to their locations on the map and spoken language. Hope you play to the end and learn a bit about the continent.</string>
-    <string name="about_africa_quiz">ABOUT AFRICA QUIZ</string>
+    <string name="text_description">How well do you know the continent Africa and the
+        countries in it?\n\nTest your knowledge! </string>
+    <string name="about_africa_quiz">AFRICA QUIZ</string>
     <string name="nothing_selected">onNothingSelected:</string>
+    <string name="number_of_questions">Number of Questions</string>
+    <string name="select_difficulty">Select Difficulty</string>
+    <string name="start_quiz">START QUIZ</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

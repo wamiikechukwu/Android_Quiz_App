@@ -112,7 +112,8 @@ public class MainActivity extends AppCompatActivity {
         pBar.setMax(name);
 
         //
-        questionText.setText("Question" + totalQuestionsAnswered + name);
+        // questionText.setText("Question"+totalQuestionsAnswered "/" +name);
+        questionText.setText("Question" + totalQuestionsAnswered);
 
         if (totalQuestionsAnswered < name) {
 

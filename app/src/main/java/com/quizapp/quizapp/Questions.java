@@ -14,6 +14,7 @@ public class Questions {
             "What percentage of all the land on the planet Earth does Africa cover?",
             "What are the origins of the name 'Africa'? The name has its origins in a small country " +
                     "in the North of Africa (Tunisia) and it means:",
+            "In 1950, how many people lived in Africa"
 
     };
 
@@ -60,9 +61,16 @@ public class Questions {
                     "C: Land of Black People",
                     "D: Dry Place"
             },
+
+            {
+                    "A: 1.2 Billion People",
+                    "B: 200 Million People",
+                    "C: 400 Million People",
+                    "D: 221 Million People",
+            },
     };
 
-    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1,};
+    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3,};
 
     public void setQuestionNumber(int position) {
         this.position = position;

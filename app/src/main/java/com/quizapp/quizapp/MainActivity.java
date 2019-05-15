@@ -45,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
     int randomNumber = 0;
 
+    //the sharedpreference that stores the total number of questions the user wants to answer
+    int name;
+
     //Calling the constructor from the question class
     Questions q = new Questions();
 
@@ -106,13 +109,15 @@ public class MainActivity extends AppCompatActivity {
 
         //storing data via shared preference
         SharedPreferences sharedPref = getSharedPreferences("QuestNumb", Context.MODE_PRIVATE);
-        int name = sharedPref.getInt("Numb", 0);
+        name = sharedPref.getInt("Numb", 0);
 
         // set the maximum value the progress bar can contain
         pBar.setMax(name);
 
         //set the question number as the user answers them
         questionText.setText("Question " + totalQuestionsAnswered);
+
+        //i couldn't concatenate all the string together so i had to split it using .append
         questionText.append(" / " + name);
 
         if (totalQuestionsAnswered < name) {
@@ -157,10 +162,15 @@ public class MainActivity extends AppCompatActivity {
         return 4;
     }
 
-
     public void setQuestion() {
         Random randNum = new Random();
-        randomNumber = randNum.nextInt(4);
+
+        try {
+            randomNumber = randNum.nextInt(name);
+        } catch (Exception e) {
+            randomNumber = randNum.nextInt(name);
+            Toast.makeText(this, "Exeception caught", Toast.LENGTH_LONG).show();
+        }
 
         q.setQuestionNumber(randomNumber);
 

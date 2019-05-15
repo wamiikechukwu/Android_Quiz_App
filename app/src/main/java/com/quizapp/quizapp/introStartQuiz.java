@@ -26,6 +26,8 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
     //global variable for the questionSpinner item
     private String myDifficultLabel = "";
 
+    int numberCarryOver;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,12 +84,14 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         if (myQuestionLabel.equals("0")) {
             editor.putInt("Numb", 0);
             editor.apply();
+            numberCarryOver = 0;
             Toast.makeText(this, "No Questions Selected", Toast.LENGTH_LONG).show();
         }
 
         if (myQuestionLabel.equals("1")) {
             editor.putInt("Numb", 1);
             editor.apply();
+            numberCarryOver = 1;
             Toast.makeText(this, "1 Question Selected", Toast.LENGTH_LONG).show();
         }
 
@@ -95,30 +99,35 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
             Toast.makeText(this, "2 Questions Selected", Toast.LENGTH_LONG).show();
             editor.putInt("Numb", 2);
             editor.apply();
+            numberCarryOver = 2;
         }
 
         if (myQuestionLabel.equals("3")) {
             Toast.makeText(this, "3 Questions Selected", Toast.LENGTH_LONG).show();
             editor.putInt("Numb", 3);
             editor.apply();
+            numberCarryOver = 3;
         }
 
         if (myQuestionLabel.equals("4")) {
             Toast.makeText(this, "4 Questions Selected", Toast.LENGTH_LONG).show();
             editor.putInt("Numb", 4);
             editor.apply();
+            numberCarryOver = 4;
         }
 
         if (myQuestionLabel.equals("5")) {
             Toast.makeText(this, "5 Questions Selected", Toast.LENGTH_LONG).show();
             editor.putInt("Numb", 5);
             editor.apply();
+            numberCarryOver = 5;
         }
 
         if (myQuestionLabel.equals("6")) {
             Toast.makeText(this, "6 Questions Selected", Toast.LENGTH_LONG).show();
             editor.putInt("Numb", 6);
             editor.apply();
+            numberCarryOver = 6;
         }
 
         //logic for how difficult the questions should be
@@ -134,6 +143,8 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         if (myQuestionLabel.equals("Hard")) {
             Toast.makeText(this, "Hard Level Selected", Toast.LENGTH_LONG).show();
         }
+
+
     }
 
     @Override
@@ -171,5 +182,6 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
     public void quizQuestions(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+
     }
 }

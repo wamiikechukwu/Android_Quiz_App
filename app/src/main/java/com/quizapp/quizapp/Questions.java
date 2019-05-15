@@ -7,10 +7,10 @@ public class Questions {
 
     String[] questionsToBeAsked = {
 
-            "1. Which part of Africa can Ghana be located",
-            "2. What is the capital of Nigeria",
-            "3. Which of these countries are not located in Africa",
-            "4. What is the estimated population of Africa, as at 2015"
+            "Which part of Africa can Ghana be located",
+            "What is the capital of Nigeria",
+            "Which of these countries are not located in Africa",
+            "What is the estimated population of Africa, as at 2015"
 
     };
 

@@ -10,7 +10,10 @@ public class Questions {
             "Which part of Africa can Ghana be located",
             "What is the capital of Nigeria",
             "Which of these countries are not located in Africa",
-            "What is the estimated population of Africa, as at 2015"
+            "What is the estimated population of Africa, as at 2015",
+            "What percentage of all the land on the planet Earth does Africa cover?",
+            "What are the origins of the name 'Africa'? The name has its origins in a small country " +
+                    "in the North of Africa (Tunisia) and it means:",
 
     };
 
@@ -43,9 +46,23 @@ public class Questions {
                     " C: 2 Billion",
                     " D: 360 million"
             },
+
+            {
+                    "A: 20%",
+                    "B: 50%",
+                    "C: 70%",
+                    "D: 15%"
+            },
+
+            {
+                    "A: Black Island",
+                    "B: Sunny Place",
+                    "C: Land of Black People",
+                    "D: Dry Place"
+            },
     };
 
-    int[] questionsCorrectAnswers = {0, 0, 3, 0};
+    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1,};
 
     public void setQuestionNumber(int position) {
         this.position = position;

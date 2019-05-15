@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     //initialized  global variable
     TextView testQuestion;
+    TextView questionText;
 
     ProgressBar pBar;
 
@@ -44,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
     int randomNumber = 0;
 
+    //Calling the constructor from the question class
     Questions q = new Questions();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Getting the view reference
         testQuestion = findViewById(R.id.testQuestion);
+        questionText = findViewById(R.id.questionText);
 
         pBar = findViewById(R.id.progressBar);
 
@@ -102,12 +104,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void nextQuestionButton(View view) {
 
+        //storing data via shared preference
         SharedPreferences sharedPref = getSharedPreferences("QuestNumb", Context.MODE_PRIVATE);
-
         int name = sharedPref.getInt("Numb", 0);
 
         // set the maximum value the progress bar can contain
         pBar.setMax(name);
+
+        //
+        questionText.setText("Question" + totalQuestionsAnswered + name);
 
         if (totalQuestionsAnswered < name) {
 

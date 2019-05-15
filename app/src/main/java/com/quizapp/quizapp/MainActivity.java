@@ -114,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
         //
         // questionText.setText("Question"+totalQuestionsAnswered "/" +name);
         questionText.setText("Question" + totalQuestionsAnswered);
+        questionText.append("/" + name);
 
         if (totalQuestionsAnswered < name) {
 

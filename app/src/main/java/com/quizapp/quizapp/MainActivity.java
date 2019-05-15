@@ -165,12 +165,7 @@ public class MainActivity extends AppCompatActivity {
     public void setQuestion() {
         Random randNum = new Random();
 
-        try {
-            randomNumber = randNum.nextInt(name);
-        } catch (Exception e) {
-            randomNumber = randNum.nextInt(name);
-            Toast.makeText(this, "Exeception caught", Toast.LENGTH_LONG).show();
-        }
+        randomNumber = randNum.nextInt(name);
 
         q.setQuestionNumber(randomNumber);
 

@@ -118,7 +118,8 @@
             android:padding="15dp"
             android:text="@string/Next"
             android:textSize="15sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:typeface="monospace" />
     </RelativeLayout>
 </ScrollView>
 

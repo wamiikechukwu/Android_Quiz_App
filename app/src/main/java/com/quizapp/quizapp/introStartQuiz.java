@@ -26,7 +26,6 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
     //global variable for the questionSpinner item
     private String myDifficultLabel = "";
 
-    int numberCarryOver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

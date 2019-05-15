@@ -1,65 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".overView">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/overViewStartQuiz"
-        style="@style/Widget.Button"
-        android:layout_width="@dimen/overViewMainButton"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"
-        android:onClick="questionInto"
-        android:padding="@dimen/overView_Padding"
-        android:text="@string/overView_StartQuiz"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:typeface="monospace" />
+        <Button
+            android:id="@+id/overViewStartQuiz"
+            style="@style/Widget.Button"
+            android:layout_width="@dimen/overViewMainButton"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:onClick="questionInto"
+            android:padding="@dimen/overView_Padding"
+            android:text="@string/overView_StartQuiz"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
 
-    <Button
-        android:id="@+id/overViewDidYouKnow"
-        style="@style/Widget.Button"
-        android:layout_width="@dimen/overViewMainButton"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/overViewStartQuiz"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:padding="@dimen/overView_Padding"
-        android:text="@string/overView_DidYouKnow"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:typeface="monospace" />
+        <Button
+            android:id="@+id/overViewDidYouKnow"
+            style="@style/Widget.Button"
+            android:layout_width="@dimen/overViewMainButton"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overViewStartQuiz"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:padding="@dimen/overView_Padding"
+            android:text="@string/overView_DidYouKnow"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
 
-    <Button
-        android:id="@+id/overViewAfricaNews"
-        style="@style/Widget.Button"
-        android:layout_width="@dimen/overViewMainButton"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/overViewDidYouKnow"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:padding="@dimen/overView_Padding"
-        android:text="@string/overView_AfricaNews"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:typeface="monospace" />
+        <Button
+            android:id="@+id/overViewAfricaNews"
+            style="@style/Widget.Button"
+            android:layout_width="@dimen/overViewMainButton"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overViewDidYouKnow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:padding="@dimen/overView_Padding"
+            android:text="@string/overView_AfricaNews"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
 
-    <Button
-        android:id="@+id/overViewMisconceptionsOfAfrica"
-        style="@style/Widget.Button"
-        android:layout_width="@dimen/overViewMainButton"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/overViewAfricaNews"
-        android:layout_marginTop="25dp"
-        android:layout_centerHorizontal="true"
-        android:padding="@dimen/overView_Padding"
-        android:text="@string/overView_MisconceptionsOfAfrica"
-        android:textSize="19sp"
-        android:textStyle="bold"
-        android:typeface="monospace" />
+        <Button
+            android:id="@+id/overViewMisconceptionsOfAfrica"
+            style="@style/Widget.Button"
+            android:layout_width="@dimen/overViewMainButton"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/overViewAfricaNews"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/overView_Padding"
+            android:text="@string/overView_MisconceptionsOfAfrica"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>

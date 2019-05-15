@@ -165,7 +165,8 @@ public class MainActivity extends AppCompatActivity {
     public void setQuestion() {
         Random randNum = new Random();
 
-        randomNumber = randNum.nextInt(name);
+        //the random number will generate random numbers in coordinate to the available questions
+        randomNumber = randNum.nextInt(4);
 
         q.setQuestionNumber(randomNumber);
 

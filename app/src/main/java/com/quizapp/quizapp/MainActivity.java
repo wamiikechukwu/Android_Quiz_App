@@ -111,10 +111,9 @@ public class MainActivity extends AppCompatActivity {
         // set the maximum value the progress bar can contain
         pBar.setMax(name);
 
-        //
-        // questionText.setText("Question"+totalQuestionsAnswered "/" +name);
-        questionText.setText("Question" + totalQuestionsAnswered);
-        questionText.append("/" + name);
+        //set the question number as the user answers them
+        questionText.setText("Question " + totalQuestionsAnswered);
+        questionText.append("/ " + name);
 
         if (totalQuestionsAnswered < name) {
 

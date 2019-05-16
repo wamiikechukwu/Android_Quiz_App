@@ -34,8 +34,8 @@
 
         <activity
             android:name=".introStartQuiz"
-            android:launchMode="singleTop"
             android:label="Africa Quiz"
+            android:launchMode="singleTop"
             android:parentActivityName=".overView">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -43,8 +43,8 @@
         </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="Settings">
-        </activity>
+            android:label="Settings"></activity>
+        <activity android:name=".didYouKnow"></activity>
     </application>
 
 </manifest>

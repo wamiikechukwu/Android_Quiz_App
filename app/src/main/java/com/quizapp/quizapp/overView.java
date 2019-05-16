@@ -48,4 +48,8 @@ public class overView extends AppCompatActivity {
         Intent intent = new Intent(this, introStartQuiz.class);
         startActivity(intent);
     }
+
+    public void didYouKnow(View view) {
+
+    }
 }

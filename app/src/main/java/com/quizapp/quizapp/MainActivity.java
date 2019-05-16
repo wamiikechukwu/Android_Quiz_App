@@ -114,18 +114,11 @@ public class MainActivity extends AppCompatActivity {
         // set the maximum value the progress bar can contain
         pBar.setMax(name);
 
-        //set the question number as the user answers them
-        questionText.setText("Question " + totalQuestionsAnswered);
-
-        //i couldn't concatenate all the string together so i had to split it using .append
-        questionText.append(" / " + name);
-
         if (totalQuestionsAnswered < name) {
 
             setQuestion();
 
             //incrementing the progress bar by 1
-
             pBar.incrementProgressBy(1);
 
             //incrementing the total number of questions answered by 1
@@ -136,6 +129,12 @@ public class MainActivity extends AppCompatActivity {
             nextLayout.putExtra("nextLayout", "" + scoresTotalCorrectAnswer);
             startActivity(nextLayout);
         }
+
+        //set the question number as the user answers them
+        questionText.setText("Question " + totalQuestionsAnswered);
+
+        //i couldn't concatenate all the string together so i had to split it using .append
+        questionText.append(" / " + name);
     }
 
     public void clearSelection() {

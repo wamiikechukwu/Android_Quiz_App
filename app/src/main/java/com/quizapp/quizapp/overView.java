@@ -50,6 +50,7 @@ public class overView extends AppCompatActivity {
     }
 
     public void didYouKnow(View view) {
-
+        Intent intent = new Intent(this, didYouKnow.class);
+        startActivity(intent);
     }
 }

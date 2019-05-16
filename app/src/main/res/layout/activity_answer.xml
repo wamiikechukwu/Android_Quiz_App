@@ -14,4 +14,18 @@
         android:textColor="#FF000000"
         android:textSize="24sp" />
 
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="25dp"
+        android:text="@string/score"
+        android:textColor="#A60A27"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <
+
 </RelativeLayout>

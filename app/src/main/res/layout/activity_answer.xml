@@ -32,7 +32,7 @@
         android:layout_below="@id/textview"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/picture_of_a_trophy"
         android:src="@drawable/first_trophy_cup" />
 
     <Button
@@ -43,7 +43,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:onClick="tryAgain"
-        android:text="TRY AGAIN"
+        android:text="@string/try_again"
         android:textColor="#FF000000"
         android:typeface="monospace" />
 

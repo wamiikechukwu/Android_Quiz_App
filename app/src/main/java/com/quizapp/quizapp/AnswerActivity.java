@@ -1,9 +1,11 @@
 package com.quizapp.quizapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
 import android.widget.TextView;
 
 public class AnswerActivity extends AppCompatActivity {
@@ -27,5 +29,10 @@ public class AnswerActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
+    }
+
+    public void tryAgain(View view) {
+        Intent intent = new Intent(this, overView.class);
+        startActivity(intent);
     }
 }

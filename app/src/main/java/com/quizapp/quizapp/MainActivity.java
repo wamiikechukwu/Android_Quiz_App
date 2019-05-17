@@ -130,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(nextLayout);
         }
 
+
         //set the question number as the user answers them
         questionText.setText("Question " + totalQuestionsAnswered);
 

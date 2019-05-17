@@ -6,24 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".AnswerActivity">
 
-    <TextView
-        android:id="@+id/score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="false"
-        android:layout_marginTop="25dp"
-        android:text="@string/score"
-        android:textColor="#A60A27"
-        android:textSize="25sp"
-        android:textStyle="bold|italic" />
 
     <ImageView
         android:id="@+id/scorePicture"
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_below="@+id/score"
+        android:layout_height="110dp"
         android:contentDescription="@string/picture_of_a_score_board"
+        android:layout_marginTop="10dp"
         android:src="@drawable/scores" />
 
     <TextView
@@ -35,5 +24,13 @@
         android:text=""
         android:textColor="#FF000000"
         android:textSize="60sp" />
+
+    <ImageView
+        android:id="@+id/tropy"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
 
 </RelativeLayout>

@@ -14,6 +14,7 @@ public class didYouKnow extends AppCompatActivity {
 
     }
 
+
     public void cardViewOne(View view) {
         Intent intent = new Intent(this, cardViewOne.class);
         startActivity(intent);

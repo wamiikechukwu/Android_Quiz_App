@@ -38,8 +38,13 @@ public class Questions {
             "Which country is Mount Kilimanjaro located?",
             "Which region is Tanzania located?",
             "Which of the following countries is part of Horn of Africa?",
-            "Which of the following is the southern most tip of Africa?",
-            "Which of the following is the largest lake in Africa?"
+            "Which of the following is the southern most tip of Africa?",       //30 Questions
+            "Which of the following is the largest lake in Africa?",
+            "What is the surface area of Lake Victoria",
+            "Which of the following African countries is the leading producer of gold in the " +
+                    "world?",
+            "Which of the following countries is completely surrounded by South Africa?",
+            "Which country is the largest producer of tea in the African",
 
     };
     String[][] answersToTheQuestions = {
@@ -219,7 +224,7 @@ public class Questions {
                     "D: Somalia",
             },
             {
-                    "A: Cape verde",
+                    "A: Cape verde",        //30 Questions
                     "B: Cape Agulhas",
                     "C: Cape of Good hope",
                     "D: Johannesburg",
@@ -230,13 +235,37 @@ public class Questions {
                     "C: Lake Nakuru",
                     "D: Lake Shiroro",
             },
+            {
+                    "A: 26,600 sq mi",
+                    "B: 68,800 sq mi",
+                    "C: 100,000 sq mi",
+                    "D: 10,000 sq mi",
+            },
+            {
+                    "A: Gabon",
+                    "B: Chad",
+                    "C: Angola",
+                    "D: South Africa",
+            },
+            {
+                    "A: Swaziland",
+                    "B: Lesotho",
+                    "C: Benin",
+                    "D: Togo",
+            },
+            {
+                    "A: Kenya",
+                    "B: Guinea",
+                    "C: Liberia",
+                    "D: Malawi",
+            },
 
 
 
     };
 
     int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3, 1, 0, 2, 2, 2, 0, 0, 2, 0, 3, 1, 0, 3,
-            1, 2, 0, 1, 0, 1, 0, 0, 3, 1, 1,};
+            1, 2, 0, 1, 0, 1, 0, 0, 3, 1, 1, 0, 3, 1, 0};
     private int position;
     private int score = 0;
 

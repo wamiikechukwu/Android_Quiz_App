@@ -32,7 +32,14 @@ public class Questions {
             "Which country in Africa has the longest coastline?",
             "which country is Kamfers Dam Artificial Island located in Africa?",
             "Which region in Africa can the Hausa ethnic group be found in Africa",
-            "Which of the following is the most populous country in Africa?"
+            "Which of the following is the most populous country in Africa?",
+            "Which one among the following is not a landlocked country in Africa?",
+            "Which is the highest mountain peaks of Africa?",
+            "Which country is Mount Kilimanjaro located?",
+            "Which region is Tanzania located?",
+            "Which of the following countries is part of Horn of Africa?",
+            "Which of the following is the southern most tip of Africa?",
+            "Which of the following is the largest lake in Africa?"
 
     };
     String[][] answersToTheQuestions = {
@@ -43,166 +50,193 @@ public class Questions {
                     " C: Central Africa",
                     " D: North Africa"
             },
-
             {
                     " A: Abuja",
                     " B: Kano",
                     " C: Lagos",
                     " D: Port Harcourt"
             },
-
             {
                     " A: Niger",
                     " B: Nigeria",
                     " C: Rwanda",
                     " D: Non of the above"
             },
-
             {
                     " A: 1.2 Billion",
                     " B: 500 Billion",
                     " C: 2 Billion",
                     " D: 360 million"
             },
-
             {
                     "A: 20%",
                     "B: 50%",
                     "C: 70%",
                     "D: 15%"
             },
-
             {
                     "A: Black Island",
                     "B: Sunny Place",
                     "C: Land of Black People",
                     "D: Dry Place"
             },
-
             {
                     "A: 1.2 Billion People",
                     "B: 200 Million People",
                     "C: 400 Million People",
                     "D: 221 Million People",
             },
-
             {
                     "A: 1500 Miles",
                     "B: 5000 Miles",
                     "C: 3000 Miles",
                     "D: 7000 Miles",
             },
-
             {
                     "A: Yes",
                     "B: No",
                     "C: Maybe",
                     "D: I have no idea",
             },
-
             {
                     "A: 100",   //10 Questions
                     "B: 3",
                     "C: 3000",
                     "D: 10",
             },
-
             {
                     "A: Nigeria",
                     "B: South Africa",
                     "C: Egypt",
                     "D: Rwanda",
             },
-
             {
                     "A: 50%",
                     "B: 10%",
                     "C: 66%",
                     "D: 1%",
             },
-
             {
                     "A: Bunny Chow",
                     "B: Ewedu",
                     "C: Shigala",
                     "D: Okadu",
             },
-
             {
                     "A: Mediterranean Sea",
                     "B: Red Sea",
                     "C: Caspian Sea",
                     "D: Black Sea",
             },
-
             {
                     "A: Caribbean Sea",
                     "B: The Sea of Crete",
                     "C: Red Sea",
                     "D: The Sea of Galilee",
             },
-
             {
                     "A: Indian Sea",
                     "B: Pacific Ocean",
                     "C: Red Sea",
                     "D: Mediterranean Sea",
             },
-
             {
                     "A: Mediterranean Sea",
                     "B: Pacific Ocean",
                     "C: Red Sea",
                     "D: Atlantic Sea",
             },
-
             {
                     "A: North & South",
                     "B: North & Sahara",
                     "C: Sahara & Kalahari",
                     "D: Inner & Outer",
             },
-
             {
                     "A: North",
                     "B: South",
                     "C: East",
                     "D: Central",
             },
-
             {
                     "A: Algeri",    //20 Questions
                     "B: Alger",
                     "C: Algeria",
                     "D: Algiers",
             },
-
             {
                     "A: Nigeria",
                     "B: Madagascar",
                     "C: Somalia",
                     "D: Cape verde",
             },
-
             {
                     "A: Morocco",
                     "B: Ethiopia",
                     "C: South Africa",
                     "D: Senegal",
             },
-
             {
                     "A: West Africa",
                     "B: East Africa",
                     "C: South Africa",
                     "D: Central Africa",
             },
+            {
+                    "A: Ethiopia",
+                    "B: Nigeria",
+                    "C: Sudan",
+                    "D: Zimbabwe",
+            },
+            {
+                    "A: Libya",
+                    "B: Niger",
+                    "C: Sudan",
+                    "D: Zambia",
+            },
+            {
+                    "A: Mount Limpopo",
+                    "B: Mount Kilimanjaro",
+                    "C: Zuma Rock",
+                    "D: Mount kafachan",
+            },
+            {
+                    "A: Tanzania",
+                    "B: Cameroon",
+                    "C: Namibia",
+                    "D: Botswana",
+            },
+            {
+                    "A: East",
+                    "B: North",
+                    "C: West",
+                    "D: South",
+            },
+            {
+                    "A: Mozambique",
+                    "B: Rwanda",
+                    "C: Madagascar",
+                    "D: Somalia",
+            },
+            {
+                    "A: Cape verde",
+                    "B: Cape Agulhas",
+                    "C: Cape of Good hope",
+                    "D: Johannesburg",
+            },
+            {
+                    "A: Lake Chad",
+                    "B: Lake Victoria",
+                    "C: Lake Nakuru",
+                    "D: Lake Shiroro",
+            },
+
 
 
     };
 
     int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3, 1, 0, 2, 2, 2, 0, 0, 2, 0, 3, 1, 0, 3,
-            1, 2, 0};
+            1, 2, 0, 1, 0, 1, 0, 0, 3, 1, 1,};
     private int position;
     private int score = 0;
 

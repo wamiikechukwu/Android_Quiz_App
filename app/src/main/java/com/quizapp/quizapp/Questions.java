@@ -14,7 +14,10 @@ public class Questions {
             "What percentage of all the land on the planet Earth does Africa cover?",
             "What are the origins of the name 'Africa'? The name has its origins in a small country " +
                     "in the North of Africa (Tunisia) and it means:",
-            "In 1950, how many people lived in Africa"
+            "In 1950, how many people lived in Africa",
+            "What is the distance from the top of Africa (i.e. its most northerly point) to the bottom" +
+                    " of Africa (its most southerly point)?",
+            "Along with lions, elephants and giraffes, is Africa also home to penguins?"
 
     };
 
@@ -68,9 +71,23 @@ public class Questions {
                     "C: 400 Million People",
                     "D: 221 Million People",
             },
+
+            {
+                    "A: 1500 Miles",
+                    "B: 5000 Miles",
+                    "C: 3000 Miles",
+                    "D: 7000 Miles",
+            },
+
+            {
+                    "A: Yes",
+                    "B: No",
+                    "C: Maybe",
+                    "D: I have no idea",
+            }
     };
 
-    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3,};
+    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3, 1, 0,};
 
     public void setQuestionNumber(int position) {
         this.position = position;

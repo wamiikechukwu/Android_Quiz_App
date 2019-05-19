@@ -53,7 +53,6 @@
             android:typeface="monospace" />
 
         <Button
-            android:id="@+id/overViewMisconceptionsOfAfrica"
             style="@style/Widget.Button"
             android:layout_width="@dimen/overViewMainButton"
             android:layout_height="wrap_content"

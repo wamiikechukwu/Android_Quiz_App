@@ -7,7 +7,6 @@
 
 
     <ImageView
-        android:id="@+id/splashScreen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:contentDescription="@string/splash_screen_imageDescription"

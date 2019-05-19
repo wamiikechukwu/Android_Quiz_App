@@ -43,8 +43,8 @@
         </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="Settings"></activity>
-        <activity android:name=".didYouKnow"></activity>
+            android:label="Settings" />
+        <activity android:name=".didYouKnow" />
     </application>
 
 </manifest>

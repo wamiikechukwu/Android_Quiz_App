@@ -7,7 +7,6 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id="@+id/QuestionViewLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -107,7 +106,6 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/nextButton"
             style="@style/Widget.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

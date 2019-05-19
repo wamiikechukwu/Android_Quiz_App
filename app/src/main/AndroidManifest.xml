@@ -45,6 +45,7 @@
             android:name=".SettingsActivity"
             android:label="Settings" />
         <activity android:name=".didYouKnow" />
+        <activity android:name=".cardViewOne"></activity>
     </application>
 
 </manifest>

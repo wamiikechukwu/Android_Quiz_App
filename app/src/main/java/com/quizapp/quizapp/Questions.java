@@ -24,7 +24,8 @@ public class Questions {
                     "crop is grown in West Africa?",
             "What is the name of the fast food dish popular in South Africa, which is made by " +
                     "filling a hollowed-out loaf of bread with curry?",
-            "Which sea is Africa bounded to in the North"
+            "Which sea is Africa bounded to in the North",
+            "Africa is bounded by which sea in the NorthEast"
 
     };
 
@@ -127,9 +128,16 @@ public class Questions {
                     "C: Caspian Sea",
                     "D: Black Sea",
             },
+
+            {
+                    "A: Caribbean Sea",
+                    "B: The Sea of Crete",
+                    "C: Red Sea",
+                    "D: The Sea of Galilee",
+            },
     };
 
-    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3, 1, 0, 2, 2, 2, 0, 0,};
+    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3, 1, 0, 2, 2, 2, 0, 0, 2,};
 
     public void setQuestionNumber(int position) {
         this.position = position;

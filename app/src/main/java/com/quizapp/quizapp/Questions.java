@@ -2,9 +2,6 @@ package com.quizapp.quizapp;
 
 public class Questions {
 
-    private int position;
-    private int score = 0;
-
     String[] questionsToBeAsked = {
 
             "Which region in Africa can Ghana be located",
@@ -25,10 +22,19 @@ public class Questions {
             "What is the name of the fast food dish popular in South Africa, which is made by " +
                     "filling a hollowed-out loaf of bread with curry?",
             "Which sea is Africa bounded to in the North",
-            "Africa is bounded by which sea in the NorthEast"
+            "Africa is bounded by which sea in the NorthEast",
+            "Which ocean is located by the Eastern border of Africa",
+            "Africa is bounded by which ocean in the West",
+            "in the post colonial era, international organizations and governments viewed Africa " +
+                    "as two regions; which are:",
+            "Which region in Africa is Algeria located?",
+            "What is the capital of Algeria",       //20 Questions
+            "Which country in Africa has the longest coastline?",
+            "which country is Kamfers Dam Artificial Island located in Africa?",
+            "Which region in Africa can the Hausa ethnic group be found in Africa",
+            "Which of the following is the most populous country in Africa?"
 
     };
-
     String[][] answersToTheQuestions = {
 
             {
@@ -95,7 +101,7 @@ public class Questions {
             },
 
             {
-                    "A: 100",
+                    "A: 100",   //10 Questions
                     "B: 3",
                     "C: 3000",
                     "D: 10",
@@ -135,9 +141,70 @@ public class Questions {
                     "C: Red Sea",
                     "D: The Sea of Galilee",
             },
+
+            {
+                    "A: Indian Sea",
+                    "B: Pacific Ocean",
+                    "C: Red Sea",
+                    "D: Mediterranean Sea",
+            },
+
+            {
+                    "A: Mediterranean Sea",
+                    "B: Pacific Ocean",
+                    "C: Red Sea",
+                    "D: Atlantic Sea",
+            },
+
+            {
+                    "A: North & South",
+                    "B: North & Sahara",
+                    "C: Sahara & Kalahari",
+                    "D: Inner & Outer",
+            },
+
+            {
+                    "A: North",
+                    "B: South",
+                    "C: East",
+                    "D: Central",
+            },
+
+            {
+                    "A: Algeri",    //20 Questions
+                    "B: Alger",
+                    "C: Algeria",
+                    "D: Algiers",
+            },
+
+            {
+                    "A: Nigeria",
+                    "B: Madagascar",
+                    "C: Somalia",
+                    "D: Cape verde",
+            },
+
+            {
+                    "A: Morocco",
+                    "B: Ethiopia",
+                    "C: South Africa",
+                    "D: Senegal",
+            },
+
+            {
+                    "A: West Africa",
+                    "B: East Africa",
+                    "C: South Africa",
+                    "D: Central Africa",
+            },
+
+
     };
 
-    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3, 1, 0, 2, 2, 2, 0, 0, 2,};
+    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3, 1, 0, 2, 2, 2, 0, 0, 2, 0, 3, 1, 0, 3,
+            1, 2, 0};
+    private int position;
+    private int score = 0;
 
     public void setQuestionNumber(int position) {
         this.position = position;

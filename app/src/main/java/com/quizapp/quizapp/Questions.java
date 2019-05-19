@@ -7,7 +7,7 @@ public class Questions {
 
     String[] questionsToBeAsked = {
 
-            "Which part of Africa can Ghana be located",
+            "Which region in Africa can Ghana be located",
             "What is the capital of Nigeria",
             "Which of these countries are not located in Africa",
             "What is the estimated population of Africa, as at 2015",
@@ -17,7 +17,14 @@ public class Questions {
             "In 1950, how many people lived in Africa",
             "What is the distance from the top of Africa (i.e. its most northerly point) to the bottom" +
                     " of Africa (its most southerly point)?",
-            "Along with lions, elephants and giraffes, is Africa also home to penguins?"
+            "Along with lions, elephants and giraffes, is Africa also home to penguins?",
+            "How many different languages are spoken across Africa?",          //10 Questions
+            "Which country is Africa'a most popular tourist destination?",
+            "To make chocolate you need cocoa beans. Approximately how much of the world's cocoa bean " +
+                    "crop is grown in West Africa?",
+            "What is the name of the fast food dish popular in South Africa, which is made by " +
+                    "filling a hollowed-out loaf of bread with curry?",
+            "Which sea is Africa bounded to in the North"
 
     };
 
@@ -84,10 +91,45 @@ public class Questions {
                     "B: No",
                     "C: Maybe",
                     "D: I have no idea",
-            }
+            },
+
+            {
+                    "A: 100",
+                    "B: 3",
+                    "C: 3000",
+                    "D: 10",
+            },
+
+            {
+                    "A: Nigeria",
+                    "B: South Africa",
+                    "C: Egypt",
+                    "D: Rwanda",
+            },
+
+            {
+                    "A: 50%",
+                    "B: 10%",
+                    "C: 66%",
+                    "D: 1%",
+            },
+
+            {
+                    "A: Bunny Chow",
+                    "B: Ewedu",
+                    "C: Shigala",
+                    "D: Okadu",
+            },
+
+            {
+                    "A: Mediterranean Sea",
+                    "B: Red Sea",
+                    "C: Caspian Sea",
+                    "D: Black Sea",
+            },
     };
 
-    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3, 1, 0,};
+    int[] questionsCorrectAnswers = {0, 0, 3, 0, 0, 1, 3, 1, 0, 2, 2, 2, 0, 0,};
 
     public void setQuestionNumber(int position) {
         this.position = position;

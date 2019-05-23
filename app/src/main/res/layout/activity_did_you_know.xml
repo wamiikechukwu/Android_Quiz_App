@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <android.support.v7.widget.CardView
-            android:id="@+id/cardViewOne"
+            android:id="@+id/cardViewZero"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_marginTop="10dp"
@@ -32,7 +32,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DID YOU KNOW!"
+                    android:text="@string/did_you_know"
                     android:textColor="#FF000000"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -42,7 +42,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="Africa is made up of 54 different countries...[READ MORE]"
+                    android:text="@string/contentDescrip_0"
                     android:textColor="#FF000000"
                     android:textSize="14sp"
                     android:textStyle="normal"
@@ -52,10 +52,57 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/eample"
+                    android:src="@drawable/didyouknow0"
+                    android:scaleType="centerCrop"/>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewOne"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/cardViewZero"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            cardView:cardCornerRadius="5dp"
+            cardView:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/did_you_know"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/contentDescrip_1"
+                    android:textColor="#FF000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:typeface="monospace" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/didyouknow1"
                     android:scaleType="centerCrop" />
-
-
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -81,7 +128,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DID YOU KNOW!"
+                    android:text="@string/did_you_know"
                     android:textColor="#FF000000"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -91,7 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="More than 60% of the cocoa used in the ... [READ MORE]"
+                    android:text="@string/contentDescrip_2"
                     android:textColor="#FF000000"
                     android:textSize="14sp"
                     android:textStyle="normal"
@@ -100,9 +147,10 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
+                    android:background="@drawable/didyouknow2"
                     android:layout_weight="1"
-                    android:background="@drawable/example1"
                     android:scaleType="centerCrop" />
+
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -128,7 +176,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DID YOU KNOW!"
+                    android:text="@string/did_you_know"
                     android:textColor="#FF000000"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -138,7 +186,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="There is a country called South Africa... [READ MORE]"
+                    android:text="@string/contentDescrip_3"
                     android:textColor="#FF000000"
                     android:textSize="14sp"
                     android:textStyle="normal"
@@ -148,7 +196,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/example2"
+                    android:background="@drawable/didyouknow3"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -176,7 +224,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="DID YOU KNOW!"
+                    android:text="@string/did_you_know"
                     android:textColor="#FF000000"
                     android:textSize="15sp"
                     android:textStyle="bold"
@@ -186,7 +234,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:text="Nigeria has the largest economy in Africa... [READ MORE]"
+                    android:text="@string/contentDescrip_4"
                     android:textColor="#FF000000"
                     android:textSize="14sp"
                     android:textStyle="normal"
@@ -196,7 +244,55 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/example3"
+                    android:background="@drawable/didyouknow4"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewFive"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/cardViewFour"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            cardView:cardCornerRadius="5dp"
+            cardView:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/did_you_know"
+                    android:textColor="#FF000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:typeface="monospace" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/contentDescrip_5"
+                    android:textColor="#FF000000"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:typeface="monospace" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/didyouknow4"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>

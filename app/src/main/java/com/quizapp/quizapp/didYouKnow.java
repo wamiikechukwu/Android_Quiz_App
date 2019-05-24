@@ -31,6 +31,7 @@ public class didYouKnow extends AppCompatActivity {
     }
 
     public void cardViewThree(View view) {
-        Intent
+        Intent intent = new Intent(this, cardViewThree.class);
+        startActivity(intent);
     }
 }

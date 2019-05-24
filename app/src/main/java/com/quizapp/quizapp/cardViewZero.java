@@ -14,7 +14,7 @@ public class cardViewZero extends AppCompatActivity {
     }
 
     public void goBack(View view) {
-        Intent intent = new Intent(this, overView.class);
+        Intent intent = new Intent(this, didYouKnow.class);
         startActivity(intent);
     }
 }

@@ -119,6 +119,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             cardView:cardCornerRadius="5dp"
+            android:onClick="cardViewTwo"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -167,6 +168,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             cardView:cardCornerRadius="5dp"
+            android:onClick="cardViewThree"
             cardView:cardElevation="20dp">
 
             <LinearLayout

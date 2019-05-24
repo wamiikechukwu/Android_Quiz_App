@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class cardViewOne extends AppCompatActivity {
+public class cardViewTwo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_view_one);
+        setContentView(R.layout.activity_card_view_two);
     }
 
     public void goBack(View view) {

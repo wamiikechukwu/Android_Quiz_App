@@ -54,9 +54,12 @@
     <string name="contentDescrip_9">Sudan has more than 200 pyramids, double the number found in Egypt ... [READ MORE]</string>
     <string name="contentDescrip_10">Almost half of the gold ever mined on Earth has come from a single place ... [READ MORE]</string>
     <string name="contentDescrip_11">Libya’s current flag, introduced in 2011 after the overthrow of Gaddafi’s government ... [READ MORE]</string>
-    <string name="content1">Africa is a huge continent made up of 54 countries and over a billion
+    <string name="content0">Africa is a huge continent made up of 54 countries and over a billion
         people. But did you know that in a country called Ethiopia (a country in East Africa),
         clocks are upside down with our 6:00 at their 12:00?</string>
+    <string name="go_back">Go Back</string>
+    <string name="content1">Africa and Europe are separated by less than 9 miles at the Strait of Gibraltar, which separates Spain from Morocco. The two countries are discussing constructing an undersea rail tunnel to connect the rail systems on the two continents.</string>
+    <string name="content2">In South Africa you are legally allowed to attach flamethrowers to your car in order to deter car jacking. Seriously.</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/didyouknow0"
+            android:id="@+id/didyouknow1"
             android:layout_width="wrap_content"
             android:layout_height="250dp"
             android:layout_marginTop="@dimen/cardTopMargin"
@@ -22,7 +22,7 @@
             android:id="@+id/didyouknow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/didyouknow0"
+            android:layout_below="@+id/didyouknow1"
             android:layout_marginTop="@dimen/cardMargin"
             android:contextClickable="true"
             android:lineSpacingExtra="3sp"
@@ -44,7 +44,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="20dp"
             android:onClick="goBack"
-            android:text="Go Back"
+            android:text="@string/go_back"
             android:textColor="#F0000000"
             android:textStyle="bold"
             android:typeface="monospace" />

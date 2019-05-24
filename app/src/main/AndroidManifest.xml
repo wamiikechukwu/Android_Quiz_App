@@ -54,6 +54,8 @@
         </activity>
         <activity android:name=".cardViewOne" />
         <activity android:name=".cardViewZero" />
+        <activity android:name=".cardViewTwo" />
+        <activity android:name=".cardViewThree"></activity>
     </application>
 
 </manifest>

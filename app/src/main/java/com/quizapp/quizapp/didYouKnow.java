@@ -20,6 +20,17 @@ public class didYouKnow extends AppCompatActivity {
     }
 
     public void cardViewOne(View view) {
+        Intent intent = new Intent(this, cardViewOne.class);
+        startActivity(intent);
 
+    }
+
+    public void cardViewTwo(View view) {
+        Intent intent = new Intent(this, cardViewTwo.class);
+        startActivity(intent);
+    }
+
+    public void cardViewThree(View view) {
+        Intent
     }
 }

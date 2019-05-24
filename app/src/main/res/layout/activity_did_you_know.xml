@@ -217,6 +217,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             cardView:cardCornerRadius="5dp"
+            android:onClick="cardViewFour"
             cardView:cardElevation="20dp">
 
             <LinearLayout

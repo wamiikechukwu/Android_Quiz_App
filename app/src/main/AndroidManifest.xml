@@ -44,7 +44,6 @@
         <activity
             android:name=".SettingsActivity"
             android:label="Settings" />
-
         <activity
             android:name=".didYouKnow"
             android:label="Did You Know"
@@ -53,8 +52,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.quizapp.quizapp.overView" />
         </activity>
-
-        <activity android:name=".cardViewOne"></activity>
+        <activity android:name=".cardViewOne" />
+        <activity android:name=".cardViewZero" />
     </application>
 
 </manifest>

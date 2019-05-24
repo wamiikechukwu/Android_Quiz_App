@@ -14,14 +14,14 @@
             android:id="@+id/cardViewZero"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="@dimen/cardMargin"
+            android:layout_marginRight="@dimen/cardMargin"
+            android:layout_marginTop="@dimen/cardTopMargin"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             cardView:cardCornerRadius="5dp"
-            android:onClick="cardViewOne"
+            android:onClick="cardViewZero"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -71,6 +71,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             cardView:cardCornerRadius="5dp"
+            android:onClick="cardViewOne"
             cardView:cardElevation="20dp">
 
             <LinearLayout

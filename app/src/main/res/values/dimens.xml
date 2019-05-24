@@ -4,4 +4,6 @@
     <dimen name="overView_Padding">15dp</dimen>
     <dimen name="activityMain_Top">10dp</dimen>
     <dimen name="activityMain">20dp</dimen>
+    <dimen name="cardTopMargin">15dp</dimen>
+    <dimen name="cardMargin">10dp</dimen>
 </resources>

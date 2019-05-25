@@ -56,7 +56,8 @@
         <activity android:name=".cardViewZero" />
         <activity android:name=".cardViewTwo" />
         <activity android:name=".cardViewThree" />
-        <activity android:name=".cardViewFour"></activity>
+        <activity android:name=".cardViewFour" />
+        <activity android:name=".africaNews"></activity>
     </application>
 
 </manifest>

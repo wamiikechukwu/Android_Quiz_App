@@ -2,7 +2,9 @@ package com.quizapp.quizapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class africaNews extends AppCompatActivity {
 
@@ -16,7 +18,14 @@ public class africaNews extends AppCompatActivity {
         webView = findViewById(R.id.webView);
 
         webView.loadUrl("https://www.africanews.com");
-
-        // webView.setWebViewClient();
+        webView.setWebViewClient(new MyWebViewClient());
     }
+
+    private class MyWebViewClient extends WebViewClient {
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+            return super.shouldOverrideUrlLoading(view, request);
+        }
+    }
+
 }

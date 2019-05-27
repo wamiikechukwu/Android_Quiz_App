@@ -413,6 +413,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             cardView:cardCornerRadius="5dp"
+            android:onClick="cardViewEight"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -461,6 +462,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             cardView:cardCornerRadius="5dp"
+            android:onClick="cardViewNine"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -509,6 +511,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             cardView:cardCornerRadius="5dp"
+            android:onClick="cardViewTen"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -557,6 +560,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             cardView:cardCornerRadius="5dp"
+            android:onClick="cardViewEleven"
             cardView:cardElevation="20dp">
 
             <LinearLayout

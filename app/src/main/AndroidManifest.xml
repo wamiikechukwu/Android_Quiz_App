@@ -81,7 +81,8 @@
         <activity android:name=".cardViewEight" />
         <activity android:name=".cardViewNine" />
         <activity android:name=".cardViewTen" />
-        <activity android:name=".cardViewEleven"></activity>
+        <activity android:name=".cardViewEleven" />
+        <activity android:name=".misconAfrica"></activity>
     </application>
 
 </manifest>

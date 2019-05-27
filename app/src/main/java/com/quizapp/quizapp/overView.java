@@ -58,4 +58,7 @@ public class overView extends AppCompatActivity {
         Intent intent = new Intent(this, africaNews.class);
         startActivity(intent);
     }
+
+    public void misconAfrica(View view) {
+    }
 }

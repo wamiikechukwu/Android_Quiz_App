@@ -23,13 +23,13 @@
         </activity>
         <activity
             android:name=".overView"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTask" />
         <activity
             android:name=".AnswerActivity"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTask" />
         <activity
             android:name=".MainActivity"
-            android:launchMode="singleTop" />
+            android:launchMode="singleTask" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -46,23 +46,36 @@
         </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="Settings" />
+            android:label="Settings"
+            android:launchMode="singleTask" />
         <activity
             android:name=".didYouKnow"
             android:label="Did You Know"
+            android:launchMode="singleTask"
             android:parentActivityName=".overView">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.quizapp.quizapp.overView" />
         </activity>
-        <activity android:name=".cardViewOne" />
-        <activity android:name=".cardViewZero" />
-        <activity android:name=".cardViewTwo" />
-        <activity android:name=".cardViewThree" />
-        <activity android:name=".cardViewFour" />
+        <activity
+            android:name=".cardViewOne"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".cardViewZero"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".cardViewTwo"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".cardViewThree"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".cardViewFour"
+            android:launchMode="singleTask" />
         <activity
             android:name=".africaNews"
-            android:label="Africa News">
+            android:label="Africa News"
+            android:launchMode="singleTask">
 
         </activity>
     </application>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cardViewFive">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/didyouknow5"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/cardTopMargin"
+            android:padding="@dimen/cardMargin"
+            android:scaleType="fitXY"
+            android:src="@drawable/didyouknow5" />
+
+        <TextView
+            android:id="@+id/didyouknow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/didyouknow5"
+            android:layout_marginTop="@dimen/cardMargin"
+            android:contextClickable="true"
+            android:lineSpacingExtra="3sp"
+            android:paddingLeft="@dimen/cardMargin"
+            android:paddingRight="@dimen/cardMargin"
+            android:text="@string/content5"
+            android:textColor="#F0000000"
+            android:textIsSelectable="true"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:typeface="serif" />
+
+        <Button
+            style="@style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/didyouknow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:onClick="goBack"
+            android:text="@string/go_back"
+            android:textColor="#F0000000"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+    </RelativeLayout>
+
+
+</ScrollView>

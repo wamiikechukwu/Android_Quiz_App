@@ -46,5 +46,12 @@ public class didYouKnow extends AppCompatActivity {
     }
 
     public void cardViewSix(View view) {
+        Intent intent = new Intent(this, cardViewSix.class);
+        startActivity(intent);
+    }
+
+    public void cardViewSeven(View view) {
+        Intent intent = new Intent(this, cardViewSeven.class);
+        startActivity(intent);
     }
 }

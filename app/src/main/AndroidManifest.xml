@@ -76,7 +76,8 @@
             android:label="Africa News"
             android:launchMode="singleTask" />
         <activity android:name=".cardViewFive" />
-        <activity android:name=".cardViewSix"></activity>
+        <activity android:name=".cardViewSix" />
+        <activity android:name=".cardViewSeven"></activity>
     </application>
 
 </manifest>

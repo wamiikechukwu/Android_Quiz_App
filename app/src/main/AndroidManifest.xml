@@ -14,7 +14,7 @@
 
         <activity
             android:name=".splashScreen"
-            android:launchMode="singleTop">
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,7 +38,7 @@
         <activity
             android:name=".introStartQuiz"
             android:label="Africa Quiz"
-            android:launchMode="singleTop"
+            android:launchMode="singleTask"
             android:parentActivityName=".overView">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -60,7 +60,11 @@
         <activity android:name=".cardViewTwo" />
         <activity android:name=".cardViewThree" />
         <activity android:name=".cardViewFour" />
-        <activity android:name=".africaNews"></activity>
+        <activity
+            android:name=".africaNews"
+            android:label="Africa News">
+
+        </activity>
     </application>
 
 </manifest>

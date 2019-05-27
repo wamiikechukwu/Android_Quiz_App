@@ -21,6 +21,8 @@ public class africaNews extends AppCompatActivity {
         webView.setWebViewClient(new MyWebViewClient());
     }
 
+    //This class enables web actions to be performed within the WebView without calling any
+    // browser intent
     private class MyWebViewClient extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {

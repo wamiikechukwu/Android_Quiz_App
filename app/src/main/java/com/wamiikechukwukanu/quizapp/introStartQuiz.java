@@ -1,4 +1,4 @@
-package com.quizapp.quizapp;
+package com.wamiikechukwukanu.quizapp;
 
 import android.content.Context;
 import android.content.Intent;

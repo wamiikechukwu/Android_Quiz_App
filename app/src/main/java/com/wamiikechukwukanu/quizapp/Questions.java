@@ -1,4 +1,4 @@
-package com.quizapp.quizapp;
+package com.wamiikechukwukanu.quizapp;
 
 public class Questions {
 

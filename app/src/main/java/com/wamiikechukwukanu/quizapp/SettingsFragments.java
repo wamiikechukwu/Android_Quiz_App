@@ -1,4 +1,4 @@
-package com.quizapp.quizapp;
+package com.wamiikechukwukanu.quizapp;
 
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceFragmentCompat;

@@ -1,16 +1,16 @@
-package com.quizapp.quizapp;
+package com.wamiikechukwukanu.quizapp;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class cardViewSix extends AppCompatActivity {
+public class cardViewFour extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_card_view_six);
+        setContentView(R.layout.activity_card_view_four);
     }
 
     public void goBack(View view) {

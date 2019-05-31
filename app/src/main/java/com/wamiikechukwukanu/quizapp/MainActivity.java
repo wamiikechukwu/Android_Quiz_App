@@ -17,6 +17,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.MobileAds;
+
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -74,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 
         setQuestion();
 
+        MobileAds.initialize(this,"ca-app-pub-9646388292265496~7436300103");
     }
 
     //This @Override method here inflate/add the menu to the activity

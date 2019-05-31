@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/appsbackground"
     tools:context=".overView">
 
     <RelativeLayout
@@ -31,11 +32,11 @@
             android:layout_below="@id/overViewStartQuiz"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
+            android:onClick="didYouKnow"
             android:padding="@dimen/overView_Padding"
             android:text="@string/overView_DidYouKnow"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:onClick="didYouKnow"
             android:typeface="monospace" />
 
         <Button
@@ -46,11 +47,11 @@
             android:layout_below="@id/overViewDidYouKnow"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
+            android:onClick="africaNews"
             android:padding="@dimen/overView_Padding"
             android:text="@string/overView_AfricaNews"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:onClick="africaNews"
             android:typeface="monospace" />
 
         <Button
@@ -58,14 +59,24 @@
             android:layout_width="@dimen/overViewMainButton"
             android:layout_height="wrap_content"
             android:layout_below="@id/overViewAfricaNews"
-            android:layout_marginTop="25dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:onClick="misconAfrica"
             android:padding="@dimen/overView_Padding"
             android:text="@string/overView_MisconceptionsOfAfrica"
             android:textSize="19sp"
             android:textStyle="bold"
-            android:onClick="misconAfrica"
             android:typeface="monospace" />
-    </RelativeLayout>
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
 </ScrollView>

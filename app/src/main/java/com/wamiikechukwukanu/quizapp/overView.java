@@ -9,12 +9,24 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class overView extends AppCompatActivity {
+
+    private AdView overviewAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_over_view);
+
+        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+
+        overviewAd = findViewById(R.id.overviewAd);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        overviewAd.loadAd(adRequest);
     }
 
     //adding the menu to this activity

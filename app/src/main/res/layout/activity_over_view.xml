@@ -20,7 +20,7 @@
             android:onClick="questionInto"
             android:padding="@dimen/overView_Padding"
             android:text="@string/overView_StartQuiz"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:typeface="monospace" />
 
@@ -69,9 +69,10 @@
             android:typeface="monospace" />
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="0dp"
             ads:adSize="BANNER"

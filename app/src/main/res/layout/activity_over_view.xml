@@ -27,13 +27,11 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/overviewAd"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:onClick="questionInto"
-            android:padding="@dimen/overView_Padding"
             android:text="@string/overView_StartQuiz"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:textColor="#F0000000" />
 
         <Button
             android:id="@+id/overViewDidYouKnow"
@@ -44,11 +42,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:onClick="didYouKnow"
-            android:padding="@dimen/overView_Padding"
             android:text="@string/overView_DidYouKnow"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:textColor="#F0000000"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/overViewAfricaNews"

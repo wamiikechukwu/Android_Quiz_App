@@ -10,13 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445"></com.google.android.gms.ads.AdView>
+
         <Button
             android:id="@+id/overViewStartQuiz"
             style="@style/Widget.Button"
             android:layout_width="@dimen/overViewMainButton"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="70dp"
+            android:layout_below="@id/overviewAd"
+            android:layout_marginTop="10dp"
             android:onClick="questionInto"
             android:padding="@dimen/overView_Padding"
             android:text="@string/overView_StartQuiz"
@@ -67,17 +78,6 @@
             android:textSize="19sp"
             android:textStyle="bold"
             android:typeface="monospace" />
-
-        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/overviewAd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="0dp"
-            ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-9646388292265496/4392647445">
-        </com.google.android.gms.ads.AdView>
 
     </RelativeLayout>
 </ScrollView>

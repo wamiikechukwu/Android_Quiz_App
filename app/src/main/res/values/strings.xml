@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Africa Quiz</string>
+    <string name="app_name">Africa Quiz App</string>
     <string name="quiz_progress">Quiz Progress</string>
     <string name="Next">Next Question</string>
     <string name="overView_StartQuiz">START QUIZ</string>

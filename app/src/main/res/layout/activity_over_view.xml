@@ -18,7 +18,7 @@
             android:layout_centerHorizontal="true"
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-9646388292265496/4392647445"></com.google.android.gms.ads.AdView>
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
 
         <Button
             android:id="@+id/overViewStartQuiz"
@@ -55,11 +55,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:onClick="africaNews"
-            android:padding="@dimen/overView_Padding"
             android:text="@string/overView_AfricaNews"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:textColor="#F0000000"
+            android:textSize="20sp" />
 
         <Button
             style="@style/Widget.Button"
@@ -69,11 +67,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
             android:onClick="misconAfrica"
-            android:padding="@dimen/overView_Padding"
             android:text="@string/overView_MisconceptionsOfAfrica"
-            android:textSize="19sp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+            android:textColor="#F0000000"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 </ScrollView>

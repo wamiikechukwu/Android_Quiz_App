@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="overViewMainButton">300dp</dimen>
-    <dimen name="overView_Padding">15dp</dimen>
     <dimen name="activityMain_Top">10dp</dimen>
     <dimen name="activityMain">20dp</dimen>
     <dimen name="cardTopMargin">15dp</dimen>

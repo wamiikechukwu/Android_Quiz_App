@@ -6,8 +6,20 @@
     tools:context=".introStartQuiz">
 
     <RelativeLayout
+        android:id="@+id/relative_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
 
 
         <TextView
@@ -15,6 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_below="@id/overviewAd"
             android:layout_margin="25dp"
             android:text="@string/about_africa_quiz"
             android:textAlignment="center"
@@ -36,7 +49,6 @@
             android:text="@string/text_description"
             android:textColor="#FF000000"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:typeface="normal" />
 
         <TextView

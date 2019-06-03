@@ -30,9 +30,8 @@
     <!-- Example settings for Notifications -->
 
     <string name="overView_DidYouKnow">DID YOU KNOW?</string>
-    <string name="text_description">How well do you know the continent Africa and the
-        countries in it?\n\nTest your knowledge! </string>
-    <string name="about_africa_quiz">AFRICA QUIZ</string>
+    <string name="text_description"></string>
+    <string name="about_africa_quiz">AFRICA QUIZ APP</string>
     <string name="nothing_selected">onNothingSelected:</string>
     <string name="number_of_questions">Number of Questions</string>
     <string name="select_difficulty">Select Difficulty</string>

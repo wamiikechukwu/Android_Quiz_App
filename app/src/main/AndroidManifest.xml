@@ -41,7 +41,7 @@
 
         <activity
             android:name=".introStartQuiz"
-            android:label="Africa Quiz"
+            android:label=""
             android:launchMode="singleTask"
             android:parentActivityName=".overView">
             <meta-data

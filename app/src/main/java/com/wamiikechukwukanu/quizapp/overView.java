@@ -33,6 +33,8 @@ public class overView extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         overviewAd1.loadAd(adRequest);
         overViewAd2.loadAd(adRequest);
+
+        getWindow().setBackgroundDrawable(null);
     }
 
     //adding the menu to this activity

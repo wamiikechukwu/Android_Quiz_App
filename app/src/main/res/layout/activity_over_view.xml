@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/appsbackground"
+    android:background="@mipmap/appsbackground"
     tools:context=".overView">
 
     <RelativeLayout
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/overviewAd1"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
             android:onClick="questionInto"
             android:text="@string/overView_StartQuiz"
             android:textSize="20sp"
@@ -71,5 +71,17 @@
             android:text="@string/overView_MisconceptionsOfAfrica"
             android:textColor="#F0000000"
             android:textSize="20sp" />
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/overView_Miscon_Africa"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
     </RelativeLayout>
 </ScrollView>

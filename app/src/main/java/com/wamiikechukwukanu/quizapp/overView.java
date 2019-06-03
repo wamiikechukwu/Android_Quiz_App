@@ -24,7 +24,7 @@ public class overView extends AppCompatActivity {
 
         MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
 
-        overviewAd = findViewById(R.id.overviewAd);
+        overviewAd = findViewById(R.id.overviewAd1);
         AdRequest adRequest = new AdRequest.Builder().build();
         overviewAd.loadAd(adRequest);
     }

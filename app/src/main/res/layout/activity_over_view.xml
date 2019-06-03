@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/overviewAd"
+            android:id="@+id/overviewAd1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -26,7 +26,7 @@
             android:layout_width="@dimen/overViewMainButton"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/overviewAd"
+            android:layout_below="@id/overviewAd1"
             android:layout_marginTop="20dp"
             android:onClick="questionInto"
             android:text="@string/overView_StartQuiz"
@@ -60,6 +60,7 @@
             android:textSize="20sp" />
 
         <Button
+            android:id="@+id/overView_Miscon_Africa"
             style="@style/Widget.Button"
             android:layout_width="@dimen/overViewMainButton"
             android:layout_height="wrap_content"
@@ -70,6 +71,5 @@
             android:text="@string/overView_MisconceptionsOfAfrica"
             android:textColor="#F0000000"
             android:textSize="20sp" />
-
     </RelativeLayout>
 </ScrollView>

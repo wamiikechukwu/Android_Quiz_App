@@ -19,6 +19,7 @@ public class overView extends AppCompatActivity {
     public AdView overviewAd1;
     public AdView overviewAd2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +65,6 @@ public class overView extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 
     public void questionInto(View view) {
         Intent intent = new Intent(this, introStartQuiz.class);

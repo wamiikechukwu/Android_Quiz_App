@@ -15,12 +15,17 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 public class introStartQuiz extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+    public AdView overviewAd;
+    public AdView overviewAd1;
+    public InterstitialAd interstitialAd;
     //global variable for questionSpinner view ID
     Spinner questionSpinner;
     //global variable for difficultSpinner view ID
@@ -29,10 +34,6 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
     private String myQuestionLabel = "";
     //global variable for the questionSpinner item
     private String myDifficultLabel = "";
-
-    public AdView overviewAd;
-    public AdView overviewAd1;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,9 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
 
         //Referencing the aadId from admob and initialing it
         MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+
+        interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
 
         AdRequest adRequest = new AdRequest.Builder().build();
         overviewAd.loadAd(adRequest);
@@ -113,6 +117,14 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
                             null).show();
         }
 
+        if (myQuestionLabel.equals("10")) {
+            editor.putInt("Numb", 10);
+            editor.apply();
+            Snackbar.make(view, "10 Questions Selected", Snackbar.LENGTH_LONG).setAction
+                    ("",
+                            null).show();
+        }
+
         if (myQuestionLabel.equals("15")) {
             editor.putInt("Numb", 15);
             editor.apply();
@@ -141,14 +153,6 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
             editor.putInt("Numb", 30);
             editor.apply();
             Snackbar.make(view, "30 Questions Selected", Snackbar.LENGTH_LONG).setAction
-                    ("",
-                            null).show();
-        }
-
-        if (myQuestionLabel.equals("35")) {
-            editor.putInt("Numb", 35);
-            editor.apply();
-            Snackbar.make(view, "35 Questions Selected", Snackbar.LENGTH_LONG).setAction
                     ("",
                             null).show();
         }
@@ -200,8 +204,24 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         }
     }
 
-    public void quizQuestions(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+    public void quizQuestions(final View view) {
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(introStartQuiz.this, MainActivity.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
     }
 }

@@ -33,6 +33,7 @@
             android:launchMode="singleTask" />
         <activity
             android:name=".MainActivity"
+            android:label="Africa Quiz"
             android:launchMode="singleTask" />
 
         <meta-data

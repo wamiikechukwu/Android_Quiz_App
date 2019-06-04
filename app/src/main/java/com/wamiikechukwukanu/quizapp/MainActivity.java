@@ -17,6 +17,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 import java.util.Random;
@@ -50,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
     //the sharedpreference that stores the total number of questions the user wants to answer
     int name;
 
+    public AdView overviewAd1;
+    public AdView overviewAd;
+
+
     //Calling the constructor from the question class
     Questions q = new Questions();
 
@@ -74,9 +80,16 @@ public class MainActivity extends AppCompatActivity {
         scrollViewLayout = findViewById(R.id.scrollViewLayout);
         answerActivity = findViewById(R.id.answerActivity);
 
+        overviewAd1 = findViewById(R.id.overviewAd1);
+        overviewAd = findViewById(R.id.overviewAd);
+
         setQuestion();
 
         MobileAds.initialize(this,"ca-app-pub-9646388292265496~7436300103");
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        overviewAd.loadAd(adRequest);
+        overviewAd1.loadAd(adRequest);
     }
 
     //This @Override method here inflate/add the menu to the activity

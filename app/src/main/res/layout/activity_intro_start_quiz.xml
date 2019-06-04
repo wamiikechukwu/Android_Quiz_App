@@ -6,7 +6,6 @@
     tools:context=".introStartQuiz">
 
     <RelativeLayout
-        android:id="@+id/relative_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -42,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/heading"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:lineSpacingExtra="5dp"
@@ -52,26 +51,40 @@
             android:typeface="normal" />
 
         <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/text_description2"
+            android:textColor="#FF000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
             android:id="@+id/questionSection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text"
+            android:layout_below="@id/text2"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:text="@string/number_of_questions"
             android:textColor="#FF000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/question_Array"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text"
+            android:layout_below="@id/text2"
             android:layout_marginBottom="20dp"
             android:layout_toEndOf="@id/questionSection">
-
         </Spinner>
 
         <TextView
@@ -84,8 +97,7 @@
             android:layout_marginRight="20dp"
             android:text="@string/select_difficulty"
             android:textColor="#FF000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
         <Spinner
             android:id="@+id/difficult_Array"
@@ -98,6 +110,7 @@
         </Spinner>
 
         <Button
+            android:id="@+id/start_quiz_button"
             style="@style/Widget.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -108,8 +121,19 @@
             android:text="@string/start_quiz"
             android:textColor="#FF000000"
             android:textSize="20sp"
-            android:textStyle="bold"
             android:typeface="monospace" />
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/start_quiz_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
 
     </RelativeLayout>
 </ScrollView>

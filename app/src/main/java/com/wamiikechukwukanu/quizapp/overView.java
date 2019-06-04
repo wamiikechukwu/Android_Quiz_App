@@ -35,6 +35,7 @@ public class overView extends AppCompatActivity {
         overViewAd2.loadAd(adRequest);
 
         getWindow().setBackgroundDrawable(null);
+
     }
 
     //adding the menu to this activity
@@ -64,6 +65,7 @@ public class overView extends AppCompatActivity {
         }
     }
 
+
     public void questionInto(View view) {
         Intent intent = new Intent(this, introStartQuiz.class);
         startActivity(intent);
@@ -83,4 +85,7 @@ public class overView extends AppCompatActivity {
         Intent intent = new Intent(this, misconAfrica.class);
         startActivity(intent);
     }
+
+
 }
+

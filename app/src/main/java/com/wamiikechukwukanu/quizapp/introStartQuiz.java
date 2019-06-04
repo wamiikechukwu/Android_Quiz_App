@@ -80,14 +80,14 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         SharedPreferences sharedPref = getSharedPreferences("QuestNumb", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
 
-        if (myQuestionLabel.equals("0")) {
-            editor.putInt("Numb", 0);
-            editor.apply();
-            Toast.makeText(this, "No Questions Selected", Toast.LENGTH_LONG).show();
-        }
-
         if (myQuestionLabel.equals("1")) {
             editor.putInt("Numb", 1);
+            editor.apply();
+            Snack
+        }
+
+        if (myQuestionLabel.equals("5")) {
+            editor.putInt("Numb", 5);
             editor.apply();
             Toast.makeText(this, "1 Question Selected", Toast.LENGTH_LONG).show();
         }

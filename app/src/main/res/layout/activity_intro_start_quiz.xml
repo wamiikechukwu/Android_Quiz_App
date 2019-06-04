@@ -134,6 +134,5 @@
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
             ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
-
     </RelativeLayout>
 </ScrollView>

@@ -4,8 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -14,6 +14,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class introStartQuiz extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -26,11 +30,24 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
     //global variable for the questionSpinner item
     private String myDifficultLabel = "";
 
+    public AdView overviewAd;
+    public AdView overviewAd1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro_start_quiz);
+
+        overviewAd = findViewById(R.id.overviewAd);
+        overviewAd1 = findViewById(R.id.overviewAd1);
+
+        //Referencing the aadId from admob and initialing it
+        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        overviewAd.loadAd(adRequest);
+        overviewAd1.loadAd(adRequest);
 
         //getting the questionSpinner ID
         questionSpinner = findViewById(R.id.question_Array);
@@ -83,43 +100,57 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         if (myQuestionLabel.equals("1")) {
             editor.putInt("Numb", 1);
             editor.apply();
-            Snack
+            Snackbar.make(view, "1 Question Selected", Snackbar.LENGTH_LONG).setAction
+                    ("",
+                            null).show();
         }
 
         if (myQuestionLabel.equals("5")) {
             editor.putInt("Numb", 5);
             editor.apply();
-            Toast.makeText(this, "1 Question Selected", Toast.LENGTH_LONG).show();
+            Snackbar.make(view, "5 Questions Selected", Snackbar.LENGTH_LONG).setAction
+                    ("",
+                            null).show();
         }
 
-        if (myQuestionLabel.equals("2")) {
-            Toast.makeText(this, "2 Questions Selected", Toast.LENGTH_LONG).show();
-            editor.putInt("Numb", 2);
+        if (myQuestionLabel.equals("15")) {
+            editor.putInt("Numb", 15);
             editor.apply();
+            Snackbar.make(view, "15 Questions Selected", Snackbar.LENGTH_LONG).setAction
+                    ("",
+                            null).show();
         }
 
-        if (myQuestionLabel.equals("3")) {
-            Toast.makeText(this, "3 Questions Selected", Toast.LENGTH_LONG).show();
-            editor.putInt("Numb", 3);
+        if (myQuestionLabel.equals("20")) {
+            editor.putInt("Numb", 20);
             editor.apply();
+            Snackbar.make(view, "20 Questions Selected", Snackbar.LENGTH_LONG).setAction
+                    ("",
+                            null).show();
         }
 
-        if (myQuestionLabel.equals("4")) {
-            Toast.makeText(this, "4 Questions Selected", Toast.LENGTH_LONG).show();
-            editor.putInt("Numb", 4);
+        if (myQuestionLabel.equals("25")) {
+            editor.putInt("Numb", 25);
             editor.apply();
+            Snackbar.make(view, "25 Questions Selected", Snackbar.LENGTH_LONG).setAction
+                    ("",
+                            null).show();
         }
 
-        if (myQuestionLabel.equals("5")) {
-            Toast.makeText(this, "5 Questions Selected", Toast.LENGTH_LONG).show();
-            editor.putInt("Numb", 5);
+        if (myQuestionLabel.equals("30")) {
+            editor.putInt("Numb", 30);
             editor.apply();
+            Snackbar.make(view, "30 Questions Selected", Snackbar.LENGTH_LONG).setAction
+                    ("",
+                            null).show();
         }
 
-        if (myQuestionLabel.equals("6")) {
-            Toast.makeText(this, "6 Questions Selected", Toast.LENGTH_LONG).show();
-            editor.putInt("Numb", 6);
+        if (myQuestionLabel.equals("35")) {
+            editor.putInt("Numb", 35);
             editor.apply();
+            Snackbar.make(view, "35 Questions Selected", Snackbar.LENGTH_LONG).setAction
+                    ("",
+                            null).show();
         }
 
         //logic for how difficult the questions should be
@@ -136,12 +167,10 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
             Toast.makeText(this, "Hard Level Selected", Toast.LENGTH_LONG).show();
         }
 
-
     }
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
-        Log.d("intro", getString(R.string.nothing_selected));
     }
 
 

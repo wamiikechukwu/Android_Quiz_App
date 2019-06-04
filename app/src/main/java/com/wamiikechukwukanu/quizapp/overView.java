@@ -17,7 +17,7 @@ public class overView extends AppCompatActivity {
 
     //variable to store the referenced ID of the adView
     public AdView overviewAd1;
-    public AdView overViewAd2;
+    public AdView overviewAd2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,11 +28,11 @@ public class overView extends AppCompatActivity {
         MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
 
         overviewAd1 = findViewById(R.id.overviewAd1);
-        overViewAd2 = findViewById(R.id.overviewAd2);
+        overviewAd2 = findViewById(R.id.overviewAd2);
 
         AdRequest adRequest = new AdRequest.Builder().build();
         overviewAd1.loadAd(adRequest);
-        overViewAd2.loadAd(adRequest);
+        overviewAd2.loadAd(adRequest);
 
         getWindow().setBackgroundDrawable(null);
 

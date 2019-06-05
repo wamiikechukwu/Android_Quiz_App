@@ -29,12 +29,18 @@
             android:name=".overView"
             android:launchMode="singleTask" />
         <activity
-            android:name=".AnswerActivity"
+            android:name=".score"
+            android:label="Your Score"
             android:launchMode="singleTask" />
         <activity
             android:name=".MainActivity"
             android:label="Africa Quiz"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:parentActivityName=".introStartQuiz">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wamiikechukwukanu.quizapp.overView" />
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

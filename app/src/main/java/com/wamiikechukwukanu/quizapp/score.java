@@ -8,14 +8,14 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.TextView;
 
-public class AnswerActivity extends AppCompatActivity {
+public class score extends AppCompatActivity {
 
     TextView textview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_answer);
+        setContentView(R.layout.activity_score);
 
         textview = findViewById(R.id.textview);
 

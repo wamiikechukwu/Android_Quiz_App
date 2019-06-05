@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,37 +24,25 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+    public AdView overviewAd1;
+    public AdView overviewAd0;
     //initialized  global variable
     TextView testQuestion;
     TextView questionText;
-
     ProgressBar pBar;
-
     RadioButton answerA;
     RadioButton answerB;
     RadioButton answerC;
     RadioButton answerD;
-
     RadioGroup radioGroup_ID;
-
     ScrollView scrollViewLayout;
-
-    RelativeLayout answerActivity;
 
     //variables for storing data
     int scoresTotalCorrectAnswer = 0;
-
     int totalQuestionsAnswered = 1;
-
     int randomNumber = 0;
-
     //the sharedpreference that stores the total number of questions the user wants to answer
     int name;
-
-    public AdView overviewAd1;
-    public AdView overviewAd;
-
-
     //Calling the constructor from the question class
     Questions q = new Questions();
 
@@ -78,18 +65,17 @@ public class MainActivity extends AppCompatActivity {
         radioGroup_ID = findViewById(R.id.radioGroup_ID);
 
         scrollViewLayout = findViewById(R.id.scrollViewLayout);
-        answerActivity = findViewById(R.id.answerActivity);
 
         overviewAd1 = findViewById(R.id.overviewAd1);
-        overviewAd = findViewById(R.id.overviewAd);
+        overviewAd0 = findViewById(R.id.overviewAd0);
 
-        setQuestion();
-
-        MobileAds.initialize(this,"ca-app-pub-9646388292265496~7436300103");
+        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
 
         AdRequest adRequest = new AdRequest.Builder().build();
-        overviewAd.loadAd(adRequest);
+        overviewAd0.loadAd(adRequest);
         overviewAd1.loadAd(adRequest);
+
+        setQuestion();
     }
 
     //This @Override method here inflate/add the menu to the activity
@@ -141,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
             totalQuestionsAnswered++;
 
         } else {
-            Intent nextLayout = new Intent(this, AnswerActivity.class);
+            Intent nextLayout = new Intent(this, score.class);
             nextLayout.putExtra("nextLayout", "" + scoresTotalCorrectAnswer);
             startActivity(nextLayout);
         }

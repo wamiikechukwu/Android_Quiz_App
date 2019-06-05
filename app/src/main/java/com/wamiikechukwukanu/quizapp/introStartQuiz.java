@@ -204,7 +204,7 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         }
     }
 
-    public void quizQuestions(final View view) {
+    public void quizQuestions(View view) {
         interstitialAd.loadAd(new AdRequest.Builder().build());
 
         if (interstitialAd.isLoaded()) {

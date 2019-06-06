@@ -49,10 +49,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/zero_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:src="@drawable/didyouknow0"
                     android:scaleType="centerCrop"/>
 
 
@@ -99,10 +99,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/one_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow1"
                     android:scaleType="centerCrop" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -147,9 +147,9 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/two_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:background="@drawable/didyouknow2"
                     android:layout_weight="1"
                     android:scaleType="centerCrop" />
 
@@ -196,10 +196,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/three_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow3"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -245,10 +245,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/four_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow4"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -294,10 +294,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/five_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow5"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -343,10 +343,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/six_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow6"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -392,10 +392,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/seven_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow7"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -441,10 +441,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/eight_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow8"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -490,10 +490,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/nine_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow9"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -539,10 +539,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/ten_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow10"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -588,10 +588,10 @@
                     android:typeface="monospace" />
 
                 <ImageView
+                    android:id="@+id/eleven_pic"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="@drawable/didyouknow11"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>

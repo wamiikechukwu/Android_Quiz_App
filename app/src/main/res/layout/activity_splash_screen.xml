@@ -7,9 +7,9 @@
 
 
     <ImageView
+        android:id="@+id/splash_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:contentDescription="@string/splash_screen_imageDescription"
-        android:src="@drawable/africa_map" />
+        android:contentDescription="@string/splash_screen_imageDescription" />
 
 </RelativeLayout>

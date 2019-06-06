@@ -11,12 +11,11 @@
 
         <ImageView
             android:id="@+id/didyouknow6"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_marginTop="@dimen/cardTopMargin"
             android:padding="@dimen/cardMargin"
-            android:scaleType="fitXY"
-            android:src="@drawable/didyouknow6" />
+            android:scaleType="fitXY" />
 
         <TextView
             android:id="@+id/didyouknow"

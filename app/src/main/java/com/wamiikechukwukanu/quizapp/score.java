@@ -6,7 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 public class score extends AppCompatActivity {
 
@@ -19,9 +22,16 @@ public class score extends AppCompatActivity {
 
         textview = findViewById(R.id.textview);
 
+        ImageView imageView = findViewById(R.id.image);
+
         String data = getIntent().getStringExtra("nextLayout");
 
         textview.setText(data);
+
+        Glide.with(this)
+                .load(R.drawable.trophy)
+                .into(imageView);
+
     }
 
     @Override

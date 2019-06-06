@@ -14,7 +14,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9646388292265496~7436300103"/>
+            android:value="ca-app-pub-9646388292265496~7436300103" />
 
         <activity
             android:name=".splashScreen"
@@ -70,31 +70,52 @@
         </activity>
         <activity
             android:name=".cardViewOne"
+            android:label=""
             android:launchMode="singleTask" />
         <activity
             android:name=".cardViewZero"
+            android:label=""
             android:launchMode="singleTask" />
         <activity
             android:name=".cardViewTwo"
+            android:label=""
             android:launchMode="singleTask" />
         <activity
             android:name=".cardViewThree"
+            android:label=""
             android:launchMode="singleTask" />
         <activity
             android:name=".cardViewFour"
+            android:label=""
             android:launchMode="singleTask" />
         <activity
             android:name=".africaNews"
             android:label="Africa News"
             android:launchMode="singleTask" />
-        <activity android:name=".cardViewFive" />
-        <activity android:name=".cardViewSix" />
-        <activity android:name=".cardViewSeven" />
-        <activity android:name=".cardViewEight" />
-        <activity android:name=".cardViewNine" />
-        <activity android:name=".cardViewTen" />
-        <activity android:name=".cardViewEleven" />
-        <activity android:name=".misconAfrica"></activity>
+        <activity
+            android:name=".cardViewFive"
+            android:label="" />
+        <activity
+            android:name=".cardViewSix"
+            android:label="" />
+        <activity
+            android:name=".cardViewSeven"
+            android:label="" />
+        <activity
+            android:name=".cardViewEight"
+            android:label="" />
+        <activity
+            android:name=".cardViewNine"
+            android:label="" />
+        <activity
+            android:name=".cardViewTen"
+            android:label="" />
+        <activity
+            android:name=".cardViewEleven"
+            android:label="" />
+        <activity android:name=".misconAfrica">
+
+        </activity>
     </application>
 
 </manifest>

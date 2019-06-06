@@ -7,13 +7,17 @@
     tools:context=".score">
 
 
-    <ImageView
+    <TextView
         android:id="@+id/scorePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:contentDescription="@string/picture_of_a_score_board"
-        android:src="@drawable/scores" />
+        android:text="score"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textview"
@@ -22,17 +26,17 @@
         android:layout_below="@+id/scorePicture"
         android:layout_centerHorizontal="true"
         android:text=""
-        android:textColor="#FF000000"
+        android:textColor="@color/colorPrimary"
         android:textSize="60sp" />
 
     <ImageView
+        android:id="@+id/image"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_below="@id/textview"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
-        android:contentDescription="@string/picture_of_a_trophy"
-        android:src="@drawable/first_trophy_cup" />
+        android:contentDescription="@string/picture_of_a_trophy" />
 
     <Button
         style="@style/Widget.Button"

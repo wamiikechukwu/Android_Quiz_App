@@ -10,18 +10,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
+
         <android.support.v7.widget.CardView
             android:id="@+id/cardViewZero"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:layout_below="@+id/overviewAd0"
             android:layout_marginLeft="@dimen/cardMargin"
             android:layout_marginRight="@dimen/cardMargin"
             android:layout_marginTop="@dimen/cardTopMargin"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewZero"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -53,7 +65,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop" />
 
 
             </LinearLayout>
@@ -64,14 +76,14 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/cardViewZero"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewOne"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -112,14 +124,14 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/cardViewOne"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewTwo"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -156,19 +168,30 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewTwo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
+
         <android.support.v7.widget.CardView
             android:id="@+id/cardViewThree"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_below="@+id/cardViewTwo"
-            android:layout_marginTop="10dp"
+            android:layout_below="@+id/overviewAd1"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewThree"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -210,14 +233,14 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/cardViewThree"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewFour"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -259,14 +282,14 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/cardViewFour"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewFive"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -303,19 +326,30 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewFive"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
+
         <android.support.v7.widget.CardView
             android:id="@+id/cardViewSix"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_below="@+id/cardViewFive"
-            android:layout_marginTop="10dp"
+            android:layout_below="@+id/overviewAd2"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewSix"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -357,14 +391,14 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/cardViewSix"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewSeven"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -412,8 +446,8 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewEight"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -450,19 +484,30 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewEight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
+
         <android.support.v7.widget.CardView
             android:id="@+id/cardViewNine"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_below="@+id/cardViewEight"
+            android:layout_below="@+id/overviewAd3"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewNine"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -510,8 +555,8 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewTen"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -553,14 +598,15 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_below="@+id/cardViewTen"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="10dp"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            cardView:cardCornerRadius="5dp"
             android:onClick="cardViewEleven"
+            cardView:cardCornerRadius="5dp"
             cardView:cardElevation="20dp">
 
             <LinearLayout
@@ -596,6 +642,17 @@
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewEleven"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
 
     </RelativeLayout>
 </ScrollView>

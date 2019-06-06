@@ -43,7 +43,7 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         overviewAd = findViewById(R.id.overviewAd);
         overviewAd1 = findViewById(R.id.overviewAd1);
 
-        //Referencing the aadId from admob and initialing it
+        //Referencing the adId from admob and initialing it
         MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
 
         interstitialAd = new InterstitialAd(this);

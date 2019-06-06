@@ -11,6 +11,10 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 public class didYouKnow extends AppCompatActivity {
 
@@ -18,6 +22,12 @@ public class didYouKnow extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_did_you_know);
+
+        //Referencing the aadId from admob and initialing it
+        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+
+        InterstitialAd interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
 
         ImageView zero_pic = findViewById(R.id.zero_pic);
         Glide.with(this).load(R.drawable.didyouknow0).into(zero_pic);
@@ -54,6 +64,19 @@ public class didYouKnow extends AppCompatActivity {
 
         ImageView eleven_pic = findViewById(R.id.eleven_pic);
         Glide.with(this).load(R.drawable.didyouknow11).into(eleven_pic);
+
+        AdView adView0 = findViewById(R.id.overviewAd0);
+        AdView adView1 = findViewById(R.id.overviewAd1);
+        AdView adView2 = findViewById(R.id.overviewAd2);
+        AdView adView3 = findViewById(R.id.overviewAd3);
+        AdView adView4 = findViewById(R.id.overviewAd4);
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView0.loadAd(adRequest);
+        adView1.loadAd(adRequest);
+        adView2.loadAd(adRequest);
+        adView3.loadAd(adRequest);
+        adView4.loadAd(adRequest);
     }
 
 

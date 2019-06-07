@@ -23,7 +23,7 @@ public class cardViewZero extends AppCompatActivity {
         setContentView(R.layout.activity_card_view_zero);
 
         //Referencing the aadId from admob and initialing it
-        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
 
         ImageView imageView = findViewById(R.id.didyouknow0);
         Glide.with(this).load(R.drawable.didyouknow0).into(imageView);

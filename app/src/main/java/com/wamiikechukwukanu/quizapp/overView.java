@@ -26,7 +26,7 @@ public class overView extends AppCompatActivity {
         setContentView(R.layout.activity_over_view);
 
         //Referencing the aadId from admob and initialing it
-        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
 
         overviewAd1 = findViewById(R.id.overviewAd1);
         overviewAd2 = findViewById(R.id.overviewAd2);

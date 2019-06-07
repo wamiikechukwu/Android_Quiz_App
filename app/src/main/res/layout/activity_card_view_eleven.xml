@@ -18,7 +18,7 @@
             android:layout_marginTop="5dp"
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
         <ImageView
             android:id="@+id/didyouknow11"
@@ -39,7 +39,7 @@
             android:lineSpacingExtra="3sp"
             android:paddingLeft="@dimen/cardMargin"
             android:paddingRight="@dimen/cardMargin"
-            android:text="@string/content7"
+            android:text="@string/content11"
             android:textColor="#F0000000"
             android:textIsSelectable="true"
             android:textSize="20sp"
@@ -70,7 +70,7 @@
             android:layout_marginTop="5dp"
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
     </RelativeLayout>
 
 </ScrollView>

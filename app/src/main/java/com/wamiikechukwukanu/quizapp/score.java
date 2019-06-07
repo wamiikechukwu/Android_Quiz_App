@@ -10,6 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class score extends AppCompatActivity {
 
@@ -31,6 +34,17 @@ public class score extends AppCompatActivity {
         Glide.with(this)
                 .load(R.drawable.trophy)
                 .into(imageView);
+
+        //Referencing the aadId from admob and initialing it
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
+
+        AdView adView0 = findViewById(R.id.overviewAd0);
+        AdView adView1 = findViewById(R.id.overviewAd1);
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        adView0.loadAd(adRequest);
+        adView1.loadAd(adRequest);
 
     }
 

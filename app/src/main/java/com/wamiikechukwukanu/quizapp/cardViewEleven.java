@@ -26,7 +26,7 @@ public class cardViewEleven extends AppCompatActivity {
         Glide.with(this).load(R.drawable.didyouknow11).into(imageView);
 
         //Referencing the aadId from admob and initialing it
-        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
 
         AdView adView0 = findViewById(R.id.overviewAd0);
         AdView adView1 = findViewById(R.id.overviewAd1);

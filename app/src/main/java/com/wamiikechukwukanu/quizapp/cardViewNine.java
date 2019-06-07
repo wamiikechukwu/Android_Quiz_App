@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class cardViewNine extends AppCompatActivity {
 
@@ -21,6 +24,17 @@ public class cardViewNine extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.didyouknow9);
         Glide.with(this).load(R.drawable.didyouknow9).into(imageView);
+
+        //Referencing the aadId from admob and initialing it
+        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+
+        AdView adView0 = findViewById(R.id.overviewAd0);
+        AdView adView1 = findViewById(R.id.overviewAd1);
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        adView0.loadAd(adRequest);
+        adView1.loadAd(adRequest);
     }
 
     //This @Override method here inflate/add the menu to the activity

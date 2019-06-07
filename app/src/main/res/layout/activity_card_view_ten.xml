@@ -9,10 +9,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
+
         <ImageView
             android:id="@+id/didyouknow10"
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            android:layout_below="@+id/overviewAd0"
             android:layout_marginTop="@dimen/cardTopMargin"
             android:padding="@dimen/cardMargin"
             android:scaleType="fitXY" />
@@ -35,6 +47,7 @@
             android:typeface="serif" />
 
         <Button
+            android:id="@+id/go_back"
             style="@style/Widget.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,6 +60,16 @@
             android:textColor="#F0000000"
             android:textStyle="bold"
             android:typeface="monospace" />
-    </RelativeLayout>
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/go_back"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
+    </RelativeLayout>
 </ScrollView>

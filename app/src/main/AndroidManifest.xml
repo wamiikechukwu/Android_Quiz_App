@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity
+            android:name=".contactUs"
+            android:label="About"
+            android:launchMode="singleTask"></activity>
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-9646388292265496~7436300103" />
@@ -56,10 +61,6 @@
                 android:value="com.wamiikechukwukanu.quizapp.overView" />
         </activity>
         <activity
-            android:name=".SettingsActivity"
-            android:label="Settings"
-            android:launchMode="singleTask" />
-        <activity
             android:name=".didYouKnow"
             android:label="Did You Know"
             android:launchMode="singleTask"
@@ -94,26 +95,35 @@
             android:launchMode="singleTask" />
         <activity
             android:name=".cardViewFive"
-            android:label="" />
+            android:label=""
+            android:launchMode="singleTask" />
         <activity
             android:name=".cardViewSix"
-            android:label="" />
+            android:label=""
+            android:launchMode="singleTask" />
         <activity
             android:name=".cardViewSeven"
-            android:label="" />
+            android:label=""
+            android:launchMode="singleTask" />
         <activity
             android:name=".cardViewEight"
-            android:label="" />
+            android:label=""
+            android:launchMode="singleTask" />
         <activity
             android:name=".cardViewNine"
-            android:label="" />
+            android:label=""
+            android:launchMode="singleTask" />
         <activity
             android:name=".cardViewTen"
-            android:label="" />
+            android:label=""
+            android:launchMode="singleTask" />
         <activity
             android:name=".cardViewEleven"
-            android:label="" />
-        <activity android:name=".misconAfrica">
+            android:label=""
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".misconAfrica"
+            android:launchMode="singleTask">
 
         </activity>
     </application>

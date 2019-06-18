@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         overviewAd1 = findViewById(R.id.overviewAd1);
         overviewAd0 = findViewById(R.id.overviewAd0);
 
-        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
+        MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
 
         AdRequest adRequest = new AdRequest.Builder().build();
         overviewAd0.loadAd(adRequest);
@@ -94,12 +94,22 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.menu1:
-                Intent intent = new Intent(this, SettingsActivity.class);
+                Intent intent = new Intent(this, contactUs.class);
                 startActivity(intent);
                 return true;
 
             case R.id.menu2:
-                Toast.makeText(this, "Contact us clicked", Toast.LENGTH_LONG).show();
+                String address = "wami7470@gmail.com";
+                String subject = "Africa Quiz App";
+                String text = "I wish to contact the developer of Africa Quiz App";
+                Intent sendMessage = new Intent(Intent.ACTION_SEND);
+                sendMessage.setType("*/*");
+                sendMessage.putExtra(Intent.EXTRA_EMAIL, address);
+                sendMessage.putExtra(Intent.EXTRA_SUBJECT, subject);
+                sendMessage.putExtra(Intent.EXTRA_TEXT, text);
+                if (sendMessage.resolveActivity(getPackageManager()) != null) {
+                    startActivity(sendMessage);
+                }
                 return true;
 
             default:

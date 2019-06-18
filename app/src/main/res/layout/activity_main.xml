@@ -63,7 +63,7 @@
             android:layout_marginTop="3dp"
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
 
         <RadioGroup
             android:id="@+id/radioGroup_ID"
@@ -142,7 +142,7 @@
             android:layout_marginTop="25dp"
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
     </RelativeLayout>
 </ScrollView>
 

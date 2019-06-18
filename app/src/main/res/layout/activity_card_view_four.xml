@@ -18,7 +18,7 @@
             android:layout_marginTop="5dp"
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
 
         <ImageView
             android:id="@+id/didyouknow4"
@@ -70,7 +70,7 @@
             android:layout_marginTop="5dp"
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
     </RelativeLayout>
 
 

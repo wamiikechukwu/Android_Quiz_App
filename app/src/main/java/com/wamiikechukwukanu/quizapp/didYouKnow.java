@@ -8,7 +8,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.ads.AdListener;
@@ -27,10 +26,10 @@ public class didYouKnow extends AppCompatActivity {
         setContentView(R.layout.activity_did_you_know);
 
         //Referencing the aadId from admob and initialing it
-        MobileAds.initialize(this, "ca-app-pub-3940256099942544/6300978111");
+        MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
 
         interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        interstitialAd.setAdUnitId("ca-app-pub-9646388292265496/3047776181");
 
         ImageView zero_pic = findViewById(R.id.zero_pic);
         Glide.with(this).load(R.drawable.didyouknow0).into(zero_pic);
@@ -353,13 +352,22 @@ public class didYouKnow extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.menu1:
-                Intent intent = new Intent(this, SettingsActivity.class);
+                Intent intent = new Intent(this, contactUs.class);
                 startActivity(intent);
                 return true;
 
             case R.id.menu2:
-                Toast.makeText(this, "Contact us clicked", Toast.LENGTH_LONG).show();
-                return true;
+                String address = "wami7470@gmail.com";
+                String subject = "Africa Quiz App";
+                String text = "I wish to contact the developer of Africa Quiz App";
+                Intent sendMessage = new Intent(Intent.ACTION_SEND);
+                sendMessage.setType("*/*");
+                sendMessage.putExtra(Intent.EXTRA_EMAIL, address);
+                sendMessage.putExtra(Intent.EXTRA_SUBJECT, subject);
+                sendMessage.putExtra(Intent.EXTRA_TEXT, text);
+                if (sendMessage.resolveActivity(getPackageManager()) != null) {
+                    startActivity(sendMessage);
+                }
 
             default:
                 return super.onOptionsItemSelected(item);

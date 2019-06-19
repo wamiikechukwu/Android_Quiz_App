@@ -12,4 +12,12 @@
         <item name="android:background">@drawable/buttonshape</item>
     </style>
 
+    <style name="overViewCardView">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
 </resources>

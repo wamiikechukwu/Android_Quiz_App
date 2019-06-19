@@ -2,11 +2,14 @@ package com.wamiikechukwukanu.quizapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -22,6 +25,27 @@ public class overView extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        /*
+         This code will hide the app title and action bar
+         */
+
+        try {
+
+            //Hide app's tile bar
+            requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+            //Hide app's action bar
+            ActionBar actionBar = getSupportActionBar();
+            actionBar.hide();
+
+        } catch (Exception e) {
+
+            Toast.makeText(this, "Encountered an Error", Toast.LENGTH_SHORT).show();
+
+        }
+
+        //Allow android/java to set the layout
         setContentView(R.layout.activity_over_view);
 
         //Referencing the aadId from admob and initialing it
@@ -33,8 +57,6 @@ public class overView extends AppCompatActivity {
         AdRequest adRequest = new AdRequest.Builder().build();
         overviewAd1.loadAd(adRequest);
         overviewAd2.loadAd(adRequest);
-
-        getWindow().setBackgroundDrawable(null);
 
     }
 

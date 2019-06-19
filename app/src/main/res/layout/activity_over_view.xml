@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@mipmap/appsbackground"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
     tools:context=".overView">
 
     <RelativeLayout
@@ -20,57 +21,101 @@
             ads:adSize="SMART_BANNER"
             ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
-        <Button
+
+        <android.support.v7.widget.CardView
             android:id="@+id/overViewStartQuiz"
-            style="@style/Widget.Button"
-            android:layout_width="@dimen/overViewMainButton"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            style="@style/overViewCardView"
             android:layout_below="@id/overviewAd1"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
             android:onClick="questionInto"
-            android:text="@string/overView_StartQuiz"
-            android:textSize="20sp"
-            android:textColor="#F0000000" />
+            cardView:cardBackgroundColor="@android:color/white"
+            cardView:cardCornerRadius="6dp"
+            cardView:cardElevation="20dp">
 
-        <Button
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/start_quiz"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
             android:id="@+id/overViewDidYouKnow"
-            style="@style/Widget.Button"
-            android:layout_width="@dimen/overViewMainButton"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/overViewStartQuiz"
+            style="@style/overViewCardView"
+            android:layout_below="@+id/overViewStartQuiz"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="40dp"
             android:onClick="didYouKnow"
-            android:text="@string/overView_DidYouKnow"
-            android:textColor="#F0000000"
-            android:textSize="20sp" />
+            cardView:cardBackgroundColor="@android:color/white"
+            cardView:cardCornerRadius="6dp"
+            cardView:cardElevation="20dp">
 
-        <Button
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/overView_DidYouKnow"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
             android:id="@+id/overViewAfricaNews"
-            style="@style/Widget.Button"
-            android:layout_width="@dimen/overViewMainButton"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/overViewDidYouKnow"
+            style="@style/overViewCardView"
+            android:layout_below="@+id/overViewDidYouKnow"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="40dp"
             android:onClick="africaNews"
-            android:text="@string/overView_AfricaNews"
-            android:textColor="#F0000000"
-            android:textSize="20sp" />
+            cardView:cardBackgroundColor="@android:color/white"
+            cardView:cardCornerRadius="6dp"
+            cardView:cardElevation="20dp">
 
-        <Button
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/overView_AfricaNews"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
             android:id="@+id/overView_Miscon_Africa"
-            style="@style/Widget.Button"
-            android:layout_width="@dimen/overViewMainButton"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/overViewAfricaNews"
+            style="@style/overViewCardView"
+            android:layout_below="@+id/overViewAfricaNews"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="40dp"
             android:onClick="misconAfrica"
-            android:text="@string/overView_MisconceptionsOfAfrica"
-            android:textColor="#F0000000"
-            android:textSize="20sp" />
+            cardView:cardBackgroundColor="@android:color/white"
+            cardView:cardCornerRadius="6dp"
+            cardView:cardElevation="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/overView_MisconceptionsOfAfrica"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.CardView>
+
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/overviewAd2"

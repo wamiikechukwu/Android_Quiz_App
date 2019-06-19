@@ -21,7 +21,7 @@ public class splashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        /**
+        /*
          The codes belows are written to hide the app's title, action bar and to enable a full screen mode
          */
         try {

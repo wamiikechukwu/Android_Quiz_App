@@ -40,12 +40,9 @@ dependencies {
 
     //core FireBase
     implementation 'com.google.firebase:firebase-core:16.0.9'
-
-    //FireBase Cloud Message
     implementation 'com.google.firebase:firebase-messaging:18.0.0'
-
-    //FireBased Ad
     implementation 'com.google.firebase:firebase-ads:17.2.1'
+    implementation 'com.google.android.gms:play-services-analytics:11.6.2'
 
     //FireBase Plugin
     apply plugin: 'com.google.gms.google-services'

@@ -3,6 +3,7 @@
     package="com.wamiikechukwukanu.quizapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +16,9 @@
         <activity
             android:name=".contactUs"
             android:label="About"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask">
+
+        </activity>
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

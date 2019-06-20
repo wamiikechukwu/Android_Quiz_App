@@ -111,7 +111,7 @@
 
         <Button
             android:id="@+id/start_quiz_button"
-            style="@style/Widget.Button"
+            style="@style/Widget.Default.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/difficult"

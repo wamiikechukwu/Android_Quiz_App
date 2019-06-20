@@ -21,14 +21,6 @@
         <item>Hard</item>
     </string-array>
 
-    <!-- Strings related to Settings -->
-
-    <!-- Example General settings -->
-
-    <!-- Example settings for Data & Sync -->
-
-    <!-- Example settings for Notifications -->
-
     <string name="overView_DidYouKnow">DID YOU KNOW?</string>
     <string name="text_description">How well  do you think you know the continent Africa and the
         54 independent countries in it?</string>
@@ -80,8 +72,5 @@
     <string name="terms_privacy"><![CDATA[Terms & Privacy]]></string>
     <string name="privacy_statement"> By Using Africa Quiz App, you agree to Africa Quiz App Terms
         and" <a href="https://www.360forextrader.com/privacy-policy/">Privacy</a> ---Read it here (https://www.360forextrader.com/privacy-policy/)</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-
 
 </resources>

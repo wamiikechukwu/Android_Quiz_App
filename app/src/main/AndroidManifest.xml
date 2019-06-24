@@ -15,7 +15,7 @@
         <activity
             android:name=".contactUs"
             android:label="About"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -124,8 +124,15 @@
         <activity
             android:name=".misconAfrica"
             android:label=""
-            android:launchMode="singleTask"></activity>
-        <activity android:name=".Miscon_1"></activity>
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Miscon_1"
+            android:label=""
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Miscon_2"
+            android:label="@string/title_activity_miscon_2" />
+        <activity android:name=".Miscon_3"></activity>
     </application>
 
 </manifest>

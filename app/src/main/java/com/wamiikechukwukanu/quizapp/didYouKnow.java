@@ -8,9 +8,9 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
@@ -18,16 +18,18 @@ import com.google.android.gms.ads.MobileAds;
 
 public class didYouKnow extends AppCompatActivity {
 
+    public InterstitialAd interstitialAd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_did_you_know);
 
         //Referencing the aadId from admob and initialing it
-        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+        MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
 
-        InterstitialAd interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId("ca-app-pub-9646388292265496/3047776181");
 
         ImageView zero_pic = findViewById(R.id.zero_pic);
         Glide.with(this).load(R.drawable.didyouknow0).into(zero_pic);
@@ -81,64 +83,257 @@ public class didYouKnow extends AppCompatActivity {
 
 
     public void cardViewZero(View view) {
-        Intent intent = new Intent(this, cardViewZero.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewZero.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewZero.class);
+            startActivity(intent);
+        }
+
     }
 
     public void cardViewOne(View view) {
-        Intent intent = new Intent(this, cardViewOne.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
 
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewOne.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewOne.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewTwo(View view) {
-        Intent intent = new Intent(this, cardViewTwo.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewTwo.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewTwo.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewThree(View view) {
-        Intent intent = new Intent(this, cardViewThree.class);
-        startActivity(intent);
+
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewThree.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewThree.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewFour(View view) {
-        Intent intent = new Intent(this, cardViewFour.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewFour.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewFour.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewFive(View view) {
-        Intent intent = new Intent(this, cardViewFive.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewFive.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewFive.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewSix(View view) {
-        Intent intent = new Intent(this, cardViewSix.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewSix.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewSix.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewSeven(View view) {
-        Intent intent = new Intent(this, cardViewSeven.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewSeven.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewSeven.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewEight(View view) {
-        Intent intent = new Intent(this, cardViewEight.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewEight.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewEight.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewNine(View view) {
-        Intent intent = new Intent(this, cardViewNine.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewNine.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewNine.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewTen(View view) {
-        Intent intent = new Intent(this, cardViewTen.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewTen.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewTen.class);
+            startActivity(intent);
+        }
     }
 
     public void cardViewEleven(View view) {
-        Intent intent = new Intent(this, cardViewEleven.class);
-        startActivity(intent);
+        interstitialAd.loadAd(new AdRequest.Builder().build());
+
+        if (interstitialAd.isLoaded()) {
+            interstitialAd.show();
+
+            interstitialAd.setAdListener(new AdListener() {
+
+                @Override
+                public void onAdClosed() {
+                    startActivity(new Intent(didYouKnow.this, cardViewEleven.class));
+                    super.onAdClosed();
+                }
+            });
+
+        } else {
+            Intent intent = new Intent(this, cardViewEleven.class);
+            startActivity(intent);
+        }
     }
 
     //This @Override method here inflate/add the menu to the activity
@@ -157,13 +352,22 @@ public class didYouKnow extends AppCompatActivity {
         switch (item.getItemId()) {
 
             case R.id.menu1:
-                Intent intent = new Intent(this, SettingsActivity.class);
+                Intent intent = new Intent(this, contactUs.class);
                 startActivity(intent);
                 return true;
 
             case R.id.menu2:
-                Toast.makeText(this, "Contact us clicked", Toast.LENGTH_LONG).show();
-                return true;
+                String address = "wami7470@gmail.com";
+                String subject = "Africa Quiz App";
+                String text = "I wish to contact the developer of Africa Quiz App";
+                Intent sendMessage = new Intent(Intent.ACTION_SEND);
+                sendMessage.setType("*/*");
+                sendMessage.putExtra(Intent.EXTRA_EMAIL, address);
+                sendMessage.putExtra(Intent.EXTRA_SUBJECT, subject);
+                sendMessage.putExtra(Intent.EXTRA_TEXT, text);
+                if (sendMessage.resolveActivity(getPackageManager()) != null) {
+                    startActivity(sendMessage);
+                }
 
             default:
                 return super.onOptionsItemSelected(item);

@@ -3,6 +3,7 @@ package com.wamiikechukwukanu.quizapp;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -44,10 +45,10 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         overviewAd1 = findViewById(R.id.overviewAd1);
 
         //Referencing the adId from admob and initialing it
-        MobileAds.initialize(this, "ca-app-pub-9646388292265496~7436300103");
+        MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
 
         interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        interstitialAd.setAdUnitId("ca-app-pub-9646388292265496/3047776181");
 
         AdRequest adRequest = new AdRequest.Builder().build();
         overviewAd.loadAd(adRequest);
@@ -191,12 +192,21 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         switch (item.getItemId()) {
 
             case R.id.menu1:
-                Intent intent = new Intent(this, SettingsActivity.class);
+                Intent intent = new Intent(this, contactUs.class);
                 startActivity(intent);
                 return true;
 
             case R.id.menu2:
-                Toast.makeText(this, "Contact us clicked", Toast.LENGTH_LONG).show();
+                String address = "wami7470@gmail.com";
+                String subject = "Africa Quiz App";
+                String text = "I wish to contact the developer of Africa Quiz App";
+                Intent sendMessage = new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:"));
+                sendMessage.putExtra(Intent.EXTRA_EMAIL, address);
+                sendMessage.putExtra(Intent.EXTRA_SUBJECT, subject);
+                sendMessage.putExtra(Intent.EXTRA_TEXT, text);
+                if (sendMessage.resolveActivity(getPackageManager()) != null) {
+                    startActivity(sendMessage);
+                }
                 return true;
 
             default:

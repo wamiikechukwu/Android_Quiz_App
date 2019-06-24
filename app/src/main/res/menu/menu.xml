@@ -4,14 +4,15 @@
 
     <item
         android:id="@+id/menu1"
+        android:checkable="false"
         android:orderInCategory="1"
-        android:title="Settings"
+        android:title="@string/about_us"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/menu2"
         android:orderInCategory="2"
-        android:title="Contact Us"
+        android:title="@string/contact_us"
         app:showAsAction="never" />
 
 </menu>

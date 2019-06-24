@@ -132,7 +132,9 @@
         <activity
             android:name=".Miscon_2"
             android:label="@string/title_activity_miscon_2" />
-        <activity android:name=".Miscon_3"></activity>
+        <activity android:name=".Miscon_3" />
+        <activity android:name=".Miscon_4" />
+        <activity android:name=".Miscon_5"></activity>
     </application>
 
 </manifest>

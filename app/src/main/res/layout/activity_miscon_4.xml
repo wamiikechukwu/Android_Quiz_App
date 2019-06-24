@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Miscon_3">
+    tools:context=".Miscon_4">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:text="Africans Speak African"
+            android:text="Lack of Technology"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -29,7 +29,7 @@
             android:layout_marginRight="10dp"
             android:layout_marginTop="15dp"
             android:lineSpacingExtra="10dp"
-            android:text="@string/miscon_3"
+            android:text="@string/miscon_4"
             android:textColor="@color/colorAccent"
             android:textSize="15sp" />
 

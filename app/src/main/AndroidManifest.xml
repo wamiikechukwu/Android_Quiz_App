@@ -12,13 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity
             android:name=".contactUs"
             android:label="About"
-            android:launchMode="singleTask">
-
-        </activity>
+            android:launchMode="singleTask"></activity>
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -126,9 +123,9 @@
             android:launchMode="singleTask" />
         <activity
             android:name=".misconAfrica"
-            android:launchMode="singleTask">
-
-        </activity>
+            android:label=""
+            android:launchMode="singleTask"></activity>
+        <activity android:name=".Miscon_1"></activity>
     </application>
 
 </manifest>

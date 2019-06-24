@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     int scoresTotalCorrectAnswer = 0;
     int totalQuestionsAnswered = 1;
     int randomNumber = 0;
-    //the sharedpreference that stores the total number of questions the user wants to answer
+    //the shared preference that stores the total number of questions the user wants to answer
     int name;
     //Calling the constructor from the question class
     Questions q = new Questions();

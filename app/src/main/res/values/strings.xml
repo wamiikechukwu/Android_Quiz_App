@@ -73,4 +73,11 @@
     <string name="privacy_statement"> By Using Africa Quiz App, you agree to Africa Quiz App Terms
         and" <a href="https://www.360forextrader.com/privacy-policy/">Privacy</a> ---Read it here (https://www.360forextrader.com/privacy-policy/)</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_welcome">When you travel out of Africa and meet individuals who have
+        never been to the continent, most of the time they tend to have certain perceptions that
+        depict the continent in ways that are either not factual or are misleading. \n\nWe will look
+        at some of the common misconceptions and stereotypes about Africa that have been passed on through various forms of media for decades and are believed to be the true representation of the continent.</string>
+
 </resources>

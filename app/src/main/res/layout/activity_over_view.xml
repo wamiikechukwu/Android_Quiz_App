@@ -2,9 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:id="@+id/scrollview"
-    android:background="@color/colorPrimaryDark"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".overView">
 
     <RelativeLayout
@@ -31,9 +30,8 @@
             android:layout_marginTop="40dp"
             android:onClick="questionInto"
             android:text="@string/overView_StartQuiz"
-            android:textColor="#FFFFFFFF"
             android:textSize="20sp"
-            android:typeface="sans" />
+            android:textColor="#FFFF" />
 
         <Button
             android:id="@+id/overViewDidYouKnow"
@@ -45,9 +43,8 @@
             android:layout_marginTop="25dp"
             android:onClick="didYouKnow"
             android:text="@string/overView_DidYouKnow"
-            android:textColor="#FFFFFFFF"
-            android:textSize="20sp"
-            android:typeface="sans" />
+            android:textColor="#FFFF"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/overViewAfricaNews"
@@ -59,9 +56,8 @@
             android:layout_marginTop="25dp"
             android:onClick="africaNews"
             android:text="@string/overView_AfricaNews"
-            android:textColor="#FFFFFFFF"
-            android:textSize="20sp"
-            android:typeface="sans" />
+            android:textColor="#FFFF"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/overView_Miscon_Africa"
@@ -73,9 +69,8 @@
             android:layout_marginTop="25dp"
             android:onClick="misconAfrica"
             android:text="@string/overView_MisconceptionsOfAfrica"
-            android:textColor="#FFFFFFFF"
-            android:textSize="20sp"
-            android:typeface="sans" />
+            android:textColor="#FFFF"
+            android:textSize="20sp" />
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/overviewAd2"

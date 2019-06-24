@@ -20,5 +20,7 @@ public class Miscon_4 extends AppCompatActivity {
     }
 
     public void goNext(View view) {
+        Intent intent = new Intent(this, Miscon_5.class);
+        startActivity(intent);
     }
 }

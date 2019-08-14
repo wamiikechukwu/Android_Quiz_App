@@ -1,9 +1,11 @@
 package com.wamiikechukwukanu.quizapp;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,7 +16,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -194,12 +195,14 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 int option = answersOption();
                 if (option == 4) {
-                    Toast.makeText(MainActivity.this, "Please select an option", Toast.LENGTH_LONG).show();
                 } else {
                     boolean isAnswerCorrectOrNot = q.checkAnswer(option);
                     if (isAnswerCorrectOrNot) {
+                        dialogShow(isAnswerCorrectOrNot);
                         q.increaseScoreByOne();
                         scoresTotalCorrectAnswer = q.getScore();
+                    } else {
+                        dialogShow(isAnswerCorrectOrNot);
                     }
                 }
             }
@@ -207,6 +210,30 @@ public class MainActivity extends AppCompatActivity {
         });
 
         clearSelection();
+    }
+
+    public void dialogShow(boolean Dialog) {
+
+        if (Dialog) {
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.setMessage(" Correct Answer ");
+            alert.setPositiveButton("got it", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                }
+            });
+            alert.show();
+        }
+        if (!Dialog) {
+            AlertDialog.Builder alert = new AlertDialog.Builder(this);
+            alert.setMessage("Wrong Answer");
+            alert.setNegativeButton("oh no", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                }
+            });
+            alert.show();
+        }
     }
 
 }

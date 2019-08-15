@@ -12,8 +12,4 @@
         <item name="android:background">@drawable/button_default_shape</item>
     </style>
 
-    <style name="Widget.White.Button" parent="android:Widget">
-        <item name="android:background">@drawable/white_button_shape</item>
-    </style>
-
 </resources>

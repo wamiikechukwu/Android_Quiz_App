@@ -35,7 +35,6 @@
             android:textStyle="bold" />
 
         <Button
-            style="@style/Widget.White.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/Miscon_heading_1"
@@ -44,6 +43,7 @@
             android:onClick="misconceptionsOfAfrica"
             android:text="10 Misconceptions of Africa"
             android:textColor="#FFFF"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
             android:textSize="20sp" />
 
 

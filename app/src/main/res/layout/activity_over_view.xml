@@ -64,20 +64,33 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/viewOne"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             app:cardCornerRadius="15dp"
             app:cardElevation="30dp">
 
-
-            <Button
-                android:id="@+id/overViewDidYouKnow"
-                style="@style/Base.Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="didYouKnow"
-                android:text="@string/overView_DidYouKnow"
-                android:textColor="#F000"
-                android:textSize="20sp" />
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ic_help_didyouknow" />
+
+                <Button
+                    android:id="@+id/overViewDidYouKnow"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="didYouKnow"
+                    android:text="@string/overView_DidYouKnow"
+                    android:textColor="#F000"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
         </android.support.v7.widget.CardView>
 
@@ -88,20 +101,31 @@
             android:layout_below="@id/viewTwo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="40dp"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="20dp">
+            app:cardCornerRadius="30dp"
+            app:cardElevation="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ic_scanner_news" />
 
             <Button
                 android:id="@+id/overViewAfricaNews"
                 style="@style/Base.Widget.AppCompat.Button.Borderless"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:layout_marginTop="25dp"
                 android:onClick="africaNews"
                 android:text="@string/overView_AfricaNews"
                 android:textColor="#F000"
                 android:textSize="20sp" />
+            </LinearLayout>
         </android.support.v7.widget.CardView>
 
 

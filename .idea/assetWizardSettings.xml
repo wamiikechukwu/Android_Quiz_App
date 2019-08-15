@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Users/USER%20Pc/Desktop/IYKE/RAW%20FILE/android-studio-ide-182.5199772-windows/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/communication/ic_import_contacts_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Users/USER%20Pc/Desktop/IYKE/RAW%20FILE/android-studio-ide-182.5199772-windows/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/hardware/ic_scanner_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,7 +33,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_import_book" />
+                            <entry key="outputName" value="ic_scanner_news" />
                             <entry key="sourceFile" value="C:\Users\USER Pc" />
                           </map>
                         </option>

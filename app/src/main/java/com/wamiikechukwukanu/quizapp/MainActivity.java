@@ -119,6 +119,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nextQuestionButton(View view) {
+        newFunction();
+    }
+
+    public void newFunction() {
 
         //storing data via shared preference
         SharedPreferences sharedPref = getSharedPreferences("QuestNumb", Context.MODE_PRIVATE);
@@ -150,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
         //i couldn't concatenate all the string together so i had to split it using .append
         questionText.append(" / " + name);
     }
+
 
     public void clearSelection() {
         radioGroup_ID.clearCheck();
@@ -220,6 +225,7 @@ public class MainActivity extends AppCompatActivity {
             alert.setPositiveButton("got it", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
+                    newFunction();
                 }
             });
             alert.show();

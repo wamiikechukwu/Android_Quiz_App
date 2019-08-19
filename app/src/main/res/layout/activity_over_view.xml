@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -29,8 +29,8 @@
             android:layout_below="@id/overviewAd1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            app:cardCornerRadius="15dp"
             android:onClick="questionInto"
+            app:cardCornerRadius="15dp"
             app:cardElevation="30dp">
 
             <LinearLayout
@@ -67,8 +67,8 @@
             android:layout_below="@id/viewOne"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            app:cardCornerRadius="15dp"
             android:onClick="didYouKnow"
+            app:cardCornerRadius="15dp"
             app:cardElevation="30dp">
 
             <LinearLayout
@@ -104,8 +104,8 @@
             android:layout_below="@id/viewTwo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
-            app:cardCornerRadius="15dp"
             android:onClick="africaNews"
+            app:cardCornerRadius="15dp"
             app:cardElevation="30dp">
 
             <LinearLayout
@@ -140,8 +140,8 @@
             android:layout_below="@id/viewThree"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="35dp"
-            app:cardCornerRadius="15dp"
             android:onClick="misconAfrica"
+            app:cardCornerRadius="15dp"
             app:cardElevation="30dp">
 
             <LinearLayout
@@ -179,4 +179,4 @@
             ads:adSize="SMART_BANNER"
             ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
     </RelativeLayout>
-</ScrollView>
+</LinearLayout>

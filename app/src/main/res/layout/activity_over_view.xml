@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_weight="10"
     android:background="@drawable/appsbackground"
     tools:context=".overView">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/overviewAd1"
@@ -27,8 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/overviewAd1"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="10dp"
             app:cardCornerRadius="15dp"
+            android:onClick="questionInto"
             app:cardElevation="30dp">
 
             <LinearLayout
@@ -48,10 +50,9 @@
                     style="@style/Base.Widget.AppCompat.Button.Borderless"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="questionInto"
+                    android:layout_gravity="center_horizontal"
                     android:text="@string/overView_StartQuiz"
                     android:textColor="#F000"
-                    android:layout_gravity="center_horizontal"
                     android:textSize="15sp" />
 
             </LinearLayout>
@@ -67,6 +68,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
             app:cardCornerRadius="15dp"
+            android:onClick="didYouKnow"
             app:cardElevation="30dp">
 
             <LinearLayout
@@ -87,7 +89,6 @@
                     style="@style/Base.Widget.AppCompat.Button.Borderless"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="didYouKnow"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/overView_DidYouKnow"
                     android:textColor="#F000"
@@ -104,6 +105,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
             app:cardCornerRadius="15dp"
+            android:onClick="africaNews"
             app:cardElevation="30dp">
 
             <LinearLayout
@@ -124,7 +126,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:onClick="africaNews"
                     android:text="@string/overView_AfricaNews"
                     android:textColor="#F000"
                     android:textSize="15sp" />
@@ -140,6 +141,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="35dp"
             app:cardCornerRadius="15dp"
+            android:onClick="misconAfrica"
             app:cardElevation="30dp">
 
             <LinearLayout
@@ -153,14 +155,14 @@
                     android:layout_height="45dp"
                     android:layout_gravity="center_horizontal"
                     app:srcCompat="@drawable/ic_extension_miscon" />
-            <Button
-                style="@style/Base.Widget.AppCompat.Button.Borderless"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:onClick="misconAfrica"
-                android:text="@string/overView_MisconceptionsOfAfrica"
-                android:textColor="#F000"
-                android:textSize="15sp" />
+
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overView_MisconceptionsOfAfrica"
+                    android:textColor="#F000"
+                    android:textSize="15sp" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>

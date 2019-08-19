@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
         //Getting the view reference
@@ -222,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
         if (Dialog) {
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
             alert.setMessage(" Correct Answer ");
-            alert.setPositiveButton("got it", new DialogInterface.OnClickListener() {
+            alert.setPositiveButton("GOT IT", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     newFunction();
@@ -233,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
         if (!Dialog) {
             AlertDialog.Builder alert = new AlertDialog.Builder(this);
             alert.setMessage("Wrong Answer");
-            alert.setNegativeButton("oh no", new DialogInterface.OnClickListener() {
+            alert.setNegativeButton("OH NO", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                 }

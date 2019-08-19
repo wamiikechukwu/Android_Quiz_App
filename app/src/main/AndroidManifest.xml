@@ -41,7 +41,8 @@
             android:name=".MainActivity"
             android:label="Africa Quiz"
             android:launchMode="singleTask"
-            android:parentActivityName=".introStartQuiz">
+            android:parentActivityName=".introStartQuiz"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wamiikechukwukanu.quizapp.overView" />
@@ -131,10 +132,17 @@
             android:launchMode="singleTask" />
         <activity
             android:name=".Miscon_2"
-            android:label="@string/title_activity_miscon_2" />
-        <activity android:name=".Miscon_3" />
-        <activity android:name=".Miscon_4" />
-        <activity android:name=".Miscon_5"></activity>
+            android:label="@string/title_activity_miscon_2"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Miscon_3"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Miscon_4"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Miscon_5"
+            android:launchMode="singleTask"></activity>
     </application>
 
 </manifest>

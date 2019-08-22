@@ -17,7 +17,33 @@
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:contentDescription="image of a quiz book"
+                android:src="@drawable/ic_import_book" />
+
+            <TextView
+                android:id="@+id/overViewStartQuiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/overView_StartQuiz" />
+        </LinearLayout>
+
     </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/viewOne"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"></android.support.v7.widget.CardView>
 
 
 </RelativeLayout>

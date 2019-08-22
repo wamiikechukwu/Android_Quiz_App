@@ -19,7 +19,6 @@ public class overView extends AppCompatActivity {
 
     //variable to store the referenced ID of the adView
     public AdView overviewAd1;
-    public AdView overviewAd2;
 
 
     @Override
@@ -52,11 +51,9 @@ public class overView extends AppCompatActivity {
         MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
 
         overviewAd1 = findViewById(R.id.overviewAd1);
-        overviewAd2 = findViewById(R.id.overviewAd2);
 
         AdRequest adRequest = new AdRequest.Builder().build();
         overviewAd1.loadAd(adRequest);
-        overviewAd2.loadAd(adRequest);
 
     }
 

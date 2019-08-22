@@ -3,7 +3,7 @@
     <string name="quiz_progress">Quiz Progress</string>
     <string name="Next">Next Question</string>
     <string name="overView_StartQuiz">START QUIZ</string>
-    <string name="overView_MisconceptionsOfAfrica">MISCONCEPTIONS OF AFRICA</string>
+    <string name="overView_MisconceptionsOfAfrica">MISCONs OF AFRICA</string>
     <string name="splash_screen_imageDescription">a sketch of the map of africa</string>
     <string name="overView_AfricaNews">AFRICA NEWS</string>
     <string-array name="question_Array">

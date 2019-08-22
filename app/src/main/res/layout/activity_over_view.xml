@@ -1,182 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_weight="10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/appsbackground"
+    android:orientation="vertical"
+    android:weightSum="10"
     tools:context=".overView">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/viewOne"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="questionInto"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
 
-        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/overviewAd1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:padding="5dp"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/viewOne"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/overviewAd1"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
-            android:onClick="questionInto"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="30dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center_horizontal"
-                    app:srcCompat="@drawable/ic_import_book" />
-
-                <Button
-                    android:id="@+id/overViewStartQuiz"
-                    style="@style/Base.Widget.AppCompat.Button.Borderless"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/overView_StartQuiz"
-                    android:textColor="#F000"
-                    android:textSize="15sp" />
-
-            </LinearLayout>
+    </android.support.v7.widget.CardView>
 
 
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/viewTwo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/viewOne"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:onClick="didYouKnow"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="30dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:orientation="vertical">
-
-
-                <ImageView
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center_horizontal"
-                    app:srcCompat="@drawable/ic_help_didyouknow" />
-
-                <Button
-                    android:id="@+id/overViewDidYouKnow"
-                    style="@style/Base.Widget.AppCompat.Button.Borderless"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/overView_DidYouKnow"
-                    android:textColor="#F000"
-                    android:textSize="15sp" />
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/viewThree"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/viewTwo"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:onClick="africaNews"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="30dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center_horizontal"
-                    app:srcCompat="@drawable/ic_scanner_news" />
-
-                <Button
-                    android:id="@+id/overViewAfricaNews"
-                    style="@style/Base.Widget.AppCompat.Button.Borderless"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/overView_AfricaNews"
-                    android:textColor="#F000"
-                    android:textSize="15sp" />
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-
-        <android.support.v7.widget.CardView
-            android:id="@+id/viewFour"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/viewThree"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="35dp"
-            android:onClick="misconAfrica"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="30dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
-                    android:layout_gravity="center_horizontal"
-                    app:srcCompat="@drawable/ic_extension_miscon" />
-
-                <Button
-                    style="@style/Base.Widget.AppCompat.Button.Borderless"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/overView_MisconceptionsOfAfrica"
-                    android:textColor="#F000"
-                    android:textSize="15sp" />
-
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
-        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/overviewAd2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/viewFour"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
-            android:padding="5dp"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
-    </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

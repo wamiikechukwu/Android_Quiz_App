@@ -22,8 +22,8 @@
     </string-array>
 
     <string name="overView_DidYouKnow">DID YOU KNOW?</string>
-    <string name="text_description">How well  do you think you know the continent Africa and the
-        54 independent countries in it?</string>
+    <string name="text_description">How well  do you think you know the continent Africa and it\'s
+        54 independent countries?</string>
     <string name="about_africa_quiz">AFRICA QUIZ APP</string>
     <string name="nothing_selected">onNothingSelected:</string>
     <string name="number_of_questions">Number of Questions</string>

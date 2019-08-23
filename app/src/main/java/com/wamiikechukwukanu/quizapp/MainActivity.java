@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -24,10 +25,9 @@ import com.google.android.gms.ads.MobileAds;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-
-    public AdView overviewAd1;
-    public AdView overviewAd0;
     //initialized  global variable
+    AdView overviewAd1;
+    AdView overviewAd0;
     TextView testQuestion;
     TextView questionText;
     ProgressBar pBar;
@@ -42,8 +42,10 @@ public class MainActivity extends AppCompatActivity {
     int scoresTotalCorrectAnswer = 0;
     int totalQuestionsAnswered = 1;
     int randomNumber = 0;
+
     //the shared preference that stores the total number of questions the user wants to answer
     int name;
+
     //Calling the constructor from the question class
     Questions q = new Questions();
 
@@ -120,7 +122,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nextQuestionButton(View view) {
-        newFunction();
+        if (answersOption() != 4)
+            newFunction();
+        else {
+            Snackbar snackbar = Snackbar.make(view, "Please select an answer", Snackbar.LENGTH_SHORT);
+            snackbar.show();
+        }
     }
 
     public void newFunction() {

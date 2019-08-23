@@ -1,49 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/appsbackground"
     android:orientation="vertical"
-    android:weightSum="10"
     tools:context=".overView">
 
+
     <android.support.v7.widget.CardView
-        android:id="@+id/viewOne"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:onClick="questionInto"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp">
+        android:layout_width="145dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/ic_import_book" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="33dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_gravity="center"
-                android:contentDescription="image of a quiz book"
-                android:src="@drawable/ic_import_book" />
-
-            <TextView
-                android:id="@+id/overViewStartQuiz"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/overView_StartQuiz" />
-        </LinearLayout>
+            android:text="@string/overView_StartQuiz" />
 
     </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/viewOne"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="10dp"></android.support.v7.widget.CardView>
-
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

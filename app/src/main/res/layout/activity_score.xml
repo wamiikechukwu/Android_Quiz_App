@@ -69,7 +69,7 @@
             android:typeface="monospace" />
 
         <View
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_below="@id/try_again"
             android:background="#A60A27" />

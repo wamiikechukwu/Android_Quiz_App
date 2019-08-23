@@ -68,6 +68,12 @@
             android:textColor="#FF000000"
             android:typeface="monospace" />
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/try_again"
+            android:background="#A60A27" />
+
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/overviewAd1"
             android:layout_width="match_parent"

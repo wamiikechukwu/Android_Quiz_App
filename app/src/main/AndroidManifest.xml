@@ -57,7 +57,8 @@
             android:name=".introStartQuiz"
             android:label=""
             android:launchMode="singleTask"
-            android:parentActivityName=".overView">
+            android:parentActivityName=".overView"
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wamiikechukwukanu.quizapp.overView" />

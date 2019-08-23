@@ -10,8 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/overviewAd1"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="3dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
         <TextView
             android:id="@+id/quizProgress"
+            android:layout_below="@id/overviewAd1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -53,23 +62,11 @@
             android:textColor="@android:color/black"
             android:textSize="21sp" />
 
-        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/overviewAd1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/testQuestion"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="3dp"
-            android:layout_marginTop="3dp"
-            android:padding="5dp"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
-
         <RadioGroup
             android:id="@+id/radioGroup_ID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/overviewAd1"
+            android:layout_below="@id/testQuestion"
             android:layout_marginTop="17dp">
 
             <RadioButton
@@ -140,7 +137,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="25dp"
-            android:padding="5dp"
             ads:adSize="SMART_BANNER"
             ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
     </RelativeLayout>

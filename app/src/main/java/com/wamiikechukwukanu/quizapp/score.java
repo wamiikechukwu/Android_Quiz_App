@@ -60,4 +60,9 @@ public class score extends AppCompatActivity {
         Intent intent = new Intent(this, overView.class);
         startActivity(intent);
     }
+
+    public void whatsapp(View view) {
+        Intent intent = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
+        startActivity(intent);
+    }
 }

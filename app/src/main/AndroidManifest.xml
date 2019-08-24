@@ -37,7 +37,8 @@
         <activity
             android:name=".score"
             android:label="Your Score"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:label="Africa Quiz"

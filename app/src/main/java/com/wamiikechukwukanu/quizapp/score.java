@@ -1,6 +1,7 @@
 package com.wamiikechukwukanu.quizapp;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.view.MenuInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.ads.AdRequest;
@@ -18,8 +20,11 @@ public class score extends AppCompatActivity {
 
     TextView textview;
 
+    String data;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_score);
@@ -28,7 +33,7 @@ public class score extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.image);
 
-        String data = getIntent().getStringExtra("nextLayout");
+        data = getIntent().getStringExtra("nextLayout");
 
         textview.setText(data);
 
@@ -51,18 +56,40 @@ public class score extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
     }
 
     public void tryAgain(View view) {
+
         Intent intent = new Intent(this, overView.class);
         startActivity(intent);
     }
 
     public void whatsapp(View view) {
-        Intent intent = getPackageManager().getLaunchIntentForPackage("com.whatsapp");
-        startActivity(intent);
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+
+        try {
+
+            getPackageManager().getPackageInfo("com.whatsapp", PackageManager.GET_META_DATA);
+            intent.setPackage("com.whatsapp");
+            intent.putExtra(Intent.EXTRA_TEXT, "Hey, i scored " + data + " in Africa Quiz App, download it via this link XXX");
+            startActivity(Intent.createChooser(intent, "Share with"));
+
+        } catch (PackageManager.NameNotFoundException e) {
+
+            Toast toast = Toast.makeText(this, "WhatsApp not Installed", Toast.LENGTH_SHORT);
+            toast.show();
+
+        }
+
     }
+
 }
+
+
+

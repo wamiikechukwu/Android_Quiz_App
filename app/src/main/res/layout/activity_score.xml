@@ -69,18 +69,36 @@
             android:typeface="monospace" />
 
         <View
+            android:id="@+id/horizontalLine"
             android:layout_width="match_parent"
-            android:layout_height="4dp"
+            android:layout_height="2dp"
             android:layout_below="@id/try_again"
             android:background="#A60A27" />
+
+        <TextView
+            android:id="@+id/shareText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontalLine"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Share with your friends Via"
+            android:textColor="#F000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/horizontalLine"
+            android:layout_toRightOf="@id/shareText" />
+
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/overviewAd1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/try_again"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
+            android:layout_below="@id/shareText"
+            android:layout_marginTop="15dp"
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
             ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />

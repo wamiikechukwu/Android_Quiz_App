@@ -80,17 +80,52 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/horizontalLine"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="10dp"
             android:text="Share with your friends Via"
             android:textColor="#F000"
-            android:textSize="15sp" />
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/whatsapp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_below="@id/horizontalLine"
-            android:layout_toRightOf="@id/shareText" />
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/shareText"
+            android:src="@drawable/whatsapp" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/horizontalLine"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/whatsapp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/twitter"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/horizontalLine"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/facebook"
+            android:src="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/instagram"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/horizontalLine"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/twitter"
+            android:src="@drawable/instagram" />
 
 
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"

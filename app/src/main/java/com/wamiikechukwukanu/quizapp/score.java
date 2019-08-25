@@ -89,6 +89,89 @@ public class score extends AppCompatActivity {
 
     }
 
+    public void facebook(View view) {
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+
+        try {
+
+            getPackageManager().getPackageInfo("com.facebook.lite",
+                    PackageManager.GET_META_DATA);
+            intent.setPackage("com.facebook.lite");
+            intent.putExtra(Intent.EXTRA_TEXT, "Hey!, i scored " + data + "point while playing " +
+                    " Africa Quiz " +
+                    "App," +
+                    " download it via this link XXX");
+            startActivity(Intent.createChooser(intent, "Share with"));
+
+        } catch (PackageManager.NameNotFoundException e) {
+
+            Toast toast = Toast.makeText(this, "Facebook Lite not Installed", Toast.LENGTH_SHORT);
+            toast.show();
+
+        }
+
+    }
+
+    public void twitter(View view) {
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+
+        try {
+
+            getPackageManager().getPackageInfo("com.twitter.android",
+                    PackageManager.GET_META_DATA);
+            intent.setPackage("com.twitter.android");
+            intent.putExtra(Intent.EXTRA_TEXT, "Hey!, i scored " + data + "point while playing " +
+                    " Africa Quiz " +
+                    "App," +
+                    " download it via this link XXX");
+            startActivity(Intent.createChooser(intent, "Share with"));
+
+        } catch (PackageManager.NameNotFoundException e) {
+
+            Toast toast = Toast.makeText(this, "Twitter not Installed", Toast.LENGTH_SHORT);
+            toast.show();
+
+        }
+
+    }
+
+    public void instagram(View view) {
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+
+        try {
+
+            getPackageManager().getPackageInfo("com.instagram.android",
+                    PackageManager.GET_META_DATA);
+            intent.setPackage("com.instagram.android");
+            intent.putExtra(Intent.EXTRA_TEXT, "Hey!, i scored " + data + "point while playing " +
+                    " Africa Quiz " +
+                    "App," +
+                    " download it via this link XXX");
+            startActivity(Intent.createChooser(intent, "Share with"));
+
+        } catch (PackageManager.NameNotFoundException e) {
+
+            Toast toast = Toast.makeText(this, "Instagram not Installed", Toast.LENGTH_SHORT);
+            toast.show();
+
+        }
+
+
+    }
+
+    public void share(View view) {
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        startActivity(Intent.createChooser(intent, "Share with"));
+    }
+
 }
 
 

@@ -127,7 +127,7 @@
             android:launchMode="singleTask" />
         <activity
             android:name=".misconAfrica"
-            android:label=""
+            android:label="Misconceptions of Africa"
             android:launchMode="singleTask" />
         <activity
             android:name=".Miscon_1"

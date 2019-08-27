@@ -31,7 +31,7 @@ public class misconAfrica extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         for (int i = 0; i < 20; i++) {
-            linkedList.add("word " + mWord);
+            linkedList.add("recyclerView_Text " + mWord);
             Log.d("WORD", linkedList.getLast());
             mWord++;
         }

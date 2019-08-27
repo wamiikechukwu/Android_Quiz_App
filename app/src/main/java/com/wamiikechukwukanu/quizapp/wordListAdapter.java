@@ -25,7 +25,7 @@ public class wordListAdapter extends RecyclerView.Adapter<wordListAdapter.WordVi
     @Override
     public wordListAdapter.WordViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 
-        View mItemView = mInflater.inflate(R.layout.wordlist, viewGroup, false);
+        View mItemView = mInflater.inflate(R.layout.layout_holder, viewGroup, false);
         return new WordViewHolder(mItemView, this);
 
     }
@@ -51,7 +51,7 @@ public class wordListAdapter extends RecyclerView.Adapter<wordListAdapter.WordVi
         public WordViewHolder(@NonNull View itemView, wordListAdapter adapter) {
 
             super(itemView);
-            wordItemView = itemView.findViewById(R.id.word);
+            wordItemView = itemView.findViewById(R.id.recyclerView_Text);
             this.mAdapter = adapter;
 
         }

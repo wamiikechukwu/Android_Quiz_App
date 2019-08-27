@@ -35,6 +35,8 @@ public class misconAfrica extends AppCompatActivity {
             Log.d("WORD", linkedList.getLast());
             mWord++;
         }
+
+
     }
 
 }

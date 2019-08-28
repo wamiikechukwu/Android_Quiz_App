@@ -10,4 +10,15 @@ public class dataModel {
         this.mImageResource = mImageResource;
         this.mText = mText;
     }
+
+    public int getmImageResource() {
+
+        return mImageResource;
+    }
+
+    public String getmText() {
+
+        return mText;
+    }
+
 }

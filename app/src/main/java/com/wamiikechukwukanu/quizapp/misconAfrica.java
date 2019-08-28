@@ -4,16 +4,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class misconAfrica extends AppCompatActivity {
 
-    private final LinkedList<String> linkedList = new LinkedList<>();
-    private int mWord = 0;
     private RecyclerView mRecyclerView;
-    private wordListAdapter mAdapter;
+    private recyclerViewAdapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,22 +19,17 @@ public class misconAfrica extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_miscon_africa);
 
-        // Get a handle to the RecyclerView.
+        ArrayList<dataModel> dataModels = new ArrayList<>();
+        dataModels.add(new dataModel(R.drawable.africa_map, "Text1"));
+        dataModels.add(new dataModel(R.drawable.appsbackground, "Text2"));
+        dataModels.add(new dataModel(R.drawable.button_default_shape, "Text3"));
+
         mRecyclerView = findViewById(R.id.recycler_view);
-        // Create an adapter and supply the data to be displayed.
-        mAdapter = new wordListAdapter(this, linkedList);
-        // Connect the adapter with the RecyclerView.
+        mLayoutManager = new LinearLayoutManager(this);
+        mAdapter = new recyclerViewAdapter(dataModels);
+
+        mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mAdapter);
-        // Give the RecyclerView a default layout manager.
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        for (int i = 0; i < 20; i++) {
-            linkedList.add("recyclerView_Text " + mWord);
-            Log.d("WORD", linkedList.getLast());
-            mWord++;
-        }
-
-
     }
 
 }

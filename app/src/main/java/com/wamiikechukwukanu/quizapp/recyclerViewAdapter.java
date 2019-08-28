@@ -34,6 +34,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
         dataModel currentItem = mDataModels.get(i);
         recyclerViewHolder.mImageView.setImageResource(currentItem.getmImageResource());
         recyclerViewHolder.mTextView.setText(currentItem.getmText());
+
     }
 
     @Override

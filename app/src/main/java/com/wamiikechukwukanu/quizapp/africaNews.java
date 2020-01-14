@@ -1,14 +1,10 @@
 package com.wamiikechukwukanu.quizapp;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class africaNews extends AppCompatActivity {
 
-    WebView webView;
+   /* WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +25,7 @@ public class africaNews extends AppCompatActivity {
             return super.shouldOverrideUrlLoading(view, request);
         }
     }
+   
+    */
 
 }

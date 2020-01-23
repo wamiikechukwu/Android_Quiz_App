@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wamiikechukwukanu.quizapp">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_icon"
@@ -12,14 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Intro_Screen.IntroActivity"></activity>
         <activity
             android:name=".contactUs"
             android:label="About"
             android:launchMode="singleTask" />
-
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9646388292265496~7436300103" />
 
         <activity
             android:name=".splashScreen"
@@ -30,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".overView"
             android:launchMode="singleTask"
@@ -49,11 +44,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wamiikechukwukanu.quizapp.overView" />
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
-
         <activity
             android:name=".introStartQuiz"
             android:label=""
@@ -64,6 +54,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wamiikechukwukanu.quizapp.overView" />
         </activity>
+
         <activity
             android:name=".didYouKnow"
             android:label="Did You Know"
@@ -73,6 +64,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wamiikechukwukanu.quizapp.overView" />
         </activity>
+
         <activity
             android:name=".cardViewOne"
             android:label=""
@@ -145,7 +137,18 @@
             android:launchMode="singleTask" />
         <activity
             android:name=".Miscon_5"
-            android:launchMode="singleTask"></activity>
+            android:launchMode="singleTask" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9646388292265496~7436300103" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

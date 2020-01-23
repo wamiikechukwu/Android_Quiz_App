@@ -6,24 +6,10 @@
     <string name="overView_MisconceptionsOfAfrica">MISCONs OF AFRICA</string>
     <string name="splash_screen_imageDescription">a sketch of the map of africa</string>
     <string name="overView_AfricaNews">AFRICA NEWS</string>
-    <string-array name="question_Array">
-        <item>1</item>
-        <item>5</item>
-        <item>10</item>
-        <item>15</item>
-        <item>20</item>
-        <item>25</item>
-        <item>30</item>
-    </string-array>
-    <string-array name="difficult_Array">
-        <item>Easy</item>
-        <item>Normal</item>
-        <item>Hard</item>
-    </string-array>
-
     <string name="overView_DidYouKnow">DID YOU KNOW?</string>
     <string name="text_description">How well  do you think you know the continent Africa and it\'s
         54 independent countries?</string>
+
     <string name="about_africa_quiz">AFRICA QUIZ APP</string>
     <string name="nothing_selected">onNothingSelected:</string>
     <string name="number_of_questions">Number of Questions</string>
@@ -72,13 +58,13 @@
     <string name="terms_privacy"><![CDATA[Terms & Privacy]]></string>
     <string name="privacy_statement"> By Using Africa Quiz App, you agree to Africa Quiz App Terms
         and" <a href="https://www.360forextrader.com/privacy-policy/">Privacy</a> ---Read it here (https://www.360forextrader.com/privacy-policy/)</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Miscon_welcome">When you travel out of Africa and meet individuals who have
         never been to the continent, most of the time they tend to have certain perceptions that
         depict the continent in ways that are either not factual or are misleading. \n\nWe will look
         at some of the common misconceptions and stereotypes about Africa that have been passed on through various forms of media for decades and are believed to be the true representation of the continent.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="Miscon_back">Back</string>
     <string name="Miscon_next">Next</string>
     <string name="miscon_1">There is a common misconception that all African people live in grass-thatched huts made of mud and dung. \nIt is true that mud huts are one of the most common forms of housing in rural areas on the continent, but it would not be fair for us not to mention the rapidly growing urban centers throughout the continent. \n\nMany African nations are going through economic growth, which is leading enormous growth in cities with brick and stone houses, clean tap water, internet connectivity, and electricity, as well as other basic necessities that are accessible to residents in some of the world’s best cities.\nThe skyline of most African cities is nothing short of beautifully architecturally designed skyscrapers that have become a source of pride for their home countries.</string>
@@ -86,5 +72,19 @@
     <string name="miscon_2">Another common misconception is that Africa is a huge forest that man and wild animals coexist in together. \nThis misconception denotes that we keep wild animals like lions or leopards, as well as other wild animals as pets, and that it is common to see lions roaming in city streets. It is true that Africa is home to many wild animals, but it is not factual that they roam in the streets. \n\nA common story is told of a visiting tourist that shook his head in dismay upon landing at Nairobi’s Jomo Kenyatta International Airport. To the tourist’s dismay, he realized he had landed in an airport in a city that looked much better than the rural town he came from. \nAccording to the middle-aged tourist, all the content he had consumed about Africa, safari drives, and the wild in Africa made him believe he would see wild animals roaming the airport immediately upon landing.</string>
     <string name="miscon_3">If you have travelled overseas from the continent, there is a likelihood that you have met someone who has asked you to teach them to speak ‘African.’ \nNot once have I faced this misconception, and the first time this happened to me, I thought I had misunderstood the request and asked if my new friend meant Swahili, as that is the language spoken in my country. \n\n‘African’ as a language does not exist. The continent is a stronghold for diversity, and with this comes thousands of different languages spoken within it. \nIt is estimated that there are over 2,000 languages spoken in Africa, with some countries like Nigeria having over 200 languages spoken by different ethnic groups. \nHowever, it is important to note that there are some languages that are spoken across many countries; for instance, Swahili in East Africa, Zulu in Southern Africa, among others, but this does not translate to ‘African’ language.</string>
     <string name="miscon_4">One of the most common ways of slighting or insulting an African on social media sites like Twitter and Facebook is by someone who has never been to the continent retorting, ‘I didn’t know they have internet in Africa,’ or ‘I didn’t know Africans use computers.’ \nThis is derived from the common misconception that has been advanced for decades that the continent lags behind in technological advancement, or worse, that there is no availability of technology on the continent. \n\nWhen it comes to technology, Africa has almost everything the rest of the world does. Although we may be slightly behind, technology is fast growing on the continent. \nFor instance, Africa is the fastest region when it comes to mobile growth. It is estimated that over 67% of the population on the continent have mobile phones, and 27% have a device that can access the internet. Simply put, 27% of the total population of Africa have mini computers at their disposal! Africa is not only thriving on mobile technology and internet, but also other forms of technology that contributed immensely to the day-to-day life on the continent.</string>
+    <string-array name="question_Array">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="difficult_Array">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+    </string-array>
 
 </resources>

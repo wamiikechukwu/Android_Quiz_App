@@ -16,7 +16,7 @@ android {
             sourceCompatibility JavaVersion.VERSION_1_8
             targetCompatibility JavaVersion.VERSION_1_8
         }
-        
+
     }
     buildTypes {
         release {
@@ -41,6 +41,9 @@ dependencies {
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.google.android.material:material:1.0.0'
+
+    //Dependency for the Intro Screen
+    implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
 
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 

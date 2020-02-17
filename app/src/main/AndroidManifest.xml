@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.wamiikechukwukanu.quizapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -8,23 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_icon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".Intro_Screen.IntroActivity"></activity>
         <activity
             android:name=".contactUs"
             android:label="About"
             android:launchMode="singleTask" />
-
-        <activity
-            android:name=".splashScreen"
-            android:launchMode="singleTask">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
         <activity
             android:name=".overView"
             android:launchMode="singleTask"
@@ -54,7 +48,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wamiikechukwukanu.quizapp.overView" />
         </activity>
-
         <activity
             android:name=".didYouKnow"
             android:label="Did You Know"
@@ -64,7 +57,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.wamiikechukwukanu.quizapp.overView" />
         </activity>
-
         <activity
             android:name=".cardViewOne"
             android:label=""
@@ -146,9 +138,5 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

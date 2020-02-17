@@ -87,4 +87,8 @@
         <item>Hard</item>
     </string-array>
 
+    <!-- FOR THE INTO-SLIDE -->
+    <string name="title"> title </string>
+    <string name="description"> description </string>
+
 </resources>

@@ -3,6 +3,10 @@
     <color name="colorPrimary">#730707</color>
     <color name="colorPrimaryDark">#730707</color>
     <color name="colorAccent">#000000</color>
+
+    <!--CUSTOM COLORS FOR OUR VIEWS-->
+    <color name="customColors">#730707</color>
+
 </resources>
 
 

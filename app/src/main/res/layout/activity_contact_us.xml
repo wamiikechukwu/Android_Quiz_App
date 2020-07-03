@@ -23,8 +23,8 @@
         android:layout_below="@id/app_name"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
         android:text="@string/versioning" />
 
     <TextView
@@ -45,8 +45,8 @@
         android:layout_below="@id/about"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
         android:lineSpacingExtra="3sp"
         android:text="@string/about_content" />
 
@@ -67,8 +67,8 @@
         android:layout_below="@id/term_privacy"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
         android:autoLink="web"
         android:lineSpacingExtra="3sp"
         android:text="@string/privacy_statement"

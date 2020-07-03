@@ -2,11 +2,11 @@ package com.wamiikechukwukanu.quizapp;
 
 import android.os.Bundle;
 
-import java.util.ArrayList;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class misconAfrica extends AppCompatActivity {
 

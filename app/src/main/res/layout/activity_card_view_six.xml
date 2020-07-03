@@ -22,9 +22,9 @@
 
         <ImageView
             android:id="@+id/didyouknow6"
-            android:layout_below="@id/overviewAd0"
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            android:layout_below="@id/overviewAd0"
             android:layout_marginTop="@dimen/cardTopMargin"
             android:padding="@dimen/cardMargin"
             android:scaleType="fitXY" />
@@ -53,8 +53,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/didyouknow"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="10dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
             android:onClick="goBack"
             android:text="@string/go_back"
             android:textColor="#F0000000"

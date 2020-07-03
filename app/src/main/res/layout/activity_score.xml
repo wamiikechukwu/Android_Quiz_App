@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".score">
-    
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        
+
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/overviewAd0"
             android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:layout_marginTop="2dp"
             ads:adSize="SMART_BANNER"
             ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
-        
+
         <TextView
             android:id="@+id/scorePicture"
             android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:textColor="@color/colorAccent"
             android:textSize="60sp"
             android:textStyle="bold" />
-        
+
         <TextView
             android:id="@+id/textview"
             android:layout_width="wrap_content"
@@ -42,7 +42,7 @@
             android:text=""
             android:textColor="@color/colorPrimary"
             android:textSize="60sp" />
-        
+
         <ImageView
             android:id="@+id/image"
             android:layout_width="150dp"
@@ -51,7 +51,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:contentDescription="@string/picture_of_a_trophy" />
-        
+
         <Button
             android:id="@+id/try_again"
             style="@style/Widget.Default.Button"
@@ -65,14 +65,14 @@
             android:text="@string/try_again"
             android:textColor="#FF000000"
             android:typeface="monospace" />
-        
+
         <View
             android:id="@+id/horizontalLine"
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_below="@id/try_again"
             android:background="#A60A27" />
-        
+
         <TextView
             android:id="@+id/shareText"
             android:layout_width="wrap_content"
@@ -84,7 +84,7 @@
             android:textColor="#F000"
             android:textSize="17sp"
             android:textStyle="bold" />
-        
+
         <ImageView
             android:id="@+id/whatsapp"
             android:layout_width="20dp"
@@ -95,7 +95,7 @@
             android:layout_toEndOf="@id/shareText"
             android:onClick="whatsapp"
             android:src="@drawable/whatsapp" />
-        
+
         <ImageView
             android:id="@+id/facebook"
             android:layout_width="20dp"
@@ -106,7 +106,7 @@
             android:layout_toEndOf="@id/whatsapp"
             android:onClick="facebook"
             android:src="@drawable/facebook" />
-        
+
         <ImageView
             android:id="@+id/twitter"
             android:layout_width="20dp"
@@ -117,7 +117,7 @@
             android:layout_toRightOf="@id/facebook"
             android:onClick="twitter"
             android:src="@drawable/twitter" />
-        
+
         <ImageView
             android:id="@+id/instagram"
             android:layout_width="20dp"
@@ -128,7 +128,7 @@
             android:layout_toEndOf="@id/twitter"
             android:onClick="instagram"
             android:src="@drawable/instagram" />
-        
+
         <ImageView
             android:id="@+id/share"
             android:layout_width="20dp"
@@ -139,8 +139,8 @@
             android:layout_toEndOf="@id/instagram"
             android:onClick="share"
             android:src="@drawable/ic_share" />
-        
-        
+
+
         <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/overviewAd1"
             android:layout_width="match_parent"
@@ -150,7 +150,7 @@
             android:padding="5dp"
             ads:adSize="SMART_BANNER"
             ads:adUnitId="ca-app-pub-9646388292265496/4392647445" />
-    
+
     </RelativeLayout>
 
 </ScrollView>

@@ -12,7 +12,6 @@ class africaNews : AppCompatActivity() {
         setContentView(R.layout.activity_africa_news);
 
         webView = findViewById(R.id.webView);
-
         webView.loadUrl("https://www.africanews.com");
         webView.setWebViewClient(new MyWebViewClient());
     }

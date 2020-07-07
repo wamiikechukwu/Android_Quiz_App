@@ -26,4 +26,5 @@ class africaNews : AppCompatActivity() {
     }
 
     */
+
 }

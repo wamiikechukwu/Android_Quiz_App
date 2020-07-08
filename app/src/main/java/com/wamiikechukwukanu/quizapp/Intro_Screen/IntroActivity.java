@@ -33,5 +33,7 @@ public class IntroActivity extends AppCompatActivity {
         screenPager = findViewById(R.id.introPageView);
         introScreenPageViewAdapter = new IntroScreenPageViewAdapter(this, modelList);
         screenPager.setAdapter(introScreenPageViewAdapter);
+
+        //
     }
 }

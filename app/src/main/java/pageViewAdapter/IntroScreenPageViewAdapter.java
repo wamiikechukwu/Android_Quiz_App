@@ -7,13 +7,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.PagerAdapter;
+
 import com.wamiikechukwukanu.quizapp.Intro_Screen.introScreenDataModel;
 import com.wamiikechukwukanu.quizapp.R;
 
 import java.util.List;
-
-import androidx.annotation.NonNull;
-import androidx.viewpager.widget.PagerAdapter;
 
 public class IntroScreenPageViewAdapter extends PagerAdapter {
 

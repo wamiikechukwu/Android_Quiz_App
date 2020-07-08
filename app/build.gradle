@@ -60,6 +60,9 @@ dependencies {
     implementation 'androidx.drawerlayout:drawerlayout:1.0.0'
     implementation "androidx.core:core-ktx:+"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //VIEWPAGER2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
 }
 repositories {
     mavenCentral()

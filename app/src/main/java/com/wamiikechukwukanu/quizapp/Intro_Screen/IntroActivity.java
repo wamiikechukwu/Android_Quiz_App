@@ -2,13 +2,14 @@ package com.wamiikechukwukanu.quizapp.Intro_Screen;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import com.wamiikechukwukanu.quizapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
 import pageViewAdapter.IntroScreenPageViewAdapter;
 
 
@@ -32,7 +33,5 @@ public class IntroActivity extends AppCompatActivity {
         screenPager = findViewById(R.id.introPageView);
         introScreenPageViewAdapter = new IntroScreenPageViewAdapter(this, modelList);
         screenPager.setAdapter(introScreenPageViewAdapter);
-
-
     }
 }

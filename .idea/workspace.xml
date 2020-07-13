@@ -7,6 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/onboarding/OnboardingDataItems.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/onboarding_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/onboarding_screen.xml" afterDir="false" />
     </list>
@@ -18,7 +20,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="12edadf20506" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_API_29_x86" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -40,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -259,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594416207830</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Done with the ViewPager2 layout, now working on the onboarding screen layout.">
+      <created>1594417764541</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1594417764541</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -289,10 +299,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1594416141778" />
-    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1594416205817">
+    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1594417763549">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1594416205817" />
+    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1594417763549" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1593897029051">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -329,10 +339,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="184" y="26" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1594413399469" />
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1594252171467">
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2" timestamp="1594417770752">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1594252171467" />
+    <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1594417770752" />
     <state x="378" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1594413040441">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

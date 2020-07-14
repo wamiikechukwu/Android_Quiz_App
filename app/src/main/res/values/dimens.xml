@@ -5,4 +5,6 @@
     <dimen name="activityMain">20dp</dimen>
     <dimen name="cardTopMargin">10dp</dimen>
     <dimen name="cardMargin">10dp</dimen>
+    <dimen name="onboarding_marginTop">24dp</dimen>
+    <dimen name="onboarding_marginStart">32dp</dimen>
 </resources>

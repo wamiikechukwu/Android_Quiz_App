@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat.getColor
 import androidx.viewpager.widget.PagerAdapter
 import com.wamiikechukwukanu.quizapp.R
 
@@ -29,13 +31,19 @@ class OnboardingPageAdapter(val mContext: Context, var mArrayList: ArrayList<Onb
         val mImage: ImageView
         val mSubTitle: TextView
 
+//        FOR THE CARDVIEW
+        val mCardView: CardView
+
         mTitle = mView.findViewById(R.id.onboard_title)
         mImage = mView.findViewById(R.id.onboard_image)
         mSubTitle = mView.findViewById(R.id.onboard_subtitle)
 
+        mCardView = mView.findViewById(R.id.onboard_cardview)
+
         mTitle.text = mArrayList[position].onboardingTitle
         mImage.setImageResource(mArrayList[position].onboardingImage)
         mSubTitle.text = mArrayList[position].onboardingSubTitle
+        mCardView.setCardBackgroundColor(getColor(mContext, mArrayList[position].onboardingCardColor))
 
         container.addView(mView, 0)
 

@@ -7,6 +7,11 @@
     <!--CUSTOM COLORS FOR OUR VIEWS-->
     <color name="customColors">#730707</color>
 
+    <!--COLORS FOR THE ONBOARDING SCREEN-->
+    <color name="first_color">#FF6D00</color>
+    <color name="second_color">#6200EA</color>
+    <color name="third_color">#D50000</color>
+
 </resources>
 
 

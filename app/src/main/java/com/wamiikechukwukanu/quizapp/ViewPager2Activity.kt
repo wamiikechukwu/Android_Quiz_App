@@ -19,9 +19,9 @@ class ViewPager2Activity : AppCompatActivity() {
         mViewPager2 = findViewById(R.id.viewpager2)
 
         mModel = ArrayList()
-        mModel.add(OnboardingDataItems(R.drawable.didyouknow0, "Welcome to Africa", "Our Home"))
-        mModel.add(OnboardingDataItems(R.drawable.didyouknow0, "Explore the Contitent", "Find the paradise"))
-        mModel.add(OnboardingDataItems(R.drawable.didyouknow0, "See the Countries", "Play Games"))
+        mModel.add(OnboardingDataItems(R.drawable.didyouknow0, "Welcome to Africa", "Our Home", R.color.first_color))
+        mModel.add(OnboardingDataItems(R.drawable.didyouknow0, "Explore the Contitent", "Find the paradise", R.color.second_color))
+        mModel.add(OnboardingDataItems(R.drawable.didyouknow0, "See the Countries", "Play Games", R.color.third_color))
 
         mPagerAdapter = OnboardingPageAdapter(this@ViewPager2Activity, mModel)
         mViewPager2.adapter = mPagerAdapter

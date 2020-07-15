@@ -4,28 +4,41 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
+import com.wamiikechukwukanu.quizapp.R
 
-class OnboardingPageAdapter(val mContext: Context) : PagerAdapter() {
-
-    var arrayList: ArrayList<OnboardingDataItems> = ArrayList()
+class OnboardingPageAdapter(val mContext: Context, var mArrayList: ArrayList<OnboardingDataItems>) : PagerAdapter() {
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
-        return view == `object` as View
-
+        return view == `object`
     }
 
     override fun getCount(): Int {
-        return arrayList.size
+        return mArrayList.size
     }
 
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
-        container.removeView(View(`object` as Context?))
+        container.removeView(`object` as View)
     }
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        val mView = LayoutInflater.from(mContext).inflate()
+        val mView = LayoutInflater.from(mContext).inflate(R.layout.onboarding_screen, container, false)
+        val mTitle: TextView
+        val mImage: ImageView
+        val mSubTitle: TextView
+
+        mTitle = mView.findViewById(R.id.onboard_title)
+        mImage = mView.findViewById(R.id.onboard_image)
+        mSubTitle = mView.findViewById(R.id.onboard_subtitle)
+
+        mTitle.text = mArrayList[position].onboardingTitle
+        mImage.setImageResource(mArrayList[position].onboardingImage)
+        mSubTitle.text = mArrayList[position].onboardingSubTitle
+
+        container.addView(mView, 0)
+
+        return mView
     }
-
-
 }

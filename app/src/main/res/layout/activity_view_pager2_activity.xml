@@ -6,15 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".ViewPager2Activity">
 
-    <androidx.viewpager2.widget.ViewPager2
+    <TextView
+        android:id="@+id/onboard_welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="WELCOME"
+        android:textColor="#000"
+        app:layout_constraintBottom_toTopOf="@id/viewpager2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/onboard_skip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/gotham_bold"
+        android:text="SKIP"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="@id/onboard_welcome_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager2"
         android:layout_width="0dp"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
         android:layout_height="0dp"
+        android:overScrollMode="never"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@id/onboard_next_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@id/onboard_welcome_text" />
 
     <Button
         android:id="@+id/onboard_next_button"

@@ -7,21 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/onboarding/OnboardingPageAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/gotham_bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/gotham_book.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/gotham_medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/gotham_narrow_bold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/gotham_narrow_book.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/segoeui_0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/seguisb_0.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/onboarding/OnboardingDataItems.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/onboarding/OnboardingDataItems.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/abeezee.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/abel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ViewPager2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ViewPager2Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/onboarding/OnboardingPageAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/onboarding/OnboardingPageAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_pager2_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_pager2_activity.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/onboarding_screen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/onboarding_screen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594627467722</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Redesigned the onboarding item layout activity">
+      <created>1594756889820</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1594756889820</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -300,7 +299,8 @@
     <MESSAGE value="Adding a pageview for the onboarding screen" />
     <MESSAGE value="Done with the ViewPager2 layout, now working on the onboarding screen layout." />
     <MESSAGE value="Added a data class that will hold all details of the onboarding Screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a data class that will hold all details of the onboarding Screen" />
+    <MESSAGE value="Redesigned the onboarding item layout activity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesigned the onboarding item layout activity" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -330,10 +330,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="541" y="196" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1594756033834" />
-    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1594627465897">
+    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1594756887871">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1594627465897" />
+    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1594756887871" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1593897029051">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -346,22 +346,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="194" y="89" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1593193364829" />
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1594415928142">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1594812396860">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1594415928142" />
-    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1594415928142">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1594812396860" />
+    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1594812396860">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1594415928142" />
-    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1594415928142">
+    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1594812396860" />
+    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1594812396860">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1594415928142" />
-    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1594415928142">
+    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1594812396860" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1594812396860">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1594415928142" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1594812396860" />
     <state x="378" y="97" key="MultipleFileMergeDialog" timestamp="1593893106366">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

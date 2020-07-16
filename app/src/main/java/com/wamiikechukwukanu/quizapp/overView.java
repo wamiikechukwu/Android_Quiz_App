@@ -23,7 +23,8 @@ public class overView extends AppCompatActivity {
         getSupportActionBar().hide();
 
         //after hiding the action bar, display the activity layout file
-        setContentView(R.layout.activity_over_view);
+//        TODO
+        //    setContentView(R.layout.activity_over_view);
 
         //Referencing the ad Id from admob and initialing it
         MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
@@ -39,20 +40,12 @@ public class overView extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void didYouKnow(View view) {
-        Intent intent = new Intent(this, didYouKnow.class);
-        startActivity(intent);
-    }
 
     public void africaNews(View view) {
         Intent intent = new Intent(this, africaNews.class);
         startActivity(intent);
     }
 
-    public void misconAfrica(View view) {
-        Intent intent = new Intent(this, misconAfrica.class);
-        startActivity(intent);
-    }
 
 }
 

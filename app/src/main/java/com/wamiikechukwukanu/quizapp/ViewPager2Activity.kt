@@ -10,7 +10,7 @@ import com.wamiikechukwukanu.quizapp.onboarding.OnboardingPageAdapter
 
 class ViewPager2Activity : AppCompatActivity() {
 
-    //    THE OBJECT I WILL USE FOR THE DATABINDING
+//    THE OBJECT I WILL USE FOR THE DATABINDING
     lateinit var binding: ActivityViewPager2ActivityBinding
 
     //    THE ADAPTER VARIABLE
@@ -33,9 +33,9 @@ class ViewPager2Activity : AppCompatActivity() {
 
 //        SETUP THE DATAMODEL
         mModel = ArrayList()
-        mModel.add(OnboardingDataItems(R.drawable.didyouknow0, "Welcome to Africa", "Our Home", R.color.first_color))
-        mModel.add(OnboardingDataItems(R.drawable.didyouknow0, "Explore the Contitent", "Find the paradise", R.color.second_color))
-        mModel.add(OnboardingDataItems(R.drawable.didyouknow0, "See the Countries", "Play Games", R.color.third_color))
+        mModel.add(OnboardingDataItems(R.drawable.africa_map, "Welcome to Africa", "Our Home", R.color.first_color))
+        mModel.add(OnboardingDataItems(R.drawable.africa_map, "Explore the Contitent", "Find the paradise", R.color.second_color))
+        mModel.add(OnboardingDataItems(R.drawable.africa_map, "See the Countries", "Play Games", R.color.third_color))
 
         mPagerAdapter = OnboardingPageAdapter(this@ViewPager2Activity, mModel)
         binding.viewPager.adapter = mPagerAdapter
@@ -72,6 +72,10 @@ class ViewPager2Activity : AppCompatActivity() {
                 binding.onboardSkipText.visibility = View.INVISIBLE
             }
         }
+
+//        TODO
+//        ONCLICK OF THE SKIP... SHOW THE NEXT ACTIVITY
+        binding.onboardSkipText.setOnClickListener { }
 
 
     }

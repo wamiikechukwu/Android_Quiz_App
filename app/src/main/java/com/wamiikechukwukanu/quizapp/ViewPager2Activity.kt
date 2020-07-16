@@ -2,6 +2,8 @@ package com.wamiikechukwukanu.quizapp
 
 import android.os.Bundle
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.wamiikechukwukanu.quizapp.databinding.ActivityViewPager2ActivityBinding
@@ -10,7 +12,7 @@ import com.wamiikechukwukanu.quizapp.onboarding.OnboardingPageAdapter
 
 class ViewPager2Activity : AppCompatActivity() {
 
-//    THE OBJECT I WILL USE FOR THE DATABINDING
+    //    THE OBJECT I WILL USE FOR THE DATABINDING
     lateinit var binding: ActivityViewPager2ActivityBinding
 
     //    THE ADAPTER VARIABLE
@@ -21,6 +23,9 @@ class ViewPager2Activity : AppCompatActivity() {
 
     //    POSITION OF THE VIEWPAGER ADAPTER
     var viewPagerAdapterPosition = 0
+
+    //    THE ANIMAL
+    lateinit var mAnimation: Animation
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,6 +57,9 @@ class ViewPager2Activity : AppCompatActivity() {
 //            THE INT POSITION THE VIEWPAGER IS IN, IS STORED HERE
             viewPagerAdapterPosition = binding.viewPager.currentItem
 
+            //SETTING THE ANIMATION TO THE GET STARTED BUTTON
+            mAnimation = AnimationUtils.loadAnimation(applicationContext, R.anim.botton_anim)
+
 //            IF THE VIEW PAGER IS NOT AT THE END OF THE SCREEN, THEN CLICKING ON THE NEXT BUTTON
 //            WILL MOVE THE VIEW PAGER
             if (viewPagerAdapterPosition < mModel.size) {
@@ -70,8 +78,11 @@ class ViewPager2Activity : AppCompatActivity() {
                 binding.onboardTabLayout.visibility = View.INVISIBLE
                 binding.onboardNextButton.visibility = View.INVISIBLE
                 binding.onboardSkipText.visibility = View.INVISIBLE
+
+                binding.getStarted.animation = mAnimation
             }
         }
+
 
 //        TODO
 //        ONCLICK OF THE SKIP... SHOW THE NEXT ACTIVITY

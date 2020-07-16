@@ -5,26 +5,18 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/onboarding_next_button_shape.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ViewPager2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ViewPager2Activity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_pager2_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_pager2_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +26,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="12edadf20506" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -198,6 +190,30 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Africa Quiz App [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Africa Quiz App [dependencies]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -322,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594904443404</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Made a little modification to the onboarding screen">
+      <created>1594906113147</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1594906113147</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,7 +369,8 @@
     <MESSAGE value="Done with the basics of the onboarding screen, now adding functionalities" />
     <MESSAGE value="Added colors to each of the cardviews in the onboarding screen" />
     <MESSAGE value="Added a functionality to the next button in the onboarding screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a functionality to the next button in the onboarding screen" />
+    <MESSAGE value="Made a little modification to the onboarding screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made a little modification to the onboarding screen" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -376,10 +400,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="541" y="196" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1594905988721" />
-    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1594904441539">
+    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1594906111149">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1594904441539" />
+    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1594906111149" />
     <state x="362" y="137" key="Downloadable.Font.Dialog.Size" timestamp="1594905924038">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -396,22 +420,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="194" y="89" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1593193364829" />
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1594906008095">
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom" timestamp="1594912896764">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1594906008094" />
-    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1594906008094">
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1594912896764" />
+    <state width="1323" height="316" key="GridCell.Tab.0.center" timestamp="1594912896764">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1594906008094" />
-    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1594906008094">
+    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1594912896764" />
+    <state width="1323" height="316" key="GridCell.Tab.0.left" timestamp="1594912896764">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1594906008094" />
-    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1594906008094">
+    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1594912896764" />
+    <state width="1323" height="316" key="GridCell.Tab.0.right" timestamp="1594912896764">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1594906008094" />
+    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1594912896764" />
     <state x="378" y="97" key="MultipleFileMergeDialog" timestamp="1593893106366">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

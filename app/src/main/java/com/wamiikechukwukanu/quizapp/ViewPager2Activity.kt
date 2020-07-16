@@ -1,6 +1,7 @@
 package com.wamiikechukwukanu.quizapp
 
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
@@ -28,6 +29,8 @@ class ViewPager2Activity : AppCompatActivity() {
     //    ONBOARDING BOTTON
     lateinit var onboardNextButton: Button
 
+    lateinit var getStarted: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,13 +40,15 @@ class ViewPager2Activity : AppCompatActivity() {
 
         setContentView(R.layout.activity_view_pager2_activity)
 
-        mViewPager2 = findViewById(R.id.viewpager2)
+        mViewPager2 = findViewById(R.id.viewpager)
 
 //        TAB LAYOUT
         tabLayout = findViewById(R.id.onboard_tab_layout)
 
 //        ONBOARDING BUTTON
         onboardNextButton = findViewById(R.id.onboard_next_button)
+
+        getStarted = findViewById(R.id.get_started)
 
 
 //        SETUP THE DATAMODEL
@@ -71,8 +76,15 @@ class ViewPager2Activity : AppCompatActivity() {
                 viewPagerAdapterPosition++
                 mViewPager2.currentItem = viewPagerAdapterPosition
             }
+
+            if (viewPagerAdapterPosition == mModel.size) {
+                getStarted.visibility = View.VISIBLE
+                tabLayout.visibility = View.INVISIBLE
+                onboardNextButton.visibility = View.INVISIBLE
+            }
         }
 
 
     }
 }
+

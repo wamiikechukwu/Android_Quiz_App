@@ -7,13 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/indicator_default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/indicator_selected.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/indicator_selector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/onboarding_next_button_shape.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ViewPager2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ViewPager2Activity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_pager2_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_pager2_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +34,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="12edadf20506" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -304,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594826040318</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added a functionality to the next button in the onboarding screen">
+      <created>1594904443404</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1594904443404</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,7 +345,8 @@
     <MESSAGE value="Redesigned the onboarding item layout activity" />
     <MESSAGE value="Done with the basics of the onboarding screen, now adding functionalities" />
     <MESSAGE value="Added colors to each of the cardviews in the onboarding screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added colors to each of the cardviews in the onboarding screen" />
+    <MESSAGE value="Added a functionality to the next button in the onboarding screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a functionality to the next button in the onboarding screen" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -349,18 +368,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="130" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1594755195043" />
-    <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1594832478863">
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog" timestamp="1594905517723">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1594832478863" />
-    <state x="541" y="196" key="AndroidCreateXmlResourceDialog" timestamp="1594756033834">
+    <state x="263" y="138" key="AndroidCreateResourceFileDialog/0.0.1366.768@0.0.1366.768" timestamp="1594905517723" />
+    <state x="541" y="196" key="AndroidCreateXmlResourceDialog" timestamp="1594905988721">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="541" y="196" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1594756033834" />
-    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1594904398493">
+    <state x="541" y="196" key="AndroidCreateXmlResourceDialog/0.0.1366.768@0.0.1366.768" timestamp="1594905988721" />
+    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1594904441539">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1594904398493" />
+    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1594904441539" />
+    <state x="362" y="137" key="Downloadable.Font.Dialog.Size" timestamp="1594905924038">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="362" y="137" key="Downloadable.Font.Dialog.Size/0.0.1366.768@0.0.1366.768" timestamp="1594905924038" />
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1593897029051">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -373,22 +396,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="194" y="89" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1593193364829" />
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1594832872225">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1594906008095">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1594832872225" />
-    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1594832872224">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1594906008094" />
+    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1594906008094">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1594832872224" />
-    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1594832872224">
+    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1594906008094" />
+    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1594906008094">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1594832872224" />
-    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1594832872224">
+    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1594906008094" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1594906008094">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1594832872224" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1594906008094" />
     <state x="378" y="97" key="MultipleFileMergeDialog" timestamp="1593893106366">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -417,5 +440,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1594414982404" />
+    <state x="404" y="294" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1594905246582">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="404" y="294" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.768@0.0.1366.768" timestamp="1594905246582" />
   </component>
 </project>

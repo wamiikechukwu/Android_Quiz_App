@@ -36,11 +36,8 @@ class ViewPager2Activity : AppCompatActivity() {
 //        ASSOCIATING THE LAYOUT FILE WITH THE ACTIVITY
         binding = DataBindingUtil.setContentView(this, R.layout.activity_view_pager2_activity)
 
-//        SETUP THE DATAMODEL
-        mModel = ArrayList()
-        mModel.add(OnboardingDataItems(R.drawable.africa_map, "Welcome to Africa", "Our Home", R.color.first_color))
-        mModel.add(OnboardingDataItems(R.drawable.africa_map, "Explore the Contitent", "Find the paradise", R.color.second_color))
-        mModel.add(OnboardingDataItems(R.drawable.africa_map, "See the Countries", "Play Games", R.color.third_color))
+//      THIS CONTAINS THE DATA MODEL (ARRAYLIST)
+        settingUpTheDataModel()
 
         mPagerAdapter = OnboardingPageAdapter(this@ViewPager2Activity, mModel)
         binding.viewPager.adapter = mPagerAdapter
@@ -51,7 +48,7 @@ class ViewPager2Activity : AppCompatActivity() {
 //        SETTING PADDING TO SHOW THE  NEXT CARD'S
         binding.viewPager.setPadding(40, 0, 40, 0)
 
-//        ONCLICK OF THE BUTTON, MOVE TO THE NEXT VIEWP PAGE
+//        ONCLICK OF THE BUTTON, MOVE TO THE NEXT VIEW PAGE
         binding.onboardNextButton.setOnClickListener {
 
 //            THE INT POSITION THE VIEWPAGER IS IN, IS STORED HERE
@@ -91,6 +88,18 @@ class ViewPager2Activity : AppCompatActivity() {
 
 
     }
+
+    fun settingUpTheDataModel() {
+
+//      SETUP THE DATAMODEL
+        mModel = ArrayList()
+        mModel.add(OnboardingDataItems(R.drawable.africa_map, "Welcome to Africa", "Our Home", R.color.first_color))
+        mModel.add(OnboardingDataItems(R.drawable.africa_map, "Explore the Contitent", "Find the paradise", R.color.second_color))
+        mModel.add(OnboardingDataItems(R.drawable.africa_map, "See the Countries", "Play Games", R.color.third_color))
+
+    }
+
+    fun sett
 
 }
 

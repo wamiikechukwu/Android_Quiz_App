@@ -62,22 +62,14 @@ class ViewPager2Activity : AppCompatActivity() {
             if (viewPagerAdapterPosition < mModel.size) {
                 viewPagerAdapterPosition++
 
-//                SET THE VIEW PAGER SCREEN TO THE NEXT, IF THE LAST SCREEN HAVENT BEEN REACHED
-                binding.viewPager.currentItem = viewPagerAdapterPosition
+                movingTheViewPager()
             }
 
 //            WHEN THE CURRENT POSITION OF THE ONBOARDING SCREEN IS THAT LAST
 //            AND WHEN THE NEXT BOTTON IS CLICKED AT THE LAST SCREEN
             if (viewPagerAdapterPosition == mModel.size) {
 
-//                THEN PERFORM THESE OPERATION
-                binding.getStarted.visibility = View.VISIBLE
-                binding.onboardTabLayout.visibility = View.INVISIBLE
-                binding.onboardNextButton.visibility = View.INVISIBLE
-                binding.onboardSkipText.visibility = View.INVISIBLE
-
-                binding.getStarted.animation = mAnimation
-
+                settingTheViews()
             }
         }
 
@@ -89,7 +81,8 @@ class ViewPager2Activity : AppCompatActivity() {
 
     }
 
-    fun settingUpTheDataModel() {
+    //    FOR THE DATAMODEL/ARRAYLIST
+    private fun settingUpTheDataModel() {
 
 //      SETUP THE DATAMODEL
         mModel = ArrayList()
@@ -99,7 +92,23 @@ class ViewPager2Activity : AppCompatActivity() {
 
     }
 
-    fun sett
+    //  MOVING THE VIEWPAGER
+    private fun movingTheViewPager() {
+        //                SET THE VIEW PAGER SCREEN TO THE NEXT, IF THE LAST SCREEN HAVENT BEEN REACHED
+        binding.viewPager.currentItem = viewPagerAdapterPosition
+    }
+
+    //    MAKING VIEWS INVISIBLE OR VISIBLE
+    private fun settingTheViews() {
+        // THEN PERFORM THESE OPERATION
+        binding.getStarted.visibility = View.VISIBLE
+        binding.onboardTabLayout.visibility = View.INVISIBLE
+        binding.onboardNextButton.visibility = View.INVISIBLE
+        binding.onboardSkipText.visibility = View.INVISIBLE
+
+        binding.getStarted.animation = mAnimation
+
+    }
 
 }
 

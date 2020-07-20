@@ -42,6 +42,7 @@ class OnboardingPageAdapter(val mContext: Context, var mArrayList: ArrayList<Onb
 
         mTitle.text = mArrayList[position].onboardingTitle
         mImage.setImageResource(mArrayList[position].onboardingImage)
+
         mSubTitle.text = mArrayList[position].onboardingSubTitle
         mCardView.setCardBackgroundColor(getColor(mContext, mArrayList[position].onboardingCardColor))
 

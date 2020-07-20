@@ -10,10 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/botton_anim.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ViewPager2Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ViewPager2Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/onboarding/OnboardingPageAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/onboarding/OnboardingPageAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_pager2_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_pager2_activity.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="12edadf20506" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -48,6 +51,7 @@
         <option value="Kotlin Class" />
         <option value="valueResourceFile" />
         <option value="resourceFile" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -67,6 +71,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/wamiikechukwukanu/quizapp" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/font" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -74,11 +81,34 @@
     <key name="android.template.343437214">
       <recent name="com.wamiikechukwukanu.quizapp" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.wamiikechukwukanu.quizapp" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\DELL\Desktop\Android Apps Files\Africa Quiz App\app\src\main\res\font" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
+    <configuration name="ViewPager2ActivityTest.shouldReturnABoolean" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wamiikechukwukanu.quizapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wamiikechukwukanu.quizapp" />
+      <option name="MAIN_CLASS_NAME" value="com.wamiikechukwukanu.quizapp.ViewPager2ActivityTest" />
+      <option name="METHOD_NAME" value="shouldReturnABoolean" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -209,6 +239,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Android JUnit.ViewPager2ActivityTest.shouldReturnABoolean" />
         <item itemvalue="Gradle.Africa Quiz App [dependencies]" />
       </list>
     </recent_temporary>
@@ -357,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594915914121</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Done with onboarding screen">
+      <created>1594937414123</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1594937414123</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,7 +403,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -383,7 +423,8 @@
     <MESSAGE value="Added a functionality to the next button in the onboarding screen" />
     <MESSAGE value="Made a little modification to the onboarding screen" />
     <MESSAGE value="Added DataBind to the onboarding screen activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added DataBind to the onboarding screen activity" />
+    <MESSAGE value="Done with onboarding screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done with onboarding screen" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -393,6 +434,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="42" key="#Notifications/0.0.1366.768@0.0.1366.768" timestamp="1593810813416" />
+    <state x="92" y="92" width="1182" height="584" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595098850352">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.768@0.0.1366.768" timestamp="1595098850352" />
     <state x="404" y="178" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593810598455">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -421,10 +466,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="537" y="148" key="AndroidProcessChooserDialog/0.0.1366.768@0.0.1366.768" timestamp="1594937264804" />
-    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1594915912048">
+    <state x="44" y="0" key="CommitChangelistDialog2" timestamp="1595203466247">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1594915912048" />
+    <state x="44" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1595203466247" />
     <state x="362" y="137" key="Downloadable.Font.Dialog.Size" timestamp="1594905924038">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -441,22 +486,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="194" y="89" key="Github.UntrackedFilesDialog/0.0.1366.768@0.0.1366.768" timestamp="1593193364829" />
-    <state width="1323" height="316" key="GridCell.Tab.0.bottom" timestamp="1594936264408">
+    <state width="1321" height="314" key="GridCell.Tab.0.bottom" timestamp="1595201469152">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1594936264408" />
-    <state width="1323" height="316" key="GridCell.Tab.0.center" timestamp="1594936264407">
+    <state width="1321" height="314" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595201469152" />
+    <state width="1321" height="314" key="GridCell.Tab.0.center" timestamp="1595201469152">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1594936264407" />
-    <state width="1323" height="316" key="GridCell.Tab.0.left" timestamp="1594936264407">
+    <state width="1321" height="314" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595201469152" />
+    <state width="1321" height="314" key="GridCell.Tab.0.left" timestamp="1595201469152">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1594936264407" />
-    <state width="1323" height="316" key="GridCell.Tab.0.right" timestamp="1594936264407">
+    <state width="1321" height="314" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595201469152" />
+    <state width="1321" height="314" key="GridCell.Tab.0.right" timestamp="1595201469152">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1594936264407" />
+    <state width="1321" height="314" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595201469152" />
     <state x="378" y="97" key="MultipleFileMergeDialog" timestamp="1593893106366">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -469,18 +514,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="116" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1594915918049" />
+    <state x="497" y="160" key="chooseDestDirectoryDialog" timestamp="1595096694289">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="497" y="160" key="chooseDestDirectoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1595096694289" />
     <state x="92" y="92" width="1182" height="584" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1594738661790">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="92" y="92" width="1182" height="584" key="com.android.tools.idea.avdmanager.AvdListDialog/0.0.1366.768@0.0.1366.768" timestamp="1594738661790" />
-    <state x="378" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1594413040441">
+    <state x="378" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1595016540379">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="378" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1594413040441" />
+    <state x="378" y="207" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1595016540379" />
     <state x="485" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594251938518">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="485" y="295" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1594251938518" />
+    <state x="445" y="85" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog" timestamp="1595096694377">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="445" y="85" key="org.jetbrains.kotlin.idea.testIntegration.KotlinCreateTestDialog/0.0.1366.768@0.0.1366.768" timestamp="1595096694377" />
     <state x="339" y="172" width="672" height="677" key="run.anything.popup" timestamp="1594414982404">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

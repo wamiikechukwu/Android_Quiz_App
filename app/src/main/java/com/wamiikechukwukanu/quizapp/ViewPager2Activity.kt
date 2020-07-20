@@ -80,6 +80,7 @@ class ViewPager2Activity : AppCompatActivity() {
                 binding.onboardSkipText.visibility = View.INVISIBLE
 
                 binding.getStarted.animation = mAnimation
+
             }
         }
 
@@ -90,5 +91,6 @@ class ViewPager2Activity : AppCompatActivity() {
 
 
     }
+
 }
 

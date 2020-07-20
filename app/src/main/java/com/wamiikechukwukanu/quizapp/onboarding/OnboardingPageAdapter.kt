@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat.getColor
 import androidx.viewpager.widget.PagerAdapter
+import com.bumptech.glide.Glide
 import com.wamiikechukwukanu.quizapp.R
 
 class OnboardingPageAdapter(val mContext: Context, var mArrayList: ArrayList<OnboardingDataItems>) : PagerAdapter() {
@@ -41,7 +42,9 @@ class OnboardingPageAdapter(val mContext: Context, var mArrayList: ArrayList<Onb
         mCardView = mView.findViewById(R.id.onboard_cardview)
 
         mTitle.text = mArrayList[position].onboardingTitle
-        mImage.setImageResource(mArrayList[position].onboardingImage)
+
+//        FOR LOADING THE IMAGE INTO THE ONBOARDING SCREEN
+        Glide.with(mContext).load(mArrayList[position].onboardingImage).into(mImage)
 
         mSubTitle.text = mArrayList[position].onboardingSubTitle
         mCardView.setCardBackgroundColor(getColor(mContext, mArrayList[position].onboardingCardColor))

@@ -10,7 +10,7 @@ import com.wamiikechukwukanu.quizapp.databinding.ActivityViewPager2ActivityBindi
 import com.wamiikechukwukanu.quizapp.onboarding.OnboardingDataItems
 import com.wamiikechukwukanu.quizapp.onboarding.OnboardingPageAdapter
 
-class ViewPager2Activity : AppCompatActivity() {
+class OnboardingActivity : AppCompatActivity() {
 
     //    THE OBJECT I WILL USE FOR THE DATABINDING
     lateinit var binding: ActivityViewPager2ActivityBinding
@@ -39,7 +39,7 @@ class ViewPager2Activity : AppCompatActivity() {
 //      THIS CONTAINS THE DATA MODEL (ARRAYLIST)
         settingUpTheDataModel()
 
-        mPagerAdapter = OnboardingPageAdapter(this@ViewPager2Activity, mModel)
+        mPagerAdapter = OnboardingPageAdapter(this@OnboardingActivity, mModel)
         binding.viewPager.adapter = mPagerAdapter
 
 //        SET THE TABLAYOUT WITH THE VIEWPAGER

@@ -225,13 +225,13 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
 
                 @Override
                 public void onAdClosed() {
-                    startActivity(new Intent(introStartQuiz.this, MainActivity.class));
+                    startActivity(new Intent(introStartQuiz.this, mMainActivity.class));
                     super.onAdClosed();
                 }
             });
 
         } else {
-            Intent intent = new Intent(this, MainActivity.class);
+            Intent intent = new Intent(this, mMainActivity.class);
             startActivity(intent);
         }
     }

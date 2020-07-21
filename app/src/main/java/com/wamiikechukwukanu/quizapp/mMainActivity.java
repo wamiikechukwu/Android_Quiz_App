@@ -25,7 +25,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Random;
 
-public class MainActivity extends AppCompatActivity {
+public class mMainActivity extends AppCompatActivity {
     //initialized  global variable
     AdView overviewAd1;
     AdView overviewAd0;
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.m_activity_main);
 
         //Getting the view reference
         testQuestion = findViewById(R.id.testQuestion);

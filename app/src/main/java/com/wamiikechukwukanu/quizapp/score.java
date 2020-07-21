@@ -65,8 +65,8 @@ public class score extends AppCompatActivity {
 
     public void tryAgain(View view) {
 
-        Intent intent = new Intent(this, overView.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, overView.class);
+//        startActivity(intent);
     }
 
     public void whatsapp(View view) {

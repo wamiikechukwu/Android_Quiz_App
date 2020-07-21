@@ -1,19 +1,20 @@
 package com.wamiikechukwukanu.quizapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.wamiikechukwukanu.quizapp.databinding.ActivityViewPager2ActivityBinding
+import com.wamiikechukwukanu.quizapp.databinding.ActivityOnboardingBinding
 import com.wamiikechukwukanu.quizapp.onboarding.OnboardingDataItems
 import com.wamiikechukwukanu.quizapp.onboarding.OnboardingPageAdapter
 
 class OnboardingActivity : AppCompatActivity() {
 
     //    THE OBJECT I WILL USE FOR THE DATABINDING
-    lateinit var binding: ActivityViewPager2ActivityBinding
+    lateinit var binding: ActivityOnboardingBinding
 
     //    THE ADAPTER VARIABLE
     private lateinit var mPagerAdapter: OnboardingPageAdapter
@@ -34,7 +35,7 @@ class OnboardingActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
 //        ASSOCIATING THE LAYOUT FILE WITH THE ACTIVITY
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_view_pager2_activity)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_onboarding)
 
 //      THIS CONTAINS THE DATA MODEL (ARRAYLIST)
         settingUpTheDataModel()
@@ -47,6 +48,10 @@ class OnboardingActivity : AppCompatActivity() {
 
 //        SETTING PADDING TO SHOW THE  NEXT CARD'S
         binding.viewPager.setPadding(40, 0, 40, 0)
+
+        if (...){
+
+        }
 
 //        ONCLICK OF THE BUTTON, MOVE TO THE NEXT VIEW PAGE
         binding.onboardNextButton.setOnClickListener {
@@ -71,6 +76,11 @@ class OnboardingActivity : AppCompatActivity() {
 
                 settingTheViews()
             }
+        }
+
+        binding.getStarted.setOnClickListener {
+            intent = Intent(this@OnboardingActivity, MainActivity::class.java)
+            startActivity(intent)
         }
 
 

@@ -49,9 +49,9 @@ class OnboardingActivity : AppCompatActivity() {
 //        SETTING PADDING TO SHOW THE  NEXT CARD'S
         binding.viewPager.setPadding(40, 0, 40, 0)
 
-        if (...){
-
-        }
+//        if (...){
+//
+//        }
 
 //        ONCLICK OF THE BUTTON, MOVE TO THE NEXT VIEW PAGE
         binding.onboardNextButton.setOnClickListener {
@@ -84,9 +84,10 @@ class OnboardingActivity : AppCompatActivity() {
         }
 
 
-//        TODO
 //        ONCLICK OF THE SKIP... SHOW THE NEXT ACTIVITY
-        binding.onboardSkipText.setOnClickListener { }
+        binding.onboardSkipText.setOnClickListener {
+            startActivity(Intent(this@OnboardingActivity, MainActivity::class.java))
+        }
 
 
     }
@@ -97,7 +98,7 @@ class OnboardingActivity : AppCompatActivity() {
 //      SETUP THE DATAMODEL
         mModel = ArrayList()
         mModel.add(OnboardingDataItems(R.drawable.africa_map, "Welcome to Africa", "Our Home", R.color.first_color))
-        mModel.add(OnboardingDataItems(R.drawable.africa_map, "Explore the Contitent", "Find the paradise", R.color.second_color))
+        mModel.add(OnboardingDataItems(R.drawable.africa_map, "Explore the Continent", "Find the paradise", R.color.second_color))
         mModel.add(OnboardingDataItems(R.drawable.africa_map, "See the Countries", "Play Games", R.color.third_color))
 
     }

@@ -55,39 +55,68 @@
 
         <View
             android:id="@+id/first_box_view"
+            style="@style/first_box_design"
             android:background="@drawable/first_box"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            style="@style/first_box_design"
             app:layout_constraintTop_toBottomOf="@id/card_button" />
 
         <TextView
+            android:id="@+id/first_header_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="28dp"
             android:fontFamily="@font/gotham_narrow_bold"
-            android:text="Test Questions"
+            android:text="Test Questions "
             android:textColor="#fff"
             android:textSize="25sp"
             app:layout_constraintStart_toStartOf="@id/first_box_view"
             app:layout_constraintTop_toTopOf="@id/first_box_view" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
+            app:layout_constraintStart_toStartOf="@id/first_box_view"
+            app:layout_constraintTop_toBottomOf="@id/first_header_text" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/engineers"
+            app:layout_constraintBottom_toBottomOf="@id/first_box_view"
+            app:layout_constraintEnd_toEndOf="@id/first_box_view"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+            app:layout_constraintTop_toTopOf="@id/first_box_view" />
+
         <View
             android:id="@+id/second_box_view"
             style="@style/first_box_design"
+            android:background="@drawable/second_box"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:background="@drawable/second_box"
             app:layout_constraintTop_toBottomOf="@id/first_box_view" />
 
         <View
             android:id="@+id/third_box_view"
             style="@style/first_box_design"
+            android:layout_marginBottom="36dp"
             android:background="@drawable/third_box"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/second_box_view" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="222dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

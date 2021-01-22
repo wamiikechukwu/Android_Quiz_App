@@ -28,13 +28,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="Design a bit of the MainActivity.kt">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/second_box.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/third_box.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/engineers.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/first_box.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/first_box.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[d52ecee50407]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -103,15 +100,15 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.wamiikechukwukanu.quizapp" />
     </key>
-    <key name="android.template.401442714">
-      <recent name="com.wamiikechukwukanu.quizapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wami's\Desktop\PROJECTS\PRODUCTION\Android Quiz App\app\src\main\res\drawable" />
+      <recent name="C:\Users\DELL\Desktop\Android Apps Files\Africa Quiz App\app\src\main\res\font" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Wami's\Desktop\PROJECTS\PRODUCTION\Android Quiz App\app\src\main\res\drawable" />
-      <recent name="C:\Users\DELL\Desktop\Android Apps Files\Africa Quiz App\app\src\main\res\font" />
+    <key name="android.template.401442714">
+      <recent name="com.wamiikechukwukanu.quizapp" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -486,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611331533287</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Design a bit of the MainActivity.kt">
+      <created>1611352765529</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1611352765529</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

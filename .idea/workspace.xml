@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidGradleBuildConfiguration">
-    <option name="COMMAND_LINE_OPTIONS" value="--offline" />
-  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
@@ -30,11 +27,26 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="Started working on this project, sucessfully intergrate intent in the skip text in the onboarding activity">
+    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="Successsfully done working on the OnboardingActivity.kt">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/main_activity_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/main_activity_card_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pyramids.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/south_africa_flag.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/OnboardingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/OnboardingActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/appsbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/example3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +56,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[d52ecee50407]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -71,8 +80,8 @@
         <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
         <option value="valueResourceFile" />
-        <option value="resourceFile" />
         <option value="JUnit4 Test Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -96,8 +105,8 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/wamiikechukwukanu/quizapp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/font" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.343437214">
@@ -106,14 +115,15 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.wamiikechukwukanu.quizapp" />
     </key>
-    <key name="android.template.401442714">
-      <recent name="com.wamiikechukwukanu.quizapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wami's\Desktop\PROJECTS\PRODUCTION\Android Quiz App\app\src\main\res\drawable" />
+      <recent name="C:\Users\DELL\Desktop\Android Apps Files\Africa Quiz App\app\src\main\res\font" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\DELL\Desktop\Android Apps Files\Africa Quiz App\app\src\main\res\font" />
+    <key name="android.template.401442714">
+      <recent name="com.wamiikechukwukanu.quizapp" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -467,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611303999227</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Successsfully done working on the OnboardingActivity.kt">
+      <created>1611311912991</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1611311912991</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,39 +515,44 @@
     <MESSAGE value="did some tweak to the onboarding acreen by changing the tablayout color to transparent" />
     <MESSAGE value="Refactoring the codes" />
     <MESSAGE value="Started working on this project, sucessfully intergrate intent in the skip text in the onboarding activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started working on this project, sucessfully intergrate intent in the skip text in the onboarding activity" />
+    <MESSAGE value="Successsfully done working on the OnboardingActivity.kt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Successsfully done working on the OnboardingActivity.kt" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="263" y="119" key="AndroidCreateResourceFileDialog" timestamp="1611325623190">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1611325623190" />
     <state x="227" y="0" key="CommitChangelistDialog2" timestamp="1611303874302">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="227" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1611303874302" />
-    <state width="1323" height="374" key="GridCell.Tab.0.bottom" timestamp="1611310569065">
+    <state width="1323" height="374" key="GridCell.Tab.0.bottom" timestamp="1611324213748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611310569065" />
-    <state width="1323" height="374" key="GridCell.Tab.0.center" timestamp="1611310569064">
+    <state width="1323" height="374" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611324213748" />
+    <state width="1323" height="374" key="GridCell.Tab.0.center" timestamp="1611324213748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611310569064" />
-    <state width="1323" height="374" key="GridCell.Tab.0.left" timestamp="1611310569064">
+    <state width="1323" height="374" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611324213748" />
+    <state width="1323" height="374" key="GridCell.Tab.0.left" timestamp="1611324213747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611310569064" />
-    <state width="1323" height="374" key="GridCell.Tab.0.right" timestamp="1611310569065">
+    <state width="1323" height="374" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611324213747" />
+    <state width="1323" height="374" key="GridCell.Tab.0.right" timestamp="1611324213748">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611310569065" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1611304920490">
+    <state width="1323" height="374" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611324213748" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1611318654214">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1611304920490" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611304121867">
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1611318654214" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611311915973">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611304121867" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611311915973" />
   </component>
 </project>

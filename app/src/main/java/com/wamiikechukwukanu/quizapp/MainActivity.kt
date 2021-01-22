@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
 //        HIDE THE SUPPORT ACTION BAR IN THIS ACTIVITY
-        supportActionBar?.title = ""
+        supportActionBar?.hide()
 
         setContentView(R.layout.activity_main)
     }

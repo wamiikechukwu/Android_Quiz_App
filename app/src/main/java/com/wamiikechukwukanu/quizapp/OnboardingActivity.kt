@@ -124,8 +124,8 @@ class OnboardingActivity : AppCompatActivity() {
 //      SETUP THE DATAMODEL
         mModel = ArrayList()
         mModel.add(OnboardingDataItems(R.drawable.africa_map, "Welcome to Africa", "Our Home", R.color.first_color))
-        mModel.add(OnboardingDataItems(R.drawable.africa_map, "Explore the Continent", "Find the paradise", R.color.second_color))
-        mModel.add(OnboardingDataItems(R.drawable.africa_map, "See the Countries", "Play Games", R.color.third_color))
+        mModel.add(OnboardingDataItems(R.drawable.pyramids, "Explore the Continent", "Find the paradise", R.color.second_color))
+        mModel.add(OnboardingDataItems(R.drawable.south_africa_flag, "See the Countries", "Learn their culture", R.color.third_color))
 
     }
 

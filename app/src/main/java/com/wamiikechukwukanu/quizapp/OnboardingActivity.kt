@@ -1,6 +1,7 @@
 package com.wamiikechukwukanu.quizapp
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import android.view.animation.Animation
@@ -25,11 +26,18 @@ class OnboardingActivity : AppCompatActivity() {
     //    POSITION OF THE VIEWPAGER ADAPTER
     var viewPagerAdapterPosition = 0
 
-    //    THE ANIMAL
+    //    THE ANIMATION
     lateinit var mAnimation: Animation
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+//        GETTING THE ONBOARDING STATE
+        if (restoredOnboardingState()) {
+            startActivity(Intent(this@OnboardingActivity, MainActivity::class.java))
+//            STOPS THE PREVIOUS ACTIVITY
+            finish()
+        }
 
 //        HIDE THE ACTION BAR
         supportActionBar?.hide()
@@ -48,10 +56,6 @@ class OnboardingActivity : AppCompatActivity() {
 
 //        SETTING PADDING TO SHOW THE  NEXT CARD'S
         binding.viewPager.setPadding(40, 0, 40, 0)
-
-//        if (...){
-//
-//        }
 
 //        ONCLICK OF THE BUTTON, MOVE TO THE NEXT VIEW PAGE
         binding.onboardNextButton.setOnClickListener {
@@ -81,15 +85,37 @@ class OnboardingActivity : AppCompatActivity() {
         binding.getStarted.setOnClickListener {
             intent = Intent(this@OnboardingActivity, MainActivity::class.java)
             startActivity(intent)
+            saveOnboardingState()
+            finish()
         }
 
 
 //        ONCLICK OF THE SKIP... SHOW THE NEXT ACTIVITY
         binding.onboardSkipText.setOnClickListener {
             startActivity(Intent(this@OnboardingActivity, MainActivity::class.java))
+            saveOnboardingState()
+            finish()
         }
 
 
+    }
+
+    //   SAVE THE STATE OF THE ONBOARDING PROCESS
+    private fun saveOnboardingState() {
+        //    SHARED PREFERENCES TO STORE THE STATE OF THE ONBOARDING
+        val sharedPreferences: SharedPreferences = this.getSharedPreferences("onboarding_state", MODE_PRIVATE)
+//  STORING VALUES INTO THE SHARED PREFERENCE
+        val editor: SharedPreferences.Editor = sharedPreferences.edit()
+        editor.putBoolean("state", true)
+        editor.apply()
+        editor.commit()
+    }
+
+    private fun restoredOnboardingState(): Boolean {
+        //    SHARED PREFERENCES TO STORE THE STATE OF THE ONBOARDING
+        val sharedPreferences: SharedPreferences = this.getSharedPreferences("onboarding_state", MODE_PRIVATE)
+        val isOboardingOpenBefore: Boolean = sharedPreferences.getBoolean("state", false)
+        return isOboardingOpenBefore
     }
 
     //    FOR THE DATAMODEL/ARRAYLIST

@@ -25,26 +25,50 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/card_button"
-            android:layout_width="300dp"
+            android:id="@+id/view_button"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:background="@drawable/main_activity_button"
+            android:text="How to Play?"
             app:layout_constraintBottom_toTopOf="@id/guideline"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/guideline" />
 
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/emoji"
+            android:translationZ="100dp"
+            app:layout_constraintBottom_toBottomOf="@id/view_button"
+            app:layout_constraintEnd_toEndOf="@id/view_button"
+            app:layout_constraintTop_toTopOf="@id/view_button" />
+
         <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:layout_constraintBottom_toTopOf="@id/card_button"
+            android:id="@+id/box_profile_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toTopOf="@id/box_profile_name"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
             app:srcCompat="@drawable/avatar_one"
             app:strokeColor="#fff"
-            app:strokeWidth="2dp" />
+            app:strokeWidth="1dp" />
+
+        <TextView
+            android:id="@+id/box_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Welcome, John Doe"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toTopOf="@id/view_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/box_profile_picture" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -55,31 +79,24 @@
 
         <View
             android:id="@+id/first_box_view"
-            style="@style/first_box_design"
+            style="@style/box_design"
+            android:layout_marginTop="16dp"
             android:background="@drawable/first_box"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_button" />
+            app:layout_constraintTop_toBottomOf="@id/view_button" />
 
         <TextView
             android:id="@+id/first_header_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="28dp"
-            android:fontFamily="@font/gotham_narrow_bold"
+            style="@style/box_header_text"
             android:text="Test Questions "
-            android:textColor="#fff"
-            android:textSize="25sp"
             app:layout_constraintStart_toStartOf="@id/first_box_view"
             app:layout_constraintTop_toTopOf="@id/first_box_view" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            android:text="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+            android:id="@+id/first_description_text"
+            style="@style/box_description_text"
+            android:text="Test your brain to retrieve data and ensures that it becomes embedded for the future"
             app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
             app:layout_constraintStart_toStartOf="@id/first_box_view"
             app:layout_constraintTop_toBottomOf="@id/first_header_text" />
@@ -87,23 +104,60 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:src="@drawable/engineers"
+            android:src="@drawable/first_box_pic"
             app:layout_constraintBottom_toBottomOf="@id/first_box_view"
             app:layout_constraintEnd_toEndOf="@id/first_box_view"
             app:layout_constraintStart_toStartOf="@id/guideline_vertical"
             app:layout_constraintTop_toTopOf="@id/first_box_view" />
 
+        <Button
+            style="@style/box_btn"
+            android:text="Start Quiz"
+            app:layout_constraintStart_toStartOf="@id/first_box_view"
+            app:layout_constraintTop_toBottomOf="@id/first_description_text" />
+
         <View
             android:id="@+id/second_box_view"
-            style="@style/first_box_design"
+            style="@style/box_design"
             android:background="@drawable/second_box"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/first_box_view" />
 
+        <TextView
+            android:id="@+id/second_header_text"
+            style="@style/box_header_text"
+            android:text="Daily Quiz"
+            app:layout_constraintStart_toStartOf="@id/second_box_view"
+            app:layout_constraintTop_toTopOf="@id/second_box_view" />
+
+        <TextView
+            android:id="@+id/second_description_text"
+            style="@style/box_description_text"
+            android:text="Studies shows that learning everyday improves the brain as well as taking daily quizzes"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
+            app:layout_constraintStart_toStartOf="@id/second_box_view"
+            app:layout_constraintTop_toBottomOf="@+id/second_header_text" />
+
+        <Button
+            style="@style/box_btn"
+            android:text="Ready"
+            app:layout_constraintStart_toStartOf="@id/second_box_view"
+            app:layout_constraintTop_toBottomOf="@id/second_description_text" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/daily_quiz_pic"
+            app:layout_constraintBottom_toBottomOf="@id/second_box_view"
+            app:layout_constraintEnd_toEndOf="@id/second_box_view"
+            app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+            app:layout_constraintTop_toTopOf="@id/second_box_view" />
+
+
         <View
             android:id="@+id/third_box_view"
-            style="@style/first_box_design"
+            style="@style/box_design"
             android:layout_marginBottom="36dp"
             android:background="@drawable/third_box"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -116,7 +170,37 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="222dp" />
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/third_header_text"
+            style="@style/box_header_text"
+            android:text="Challenge"
+            app:layout_constraintStart_toStartOf="@id/third_box_view"
+            app:layout_constraintTop_toTopOf="@id/third_box_view" />
+
+        <TextView
+            android:id="@+id/third_description_text"
+            style="@style/box_description_text"
+            android:text="Challenging yourself to learn new things reduces the chance of having mental fatigue"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
+            app:layout_constraintStart_toStartOf="@id/third_box_view"
+            app:layout_constraintTop_toBottomOf="@id/third_header_text" />
+
+        <Button
+            style="@style/box_btn"
+            android:text="Start"
+            app:layout_constraintStart_toStartOf="@id/third_box_view"
+            app:layout_constraintTop_toBottomOf="@id/third_description_text" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/third_box_pic"
+            app:layout_constraintBottom_toBottomOf="@id/third_box_view"
+            app:layout_constraintEnd_toEndOf="@id/third_box_view"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+            app:layout_constraintTop_toTopOf="@id/third_box_view" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

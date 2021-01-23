@@ -3,6 +3,14 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
+    signingConfigs {
+        AfricaQuizApp {
+            storeFile file('C:\\Users\\Wami\'s\\Desktop\\MAIN\\MY ANDROID APP DEV\\AfricaQuizApp Data\\AfricaQuizApp Secret Key\\mySpecialKey.jks')
+            storePassword 'Aleruchivera7470'
+            keyAlias 'Aleruchivera7470'
+            keyPassword 'Aleruchivera7470'
+        }
+    }
     dataBinding{
         enabled = true
     }

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "878788887967-p9hlejftv8bd7ccmugmbe3h71q8grsit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wamiikechukwukanu.quizapp",
+            "certificate_hash": "f5bd3d87d4c9df35dfdbca8a48ff47ed23e5ed9b"
+          }
+        },
+        {
           "client_id": "878788887967-3sps9jh7tb98459bp1bd4ij1bsiip0k3.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -33,7 +41,8 @@
             }
           ]
         }
-      }
+      },
+      "admob_app_id": "ca-app-pub-9646388292265496~7436300103"
     }
   ],
   "configuration_version": "1"

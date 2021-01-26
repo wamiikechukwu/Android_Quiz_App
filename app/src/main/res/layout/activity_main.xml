@@ -21,8 +21,25 @@
             android:focusable="true"
             app:layout_constraintBottom_toBottomOf="@id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/sigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/synebold"
+            android:onClick="signin"
+            android:padding="15dp"
+            android:text="SIGN IN"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="@id/box_profile_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/box_profile_picture"
+            app:layout_constraintTop_toTopOf="@id/box_profile_picture" />
+
 
         <Button
             android:id="@+id/view_button"
@@ -54,7 +71,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
-            app:srcCompat="@drawable/avatar_one"
             app:strokeColor="#fff"
             app:strokeWidth="1dp" />
 

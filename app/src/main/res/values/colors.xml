@@ -5,7 +5,6 @@
     <color name="colorAccent">#000000</color>
 
     <!--CUSTOM COLORS FOR OUR VIEWS-->
-    <color name="customColors">#730707</color>
 
     <!--COLORS FOR THE ONBOARDING SCREEN-->
     <color name="first_color">#FF6D00</color>

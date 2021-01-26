@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="overViewMainButton">300dp</dimen>
     <dimen name="activityMain_Top">10dp</dimen>
-    <dimen name="activityMain">20dp</dimen>
-    <dimen name="cardTopMargin">10dp</dimen>
-    <dimen name="cardMargin">10dp</dimen>
     <dimen name="onboarding_marginTop">24dp</dimen>
     <dimen name="onboarding_marginStart">32dp</dimen>
     <dimen name="onboarding_next_button_corner_size">4dp</dimen>

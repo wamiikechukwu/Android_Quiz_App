@@ -11,6 +11,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
+    //    SHARED PREFERENCES
     lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
         editor.apply()
         editor.commit()
 
+//        METHODS
         setProfilePicture()
     }
 
@@ -35,9 +37,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setProfilePicture() {
-
-        if (!(sharedPreferences.getBoolean("user_inserted", true))) {
+//        CHECK IF THE USER HAS LOG IN BEFORE
+//        USE THE SHARED PREFERENCES TO STORE USERS STATE
+        if (!(sharedPreferences.getBoolean("user_inserted", true)) || sharedPreferences.getString("user_photo_url", "null") == "null") {
+//            IF THE SHARED PREFERENCES KEY IS IT TOO FALSE THE USE THE LOCAL PICTURE
             Glide.with(this).load(R.drawable.avatar).into(box_profile_picture)
+        } else {
+            Glide.with(this).load(sharedPreferences.getString("user_photo_url", "null")).into(box_profile_picture)
         }
     }
 }

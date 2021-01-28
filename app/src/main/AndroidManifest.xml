@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SigninActivity"></activity>
+        <activity android:name=".SignupActivity"></activity>
+        <activity android:name=".SigninActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".OnboardingActivity">
             <intent-filter>
@@ -77,7 +78,6 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

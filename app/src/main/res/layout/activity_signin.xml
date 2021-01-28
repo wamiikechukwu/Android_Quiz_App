@@ -70,6 +70,7 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="25dp"
+                android:focusable="true"
                 android:hint="Email"
                 app:hintAnimationEnabled="true"
                 app:layout_constraintBottom_toTopOf="@id/password_layout"
@@ -92,9 +93,10 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="25dp"
+                android:focusable="true"
                 android:hint="Password"
                 app:hintTextColor="@color/colorAccent"
-                app:layout_constraintBottom_toTopOf="@id/signin_btn"
+                app:layout_constraintBottom_toTopOf="@id/forgot_password"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/email_layout"
@@ -108,22 +110,36 @@
                     android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/synebold"
+                android:text="Forgot Password?"
+                android:textColor="#000"
+                app:layout_constraintBottom_toTopOf="@id/signin_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/password_layout" />
+
             <Button
                 android:id="@+id/signin_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="50dp"
                 android:background="@drawable/button_default_shape"
                 android:clickable="true"
                 android:focusable="true"
                 android:fontFamily="@font/synebold"
+                android:onClick="EmailLoginInButton"
                 android:text="GO!"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
 
-                app:layout_constraintTop_toBottomOf="@id/password_layout" />
+                app:layout_constraintTop_toBottomOf="@id/forgot_password" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -167,7 +183,6 @@
         android:id="@+id/sign_text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
         android:fontFamily="@font/synebold"
         android:text="You Do Not Have an Account?"
         android:textColor="@color/colorAccent"
@@ -183,8 +198,9 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/synebold"
         android:padding="10dp"
+        android:onClick="createAccountButton"
         android:text="Create One"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

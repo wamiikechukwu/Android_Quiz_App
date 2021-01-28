@@ -47,12 +47,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="validated the sign up fields">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_arrow_drop.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/login_picture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/syne_extra_bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SignupActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sign_up_picture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_signup.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SigninActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SigninActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_signin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_signin.xml" afterDir="false" />
     </list>
@@ -116,7 +117,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/wamiikechukwukanu/quizapp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="multi-representation-previewC:/Users/Wami's/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/imageview/ShapeableImageView.java_selected" value="Custom views" />
     <property name="multi-representation-previewC:/Users/Wami's/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/textfield/TextInputLayout.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -141,9 +142,12 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="android.template.600861778">
+      <recent name="com.wamiikechukwukanu.quizapp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Wami's\Desktop\PROJECTS\PRODUCTION\Android Quiz App\app\src\main\res\font" />
       <recent name="C:\Users\Wami's\Desktop\PROJECTS\PRODUCTION\Android Quiz App\app\src\main\res\drawable" />
+      <recent name="C:\Users\Wami's\Desktop\PROJECTS\PRODUCTION\Android Quiz App\app\src\main\res\font" />
       <recent name="C:\Users\Wami's\Desktop\PROJECTS\PRODUCTION\Android Quiz App\app" />
       <recent name="C:\Users\DELL\Desktop\Android Apps Files\Africa Quiz App\app\src\main\res\font" />
     </key>
@@ -678,22 +682,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611438121898" />
-    <state width="1323" height="374" key="GridCell.Tab.0.bottom" timestamp="1611780930647">
+    <state width="1323" height="374" key="GridCell.Tab.0.bottom" timestamp="1611836318604">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611780930647" />
-    <state width="1323" height="374" key="GridCell.Tab.0.center" timestamp="1611780930647">
+    <state width="1323" height="374" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611836318604" />
+    <state width="1323" height="374" key="GridCell.Tab.0.center" timestamp="1611836318603">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611780930647" />
-    <state width="1323" height="374" key="GridCell.Tab.0.left" timestamp="1611780930647">
+    <state width="1323" height="374" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611836318603" />
+    <state width="1323" height="374" key="GridCell.Tab.0.left" timestamp="1611836318603">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611780930647" />
-    <state width="1323" height="374" key="GridCell.Tab.0.right" timestamp="1611780930647">
+    <state width="1323" height="374" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611836318603" />
+    <state width="1323" height="374" key="GridCell.Tab.0.right" timestamp="1611836318603">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611780930647" />
+    <state width="1323" height="374" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611836318603" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1611318654214">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -42,14 +42,20 @@ class SigninActivity : AppCompatActivity() {
             password_edit_text.error = "Password too short"
             password_edit_text.requestFocus()
         } else {
+            progress_bar.visibility = View.VISIBLE
             auth.signInWithEmailAndPassword(userLoginEmail, userLoginPassword)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
+                            progress_bar.visibility = View.INVISIBLE
                             // Sign in success, update UI with the signed-in user's information
                             val user = auth.currentUser
+                            Toast.makeText(baseContext, "Sign In Success",
+                                    Toast.LENGTH_LONG).show()
+
                         } else {
+                            progress_bar.visibility = View.VISIBLE
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(baseContext, "Authentication failed.",
+                            Toast.makeText(baseContext, "Sign In Failed",
                                     Toast.LENGTH_LONG).show()
                             // ...
                         }

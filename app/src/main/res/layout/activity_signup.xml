@@ -39,7 +39,6 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="100dp"
         android:elevation="30dp"
         app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -103,7 +102,8 @@
                 app:layout_constraintBottom_toTopOf="@id/confirm_password_edit_text_layout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/signup_email_edit_text_layout">
+                app:layout_constraintTop_toBottomOf="@id/signup_email_edit_text_layout"
+                app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/signup_password_edit_text"
@@ -125,7 +125,8 @@
                 app:layout_constraintBottom_toTopOf="@id/sign_up_btn"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/signup_password_edit_text_layout">
+                app:layout_constraintTop_toBottomOf="@id/signup_password_edit_text_layout"
+                app:passwordToggleEnabled="true">
 
                 <EditText
                     android:id="@+id/confirm_password_edit_text"
@@ -140,7 +141,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="25dp"
                 android:background="@drawable/button_default_shape"
                 android:focusable="true"
                 android:onClick="signUpButton"
@@ -148,10 +149,22 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/signup_password_edit_text_layout" />
+                app:layout_constraintTop_toBottomOf="@id/confirm_password_edit_text_layout" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:translationZ="1dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

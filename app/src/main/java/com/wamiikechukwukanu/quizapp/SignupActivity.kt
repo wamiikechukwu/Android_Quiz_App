@@ -64,15 +64,18 @@ class SignupActivity : AppCompatActivity() {
             confirm_password_edit_text.error = "Does not Match"
             confirm_password_edit_text.requestFocus()
         } else {
-            auth.createUserWithEmailAndPassword(userDisplayName, userEmail)
+            progress_bar.visibility = View.VISIBLE
+            auth.createUserWithEmailAndPassword(userEmail, confirmPassword)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
                             // Sign in success, update UI with the signed-in user's information
-                            Toast.makeText(this, "Sign  Success", Toast.LENGTH_LONG).show()
+                            progress_bar.visibility = View.INVISIBLE
+                            Toast.makeText(this, "Sign Up Success", Toast.LENGTH_LONG).show()
                             val user = auth.currentUser
                         } else {
+                            progress_bar.visibility = View.INVISIBLE
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(baseContext, "Authentication failed.",
+                            Toast.makeText(baseContext, "Sign Up",
                                     Toast.LENGTH_SHORT).show()
                         }
 

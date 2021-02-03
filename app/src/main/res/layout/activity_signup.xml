@@ -12,10 +12,24 @@
         android:layout_height="150dp"
         android:src="@drawable/sign_up_picture"
         android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintBottom_toTopOf="@id/sigup_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sigup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/synebold"
+        android:text="Sign Up"
+        android:textColor="#fff"
+        android:textSize="23sp"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_picture" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -30,8 +44,10 @@
         android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -43,7 +59,7 @@
         app:cardCornerRadius="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sign_up_picture">
+        app:layout_constraintTop_toBottomOf="@id/sigup_text">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

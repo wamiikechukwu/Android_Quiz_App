@@ -19,7 +19,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -46,9 +46,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="validated the sign up fields">
+    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="About to work on the Main Activity">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SigninActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SigninActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SignupActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SignupActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_signin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_signin.xml" afterDir="false" />
@@ -71,6 +72,12 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -84,12 +91,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="layoutResourceFile" />
-        <option value="Kotlin Class" />
         <option value="valueResourceFile" />
         <option value="JUnit4 Test Class" />
         <option value="resourceFile" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -105,6 +116,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ApkExportedModule" value="Android_Quiz_App.app" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -114,13 +126,13 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/wamiikechukwukanu/quizapp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="multi-representation-previewC:/Users/Wami's/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/imageview/ShapeableImageView.java_selected" value="Custom views" />
     <property name="multi-representation-previewC:/Users/Wami's/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/textfield/TextInputLayout.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Signing Configs" />
@@ -310,14 +322,56 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Android Quiz App [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Android Quiz App:app [signingReport]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/app" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Android App.app" />
       <item itemvalue="Android App.myquizapp" />
       <item itemvalue="Android JUnit.ViewPager2ActivityTest.shouldReturnABoolean" />
       <item itemvalue="Gradle.Africa Quiz App [dependencies]" />
+      <item itemvalue="Gradle.Android Quiz App [signingReport]" />
+      <item itemvalue="Gradle.Android Quiz App:app [signingReport]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Android Quiz App:app [signingReport]" />
+        <item itemvalue="Gradle.Android Quiz App [signingReport]" />
         <item itemvalue="Android JUnit.ViewPager2ActivityTest.shouldReturnABoolean" />
         <item itemvalue="Gradle.Africa Quiz App [dependencies]" />
       </list>
@@ -579,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611838623817</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Done Validation">
+      <created>1611845418639</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1611845418639</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -648,7 +709,9 @@
     <MESSAGE value="Design a bit of the MainActivity.kt" />
     <MESSAGE value="Added google authentication to the app" />
     <MESSAGE value="validated the sign up fields" />
-    <option name="LAST_COMMIT_MESSAGE" value="validated the sign up fields" />
+    <MESSAGE value="Done Validation" />
+    <MESSAGE value="About to work on the Main Activity" />
+    <option name="LAST_COMMIT_MESSAGE" value="About to work on the Main Activity" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -682,34 +745,44 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1611356142095" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1611438121898">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="810" y="148" width="424" height="491" key="FileChooserDialogImpl" timestamp="1612164662898">
+      <screen x="0" y="27" width="2390" height="741" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611438121898" />
-    <state width="1323" height="374" key="GridCell.Tab.0.bottom" timestamp="1611836318604">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="810" y="148" width="424" height="491" key="FileChooserDialogImpl/0.27.2390.741@0.27.2390.741" timestamp="1612164662898" />
+    <state width="1320" height="342" key="GridCell.Tab.0.bottom" timestamp="1612346356729">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611836318604" />
-    <state width="1323" height="374" key="GridCell.Tab.0.center" timestamp="1611836318603">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="374" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611850251939" />
+    <state width="1320" height="342" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1612346356729" />
+    <state width="1248" height="342" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
+    <state width="1320" height="342" key="GridCell.Tab.0.center" timestamp="1612346356729">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611836318603" />
-    <state width="1323" height="374" key="GridCell.Tab.0.left" timestamp="1611836318603">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="374" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611850251938" />
+    <state width="1320" height="342" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1612346356729" />
+    <state width="1248" height="342" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
+    <state width="1320" height="342" key="GridCell.Tab.0.left" timestamp="1612346356728">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611836318603" />
-    <state width="1323" height="374" key="GridCell.Tab.0.right" timestamp="1611836318603">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="374" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611850251938" />
+    <state width="1320" height="342" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1612346356728" />
+    <state width="1248" height="342" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1611961817347" />
+    <state width="1320" height="342" key="GridCell.Tab.0.right" timestamp="1612346356729">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1323" height="374" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611836318603" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1611318654214">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1323" height="374" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611850251939" />
+    <state width="1320" height="342" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1612346356729" />
+    <state width="1248" height="342" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
+    <state x="184" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1612347396850">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1611318654214" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611838631340">
+    <state x="184" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1612347396850" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611845428211">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611838631340" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611845428211" />
     <state x="363" y="98" key="VcsDiffUtil.ChangesDialog" timestamp="1611356048209">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -726,9 +799,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="459" y="136" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1611658777114" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1611591203722">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="393" y="76" width="672" height="690" key="run.anything.popup" timestamp="1611952440790">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1611591203722" />
+    <state x="393" y="76" width="672" height="690" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1611952440790" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1611851233920">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1611851233920" />
   </component>
 </project>

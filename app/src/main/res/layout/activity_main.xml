@@ -8,9 +8,9 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_activity_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:id="@+id/main_activity_layout"
         android:background="#E3E3E3">
 
         <View
@@ -32,9 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/synebold"
-            android:onClick="signin"
             android:padding="15dp"
-            android:text="SIGN IN"
             android:textColor="#fff"
             app:layout_constraintBottom_toBottomOf="@id/box_profile_picture"
             app:layout_constraintEnd_toEndOf="parent"
@@ -72,6 +70,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
+            app:srcCompat="@drawable/avatar"
             app:strokeColor="#fff"
             app:strokeWidth="1dp" />
 
@@ -80,12 +79,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gotham_bold"
-            android:text="Welcome, John Doe"
+            android:text="Welcome,"
             android:textColor="#fff"
             app:layout_constraintBottom_toTopOf="@id/view_button"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/box_profile_name_placeholder"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/box_profile_picture" />
+
+        <TextView
+            android:id="@+id/box_profile_name_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="John Doe"
+            android:textColor="#fff"
+            app:layout_constraintBaseline_toBaselineOf="@id/box_profile_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/box_profile_name" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -159,6 +171,7 @@
         <Button
             style="@style/box_btn"
             android:text="Ready"
+            android:onClick="dailyQuiz"
             app:layout_constraintStart_toStartOf="@id/second_box_view"
             app:layout_constraintTop_toBottomOf="@id/second_description_text" />
 

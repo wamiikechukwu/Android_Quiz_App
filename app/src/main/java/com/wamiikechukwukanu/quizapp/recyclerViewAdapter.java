@@ -13,11 +13,11 @@ import java.util.ArrayList;
 
 public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapter.recyclerViewHolder> {
 
-    private ArrayList<dataModel> mDataModels;
+    private final ArrayList<mdataModel> mMdataModels;
 
-    public recyclerViewAdapter(ArrayList<dataModel> dataModels) {
+    public recyclerViewAdapter(ArrayList<mdataModel> mdataModels) {
 
-        mDataModels = dataModels;
+        mMdataModels = mdataModels;
     }
 
     @NonNull
@@ -32,7 +32,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull recyclerViewHolder recyclerViewHolder, int i) {
-        dataModel currentItem = mDataModels.get(i);
+        mdataModel currentItem = mMdataModels.get(i);
         recyclerViewHolder.mImageView.setImageResource(currentItem.getmImageResource());
         recyclerViewHolder.mTextView.setText(currentItem.getmText());
 
@@ -41,7 +41,7 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
     @Override
     public int getItemCount() {
 
-        return mDataModels.size();
+        return mMdataModels.size();
     }
 
     public static class recyclerViewHolder extends RecyclerView.ViewHolder {

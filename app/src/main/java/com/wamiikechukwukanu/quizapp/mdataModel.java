@@ -1,11 +1,11 @@
 package com.wamiikechukwukanu.quizapp;
 
-public class dataModel {
+public class mdataModel {
 
-    private int mImageResource;
-    private String mText;
+    private final int mImageResource;
+    private final String mText;
 
-    public dataModel(int mImageResource, String mText) {
+    public mdataModel(int mImageResource, String mText) {
 
         this.mImageResource = mImageResource;
         this.mText = mText;

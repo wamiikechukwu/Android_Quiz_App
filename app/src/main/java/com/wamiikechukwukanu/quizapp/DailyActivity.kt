@@ -78,5 +78,6 @@ class DailyActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
         adapter.notifyDataSetChanged()
 
+
     }
 }

@@ -158,7 +158,7 @@ class MainActivity : AppCompatActivity() {
             val userNameReference = db.collection("AfricanQuizAppUsers").document(user.email.toString()).get()
                     .addOnCompleteListener {
                         if (it.isSuccessful) {
-                            val name = it.result.get("displayName") as String? ?: "John Doe"
+                            val name = it.result.get("email") as String? ?: "John Doe"
                             box_profile_name_placeholder.text = name
                         }
                     }

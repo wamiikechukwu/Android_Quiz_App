@@ -3,9 +3,9 @@
   <component name="AndroidConfiguredLogFilters">
     <filters>
       <filter>
-        <option name="logLevel" value="verbose" />
+        <option name="logLevel" value="debug" />
         <option name="logMessagePattern" value="" />
-        <option name="logTagPattern" value="FIREBASE" />
+        <option name="logTagPattern" value="WAMI" />
         <option name="name" value="Unnamed-0" />
         <option name="packageNamePattern" value="" />
       </filter>
@@ -19,7 +19,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
   </component>
   <component name="BranchesTreeState">
     <expand>
@@ -27,27 +27,25 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:dev" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="Back to work" />
+    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="Back to work">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/quizlogic/QuizLogic.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/DailyActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/DailyActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/dailyactivity/DailyActivityViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/dailyactivity/DailyActivityViewModel.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,6 +94,11 @@
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -651,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616876025817</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Back to work">
+      <created>1616876261986</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1616876261986</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -665,7 +675,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
@@ -778,29 +788,29 @@
     <state x="1417" y="208" width="374" height="498" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1024.768@0.27.1366.741" timestamp="1612943920283" />
     <state x="463" y="148" width="374" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1612526504376" />
     <state x="810" y="148" width="424" height="491" key="FileChooserDialogImpl/0.27.2390.741@0.27.2390.741" timestamp="1612164662898" />
-    <state width="1320" height="342" key="GridCell.Tab.0.bottom" timestamp="1612346356729">
+    <state width="1320" height="342" key="GridCell.Tab.0.bottom" timestamp="1617489159315">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1323" height="374" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611850251939" />
-    <state width="1320" height="342" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1612346356729" />
+    <state width="1320" height="342" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1617489159315" />
     <state width="1248" height="342" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
-    <state width="1320" height="342" key="GridCell.Tab.0.center" timestamp="1612346356729">
+    <state width="1320" height="342" key="GridCell.Tab.0.center" timestamp="1617489159314">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1323" height="374" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611850251938" />
-    <state width="1320" height="342" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1612346356729" />
+    <state width="1320" height="342" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1617489159314" />
     <state width="1248" height="342" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
-    <state width="1320" height="342" key="GridCell.Tab.0.left" timestamp="1612346356728">
+    <state width="1320" height="342" key="GridCell.Tab.0.left" timestamp="1617489159313">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1323" height="374" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611850251938" />
-    <state width="1320" height="342" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1612346356728" />
+    <state width="1320" height="342" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1617489159313" />
     <state width="1248" height="342" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1611961817347" />
-    <state width="1320" height="342" key="GridCell.Tab.0.right" timestamp="1612346356729">
+    <state width="1320" height="342" key="GridCell.Tab.0.right" timestamp="1617489159314">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1323" height="374" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611850251939" />
-    <state width="1320" height="342" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1612346356729" />
+    <state width="1320" height="342" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1617489159314" />
     <state width="1248" height="342" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
     <state x="402" y="100" width="551" height="602" key="RollbackChangesDialog" timestamp="1612943845727">
       <screen x="0" y="27" width="1366" height="741" />
@@ -824,10 +834,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1611356142095" />
-    <state x="391" y="208" key="edit.logcat.filter.dialog.dimensions" timestamp="1611674043184">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="391" y="239" width="680" height="319" key="edit.logcat.filter.dialog.dimensions" timestamp="1617487500406">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="391" y="208" key="edit.logcat.filter.dialog.dimensions/0.0.1366.728@0.0.1366.728" timestamp="1611674043184" />
+    <state x="391" y="239" width="680" height="319" key="edit.logcat.filter.dialog.dimensions/0.27.1366.741@0.27.1366.741" timestamp="1617487500406" />
+    <state x="0" y="27" width="621" height="741" key="find.popup" timestamp="1617486542521">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="0" y="27" width="621" height="741" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1617486542521" />
     <state x="154" y="147" width="1033" height="528" key="psd.add.library.dependency.panel.dimension" timestamp="1612447233306">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

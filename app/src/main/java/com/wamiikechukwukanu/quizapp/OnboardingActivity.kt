@@ -118,7 +118,7 @@ class OnboardingActivity : AppCompatActivity() {
         return isOboardingOpenBefore
     }
 
-    //    FOR THE DATAMODEL/ARRAYLIST
+    //    FOR THE DATAMODEL/ARRAYLISTs
     private fun settingUpTheDataModel() {
 
 //      SETUP THE DATAMODEL

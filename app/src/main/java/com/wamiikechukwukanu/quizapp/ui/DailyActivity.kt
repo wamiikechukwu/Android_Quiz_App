@@ -1,13 +1,15 @@
-package com.wamiikechukwukanu.quizapp
+package com.wamiikechukwukanu.quizapp.ui
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.wamiikechukwukanu.quizapp.MapQuizActivity
+import com.wamiikechukwukanu.quizapp.R
 import com.wamiikechukwukanu.quizapp.dailyactivity.DailyActivityViewModel
-import com.wamiikechukwukanu.quizapp.dailyactivity.DataModel
 import com.wamiikechukwukanu.quizapp.dailyactivity.OnItemClickListener
+import com.wamiikechukwukanu.quizapp.model.DataModel
 import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
 
 class DailyActivity : AppCompatActivity(), OnItemClickListener {
@@ -87,13 +89,13 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
     }
 
 
-    fun getMapDetails() {
-        val mapItemPosition = quizLogic.getCurrentSharedPreference()
-//        if (mapItemPosition )
-    }
-
 
     override fun onItemClicked(mapPosition: Int) {
-        Toast.makeText(this, mapPosition.toString(), Toast.LENGTH_SHORT).show()
+//        PASS THE CURRENT CLICK POSITION
+        quizLogic.saveToSharedPreference(mapPosition)
+
+//        MAP ACTIVITY
+        intent = Intent(this, MapQuizActivity::class.java)
+        startActivity(intent)
     }
 }

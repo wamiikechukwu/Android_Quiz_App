@@ -27,6 +27,15 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
@@ -37,13 +46,36 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="Added event listeners to the recycler view">
+    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="Can now get the adapter item position">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/MapQuizActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/db/BookMarksDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/db/BookMarksDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/db/MapDataBase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/model/BookMarks.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/repository/BookMarkRepo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_map_quiz.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_0_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/DailyActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/DailyActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/OnboardingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/OnboardingActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/DailyActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ui/DailyActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ui/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/OnboardingActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/ui/OnboardingActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SigninActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SigninActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SignupActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/SignupActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/dailyactivity/DailyActivityViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/dailyactivity/DailyActivityViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/quizlogic/QuizLogic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/quizlogic/QuizLogic.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_daily.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_daily.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_onboarding.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,13 +159,17 @@
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="AfricaQuizApp" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.wamiikechukwukanu.quizapp.model" />
+      <recent name="com.wamiikechukwukanu.quizapp.ui" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.wamiikechukwukanu.quizapp" />
     </key>
@@ -141,6 +177,9 @@
       <recent name="com.wamiikechukwukanu.quizapp" />
     </key>
     <key name="android.template.401442714">
+      <recent name="com.wamiikechukwukanu.quizapp" />
+    </key>
+    <key name="android.template.1413764301">
       <recent name="com.wamiikechukwukanu.quizapp" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -667,7 +706,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617489327656</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Can now get the adapter item position">
+      <created>1617538347263</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1617538347263</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -741,17 +787,18 @@
     <MESSAGE value="working on the Main Activity" />
     <MESSAGE value="Back to work" />
     <MESSAGE value="Added event listeners to the recycler view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added event listeners to the recycler view" />
+    <MESSAGE value="Can now get the adapter item position" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can now get the adapter item position" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="200" y="139" width="950" height="537" key="#PSD" timestamp="1612447236253">
+    <state x="200" y="139" width="950" height="537" key="#PSD" timestamp="1617567763811">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="200" y="110" key="#PSD/0.0.1366.728@0.0.1366.728" timestamp="1611438138971" />
-    <state x="200" y="139" width="950" height="537" key="#PSD/0.27.1366.741@0.27.1366.741" timestamp="1612447236253" />
+    <state x="200" y="139" width="950" height="537" key="#PSD/0.27.1366.741@0.27.1366.741" timestamp="1617567763811" />
     <state x="392" y="0" key="#app" timestamp="1611438156158">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -772,14 +819,19 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1611752362538" />
+    <state x="409" y="172" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1617539883409">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="409" y="172" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1617539883409" />
     <state x="100" y="127" width="1166" height="541" key="AVDManager" timestamp="1613032112014">
       <screen x="0" y="27" width="2390" height="741" />
     </state>
     <state x="100" y="127" width="1166" height="541" key="AVDManager/0.27.2390.741@0.27.2390.741" timestamp="1613032112014" />
-    <state x="263" y="119" key="AndroidCreateResourceFileDialog" timestamp="1611742739253">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="263" y="148" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1617568405258">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="263" y="119" key="AndroidCreateResourceFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1611742739253" />
+    <state x="263" y="148" width="824" height="491" key="AndroidCreateResourceFileDialog/0.27.1366.741@0.27.1366.741" timestamp="1617568405258" />
     <state x="227" y="0" key="CommitChangelistDialog2" timestamp="1611303874302">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -795,39 +847,39 @@
     <state x="1417" y="208" width="374" height="498" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1024.768@0.27.1366.741" timestamp="1612943920283" />
     <state x="463" y="148" width="374" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1612526504376" />
     <state x="810" y="148" width="424" height="491" key="FileChooserDialogImpl/0.27.2390.741@0.27.2390.741" timestamp="1612164662898" />
-    <state width="1320" height="342" key="GridCell.Tab.0.bottom" timestamp="1617536619550">
+    <state width="1320" height="342" key="GridCell.Tab.0.bottom" timestamp="1617568158777">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1323" height="374" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1611850251939" />
-    <state width="1320" height="342" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1617536619550" />
+    <state width="1320" height="342" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1617568158777" />
     <state width="1248" height="342" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
-    <state width="1320" height="342" key="GridCell.Tab.0.center" timestamp="1617536619549">
+    <state width="1320" height="342" key="GridCell.Tab.0.center" timestamp="1617568158776">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1323" height="374" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1611850251938" />
-    <state width="1320" height="342" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1617536619549" />
+    <state width="1320" height="342" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1617568158776" />
     <state width="1248" height="342" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
-    <state width="1320" height="342" key="GridCell.Tab.0.left" timestamp="1617536619549">
+    <state width="1320" height="342" key="GridCell.Tab.0.left" timestamp="1617568158776">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1323" height="374" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1611850251938" />
-    <state width="1320" height="342" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1617536619549" />
+    <state width="1320" height="342" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1617568158776" />
     <state width="1248" height="342" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1611961817347" />
-    <state width="1320" height="342" key="GridCell.Tab.0.right" timestamp="1617536619549">
+    <state width="1320" height="342" key="GridCell.Tab.0.right" timestamp="1617568158777">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1323" height="374" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1611850251939" />
-    <state width="1320" height="342" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1617536619549" />
+    <state width="1320" height="342" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1617568158777" />
     <state width="1248" height="342" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
     <state x="402" y="100" width="551" height="602" key="RollbackChangesDialog" timestamp="1612943845727">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="402" y="100" width="551" height="602" key="RollbackChangesDialog/0.27.1366.741/1366.0.1024.768@0.27.1366.741" timestamp="1612943845727" />
-    <state x="184" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1612347396850">
+    <state x="184" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1617567784058">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1611318654214" />
-    <state x="184" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1612347396850" />
+    <state x="184" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1617567784058" />
     <state x="275" y="126" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1617489496854">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -841,11 +893,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1611356142095" />
-    <state x="391" y="239" width="680" height="319" key="edit.logcat.filter.dialog.dimensions" timestamp="1617487500406">
+    <state x="391" y="239" width="680" height="319" key="edit.logcat.filter.dialog.dimensions" timestamp="1617548446980">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="391" y="208" key="edit.logcat.filter.dialog.dimensions/0.0.1366.728@0.0.1366.728" timestamp="1611674043184" />
-    <state x="391" y="239" width="680" height="319" key="edit.logcat.filter.dialog.dimensions/0.27.1366.741@0.27.1366.741" timestamp="1617487500406" />
+    <state x="391" y="239" width="680" height="319" key="edit.logcat.filter.dialog.dimensions/0.27.1366.741@0.27.1366.741" timestamp="1617548446980" />
     <state x="0" y="27" width="621" height="741" key="find.popup" timestamp="1617486542521">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

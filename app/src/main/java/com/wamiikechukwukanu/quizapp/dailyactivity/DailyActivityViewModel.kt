@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.wamiikechukwukanu.quizapp.R
+import com.wamiikechukwukanu.quizapp.model.DataModel
 import kotlinx.android.synthetic.main.daily_activity_model.view.*
 
 

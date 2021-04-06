@@ -1,4 +1,4 @@
-package com.wamiikechukwukanu.quizapp
+package com.wamiikechukwukanu.quizapp.ui
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -8,6 +8,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.wamiikechukwukanu.quizapp.R
 import com.wamiikechukwukanu.quizapp.databinding.ActivityOnboardingBinding
 import com.wamiikechukwukanu.quizapp.onboarding.OnboardingDataItems
 import com.wamiikechukwukanu.quizapp.onboarding.OnboardingPageAdapter
@@ -118,7 +119,7 @@ class OnboardingActivity : AppCompatActivity() {
         return isOboardingOpenBefore
     }
 
-    //    FOR THE DATAMODEL/ARRAYLIST
+    //    FOR THE DATAMODEL/ARRAYLISTs
     private fun settingUpTheDataModel() {
 
 //      SETUP THE DATAMODEL

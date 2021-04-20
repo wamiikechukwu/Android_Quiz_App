@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.wamiikechukwukanu.quizapp.MapQuizActivity
 import com.wamiikechukwukanu.quizapp.R
-import com.wamiikechukwukanu.quizapp.dailyactivity.DailyActivityViewModel
-import com.wamiikechukwukanu.quizapp.dailyactivity.OnItemClickListener
+import com.wamiikechukwukanu.quizapp.adapter.DailyActivityViewModel
+import com.wamiikechukwukanu.quizapp.adapter.OnItemClickListener
 import com.wamiikechukwukanu.quizapp.model.DataModel
 import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
 
@@ -19,6 +19,7 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
     var arrayList = ArrayList<DataModel>()
     lateinit var quizLogic: QuizLogic
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
@@ -27,8 +28,26 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
         recyclerView = findViewById(R.id.recycler_view)
         recyclerView.layoutManager = GridLayoutManager(this, 2)
         quizLogic = QuizLogic(this)
+        addMapImagesToRecyclerView()
 
 
+        adapter = DailyActivityViewModel(this, arrayList, this)
+        recyclerView.adapter = adapter
+        adapter.notifyDataSetChanged()
+
+
+    }
+
+    override fun onItemClicked(mapPosition: Int) {
+//        PASS THE CURRENT CLICK POSITION
+        quizLogic.saveToSharedPreference(mapPosition)
+
+//        MAP ACTIVITY
+        intent = Intent(this, MapQuizActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun addMapImagesToRecyclerView() {
         arrayList.add(DataModel(R.drawable.algeria))
         arrayList.add(DataModel(R.drawable.angola))
         arrayList.add(DataModel(R.drawable.benin))
@@ -79,23 +98,5 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
         arrayList.add(DataModel(R.drawable.uganda))
         arrayList.add(DataModel(R.drawable.zambia))
         arrayList.add(DataModel(R.drawable.zimbabwe))
-
-
-        adapter = DailyActivityViewModel(this, arrayList, this)
-        recyclerView.adapter = adapter
-        adapter.notifyDataSetChanged()
-
-
-    }
-
-
-
-    override fun onItemClicked(mapPosition: Int) {
-//        PASS THE CURRENT CLICK POSITION
-        quizLogic.saveToSharedPreference(mapPosition)
-
-//        MAP ACTIVITY
-        intent = Intent(this, MapQuizActivity::class.java)
-        startActivity(intent)
     }
 }

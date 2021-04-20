@@ -77,5 +77,18 @@ class QuizLogic(val context: Context) {
         return mapArrayList[position]
     }
 
+    fun saveIntoDataBaseOnce(inserted: Boolean) {
+        val sharedPreferences: SharedPreferences = context.getSharedPreferences("isItInsertedToDataBase", AppCompatActivity.MODE_PRIVATE)
+        val editor: SharedPreferences.Editor = sharedPreferences.edit()
+        editor.putBoolean("inserted", inserted)
+        editor.apply()
+        editor.commit()
+    }
+
+    fun checkIfSavedToDataBase(): Boolean {
+        val sharedPreferences: SharedPreferences = context.getSharedPreferences("isItInsertedToDataBase", MODE_PRIVATE)
+        return sharedPreferences.getBoolean("inserted", true)
+    }
+
 
 }

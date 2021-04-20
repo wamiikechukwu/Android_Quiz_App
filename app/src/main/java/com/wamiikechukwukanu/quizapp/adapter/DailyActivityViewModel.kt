@@ -1,4 +1,4 @@
-package com.wamiikechukwukanu.quizapp.dailyactivity
+package com.wamiikechukwukanu.quizapp.adapter
 
 import android.content.Context
 import android.view.LayoutInflater

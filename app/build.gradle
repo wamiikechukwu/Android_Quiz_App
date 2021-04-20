@@ -57,9 +57,19 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:19.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation "androidx.activity:activity-ktx:1.2.2"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    implementation "androidx.room:room-runtime:2.2.6"
+
+//    ROOM
     implementation "androidx.room:room-runtime:2.2.6"
     kapt "androidx.room:room-compiler:2.2.6"
+    implementation "androidx.room:room-ktx:2.2.6"
+//    kapt "androidx.room:room-ktx:2.2.6"
+
+//    VIEW MODEL
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
 
 
     //Dependency for the Intro Screen

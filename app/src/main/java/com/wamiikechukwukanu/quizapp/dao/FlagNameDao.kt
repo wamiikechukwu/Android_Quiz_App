@@ -12,6 +12,6 @@ interface FlagNameDao {
 //    fun loadLiveBookmark(bookmarkID: Long): LiveData<BookMarks>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertFlagName(insertingFlagsNames: FlagNameTable)
+    suspend fun insertFlagName(insertingFlagsNames: ArrayList<FlagNameTable>)
 
 }

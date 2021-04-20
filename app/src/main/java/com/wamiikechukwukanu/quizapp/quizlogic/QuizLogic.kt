@@ -90,5 +90,4 @@ class QuizLogic(val context: Context) {
         return sharedPreferences.getBoolean("inserted", true)
     }
 
-
 }

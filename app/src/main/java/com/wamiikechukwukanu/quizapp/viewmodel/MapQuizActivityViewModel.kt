@@ -9,7 +9,7 @@ import com.wamiikechukwukanu.quizapp.repository.FlagNameRepo
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class FlagNameViewModel(application: Application) : AndroidViewModel(application) {
+class MapQuizActivityViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: FlagNameRepo
 
     init {
@@ -17,7 +17,7 @@ class FlagNameViewModel(application: Application) : AndroidViewModel(application
         repository = FlagNameRepo(flagDao)
     }
 
-    fun addFlagName(flagName: FlagNameTable) {
+    fun addFlagName(flagName: ArrayList<FlagNameTable>) {
         viewModelScope.launch(Dispatchers.IO) {
             repository.addFlagName(flagName)
         }

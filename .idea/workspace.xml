@@ -46,17 +46,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="Used Room to successfully saved the name of the maps">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
+    <list default="true" id="a821c777-ba8d-4a3e-a6b2-df2f97daf5bd" name="Default Changelist" comment="Adding multiples names to the room database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/MapQuizActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/MapQuizActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/dao/FlagNameDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/dao/FlagNameDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/quizlogic/QuizLogic.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/quizlogic/QuizLogic.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/repository/FlagNameRepo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/repository/FlagNameRepo.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/viewmodel/FlagNameViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wamiikechukwukanu/quizapp/viewmodel/MapQuizActivityViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_map_quiz.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_map_quiz.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,17 +122,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android-custom-viewC:/Users/Wami's/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/imageview/ShapeableImageView.java_SELECTED" value="ShapeableImageView" />
     <property name="android-custom-viewC:/Users/Wami's/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/textfield/TextInputLayout.java_SELECTED" value="TextInputLayout" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="kotlin" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="full.screen.before.presentation.mode" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/com/wamiikechukwukanu/quizapp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MAIN/NIIT CODES/STUDENTS CODES/Train Link" />
     <property name="multi-representation-previewC:/Users/Wami's/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/imageview/ShapeableImageView.java_selected" value="Custom views" />
     <property name="multi-representation-previewC:/Users/Wami's/.gradle/caches/modules-2/files-2.1/com.google.android.material/material/1.2.1/37d55d5141066b3d118d24232fa7025b65eb3a74/material-1.2.1-sources.jar!/com/google/android/material/textfield/TextInputLayout.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
@@ -734,7 +727,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618915588141</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Adding multiples names to the room database">
+      <created>1618930569503</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1618930569503</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -785,7 +785,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Done with the ViewPager2 layout, now working on the onboarding screen layout." />
     <MESSAGE value="Added a data class that will hold all details of the onboarding Screen" />
     <MESSAGE value="Redesigned the onboarding item layout activity" />
     <MESSAGE value="Done with the basics of the onboarding screen, now adding functionalities" />
@@ -810,7 +809,8 @@
     <MESSAGE value="Adding database" />
     <MESSAGE value=" Learning to use Room to implement data base" />
     <MESSAGE value="Used Room to successfully saved the name of the maps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Used Room to successfully saved the name of the maps" />
+    <MESSAGE value="Adding multiples names to the room database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding multiples names to the room database" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -868,44 +868,44 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1611356142095" />
-    <state x="1417" y="208" width="374" height="498" key="FileChooserDialogImpl" timestamp="1612943920283">
-      <screen x="1366" y="0" width="1024" height="768" />
+    <state x="463" y="119" width="374" height="498" key="FileChooserDialogImpl" timestamp="1618989702154">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1611438121898" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1618989702154" />
     <state x="1417" y="208" width="374" height="498" key="FileChooserDialogImpl/0.27.1366.741/1366.0.1024.768@0.27.1366.741" timestamp="1612943920283" />
     <state x="463" y="148" width="374" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1612526504376" />
     <state x="810" y="148" width="424" height="491" key="FileChooserDialogImpl/0.27.2390.741@0.27.2390.741" timestamp="1612164662898" />
-    <state width="1323" height="569" key="GridCell.Tab.0.bottom" timestamp="1618926714463">
+    <state width="1323" height="391" key="GridCell.Tab.0.bottom" timestamp="1618930392617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="569" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618926714463" />
+    <state width="1323" height="391" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618930392617" />
     <state width="1338" height="384" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1618848342380" />
     <state width="1320" height="358" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1617897570993" />
     <state width="1320" height="358" key="GridCell.Tab.0.bottom/0.27.1366.741/1366.0.1366.768@1366.0.1366.768" timestamp="1617896370558" />
     <state width="1320" height="342" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1617568158777" />
     <state width="1248" height="342" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
-    <state width="1323" height="569" key="GridCell.Tab.0.center" timestamp="1618926714462">
+    <state width="1323" height="391" key="GridCell.Tab.0.center" timestamp="1618930392617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="569" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618926714462" />
+    <state width="1323" height="391" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618930392617" />
     <state width="1338" height="384" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1618848342380" />
     <state width="1320" height="358" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1617897570993" />
     <state width="1320" height="358" key="GridCell.Tab.0.center/0.27.1366.741/1366.0.1366.768@1366.0.1366.768" timestamp="1617896370558" />
     <state width="1320" height="342" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1617568158776" />
     <state width="1248" height="342" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1611961817348" />
-    <state width="1323" height="569" key="GridCell.Tab.0.left" timestamp="1618926714462">
+    <state width="1323" height="391" key="GridCell.Tab.0.left" timestamp="1618930392616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="569" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618926714462" />
+    <state width="1323" height="391" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618930392616" />
     <state width="1338" height="384" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1618848342380" />
     <state width="1320" height="358" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1617897570993" />
     <state width="1320" height="358" key="GridCell.Tab.0.left/0.27.1366.741/1366.0.1366.768@1366.0.1366.768" timestamp="1617896370558" />
     <state width="1320" height="342" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1617568158776" />
     <state width="1248" height="342" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1611961817347" />
-    <state width="1323" height="569" key="GridCell.Tab.0.right" timestamp="1618926714463">
+    <state width="1323" height="391" key="GridCell.Tab.0.right" timestamp="1618930392617">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="569" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618926714463" />
+    <state width="1323" height="391" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618930392617" />
     <state width="1338" height="384" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1618848342380" />
     <state width="1320" height="358" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1366.768@0.27.1366.741" timestamp="1617897570993" />
     <state width="1320" height="358" key="GridCell.Tab.0.right/0.27.1366.741/1366.0.1366.768@1366.0.1366.768" timestamp="1617896370558" />
@@ -915,16 +915,17 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="402" y="100" width="551" height="602" key="RollbackChangesDialog/0.27.1366.741/1366.0.1024.768@0.27.1366.741" timestamp="1612943845727" />
-    <state x="1550" y="4" width="1022" height="737" key="SettingsEditor" timestamp="1617714540256">
-      <screen x="1366" y="0" width="1366" height="768" />
+    <state x="184" y="4" width="1022" height="708" key="SettingsEditor" timestamp="1618930818698">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="184" y="4" width="1022" height="708" key="SettingsEditor/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618930818698" />
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1611318654214" />
     <state x="1550" y="4" width="1022" height="737" key="SettingsEditor/0.27.1366.741/1366.0.1366.768@1366.0.1366.768" timestamp="1617714540256" />
     <state x="184" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1617567784058" />
-    <state x="275" y="98" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618915606316">
+    <state x="275" y="98" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1618930573366">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618915606316" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1440.860@0.0.1366.728" timestamp="1618930573366" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1611845428211" />
     <state x="1641" y="103" key="Vcs.Push.Dialog.v2/0.27.1366.741/1366.0.1366.768@1366.0.1366.768" timestamp="1617715765726" />
     <state x="275" y="126" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1617489496854" />

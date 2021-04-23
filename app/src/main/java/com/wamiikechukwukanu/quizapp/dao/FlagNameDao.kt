@@ -8,8 +8,8 @@ import com.wamiikechukwukanu.quizapp.model.FlagNameTable
 @Dao
 interface FlagNameDao {
 
-//    @Query("SELECT * FROM Bookmarks WHERE id = :bookmarkID")
-//    fun loadLiveBookmark(bookmarkID: Long): LiveData<BookMarks>
+//    @Query("SELECT * FROM flag_name_table WHERE id = :flagNameIndex")
+//    fun getFlagNameIndex(flagNameIndex: Int): ArrayList<FlagNameTable>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertFlagName(insertingFlagsNames: ArrayList<FlagNameTable>)

@@ -7,4 +7,8 @@ class FlagNameRepo(private val flagNameDao: FlagNameDao) {
     suspend fun addFlagName(flagName: ArrayList<FlagNameTable>) {
         flagNameDao.insertFlagName(flagName)
     }
+
+//     fun getFlagName(flagNameIndex:Int){
+//        flagNameDao.getFlagNameIndex(flagNameIndex )
+//    }
 }

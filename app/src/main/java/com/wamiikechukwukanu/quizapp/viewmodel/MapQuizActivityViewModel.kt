@@ -22,4 +22,11 @@ class MapQuizActivityViewModel(application: Application) : AndroidViewModel(appl
             repository.addFlagName(flagName)
         }
     }
+
+//    fun getFlagIndex(flagPosition:Int){
+//        viewModelScope.launch(Dispatchers.IO) {
+//            repository.getFlagName(flagPosition)
+//        }
+
+//    }
 }

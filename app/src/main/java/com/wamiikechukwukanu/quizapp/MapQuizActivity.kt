@@ -34,6 +34,9 @@ class MapQuizActivity : AppCompatActivity() {
 
         val i = quizLogic.getCurrentSharedPreference()
 
+        quizLogic.setButtons(i,first_btn,second_btn,third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
+
+        quizLogic
         getCurrentMapState(i)
 
 //        CHECK IF THE MAP NAME HAS BEEN ADDED TO THE DATA BASE BEFORE NOW
@@ -43,12 +46,14 @@ class MapQuizActivity : AppCompatActivity() {
 //            SET SHARED PREF TO TRUE, BECAUSE DATABASE
             quizLogic.saveIntoDataBaseOnce(false)
         }
+
+//        var k = mapQuizActivityViewModel.getFlagIndex(i)
+
     }
 
     private fun getCurrentMapState(position: Int) {
         val positionImage = quizLogic.getPositionMap(position)
         Glide.with(this).load(positionImage).into(map_image_view)
-
     }
 
     private fun insertIntoRoomDataBase() {
@@ -111,4 +116,6 @@ class MapQuizActivity : AppCompatActivity() {
 
         Toast.makeText(this, "INSERTED", Toast.LENGTH_LONG).show()
     }
+
+
 }

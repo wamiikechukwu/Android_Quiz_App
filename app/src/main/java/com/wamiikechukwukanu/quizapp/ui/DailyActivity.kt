@@ -45,6 +45,7 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
 //        MAP ACTIVITY
         intent = Intent(this, MapQuizActivity::class.java)
         startActivity(intent)
+
     }
 
     fun addMapImagesToRecyclerView() {

@@ -8,7 +8,7 @@ class FlagNameRepo(private val flagNameDao: FlagNameDao) {
         flagNameDao.insertFlagName(flagName)
     }
 
-//     fun getFlagName(flagNameIndex:Int){
-//        flagNameDao.getFlagNameIndex(flagNameIndex )
+//      fun getFlagName(flagNameIndex:Long):ArrayList<FlagNameTable>{
+//       return flagNameDao.getFlagNameIndex(flagNameIndex )
 //    }
 }

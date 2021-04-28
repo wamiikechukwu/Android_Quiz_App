@@ -32,12 +32,12 @@ class MapQuizActivity : AppCompatActivity() {
         // INITIALIZE THE VIEW MODEL
         mapQuizActivityViewModel = ViewModelProvider(this).get(MapQuizActivityViewModel::class.java)
 
-        val i = quizLogic.getCurrentSharedPreference()
+        val currentMapPosition = quizLogic.getCurrentSharedPreference()
 
-        quizLogic.setButtons(i,first_btn,second_btn,third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
+        quizLogic.setButtons(currentMapPosition,first_btn,second_btn,third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
 
         quizLogic
-        getCurrentMapState(i)
+        getCurrentMapState(currentMapPosition)
 
 //        CHECK IF THE MAP NAME HAS BEEN ADDED TO THE DATA BASE BEFORE NOW
         if (quizLogic.checkIfSavedToDataBase()) {
@@ -46,9 +46,9 @@ class MapQuizActivity : AppCompatActivity() {
 //            SET SHARED PREF TO TRUE, BECAUSE DATABASE
             quizLogic.saveIntoDataBaseOnce(false)
         }
-
-//        var k = mapQuizActivityViewModel.getFlagIndex(i)
-
+//
+//        var k = mapQuizActivityViewModel.getFlagIndex(currentMapPosition.toLong())
+//        Toast.makeText(this,k.toString(),Toast.LENGTH_SHORT).show()
     }
 
     private fun getCurrentMapState(position: Int) {
@@ -116,6 +116,5 @@ class MapQuizActivity : AppCompatActivity() {
 
         Toast.makeText(this, "INSERTED", Toast.LENGTH_LONG).show()
     }
-
 
 }

@@ -9,7 +9,7 @@ import com.wamiikechukwukanu.quizapp.model.FlagNameTable
 interface FlagNameDao {
 
 //    @Query("SELECT * FROM flag_name_table WHERE id = :flagNameIndex")
-//    fun getFlagNameIndex(flagNameIndex: Int): ArrayList<FlagNameTable>
+//    fun getFlagNameIndex(flagNameIndex: Long): ArrayList<FlagNameTable>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertFlagName(insertingFlagsNames: ArrayList<FlagNameTable>)

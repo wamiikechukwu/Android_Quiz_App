@@ -1,17 +1,24 @@
-package com.wamiikechukwukanu.quizapp
+package com.wamiikechukwukanu.quizapp.ui
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.wamiikechukwukanu.quizapp.dailyactivity.DailyActivityViewModel
-import com.wamiikechukwukanu.quizapp.dailyactivity.DataModel
+import com.wamiikechukwukanu.quizapp.MapQuizActivity
+import com.wamiikechukwukanu.quizapp.R
+import com.wamiikechukwukanu.quizapp.adapter.DailyActivityViewModel
+import com.wamiikechukwukanu.quizapp.adapter.OnItemClickListener
+import com.wamiikechukwukanu.quizapp.model.DataModel
+import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
 
-class DailyActivity : AppCompatActivity() {
+class DailyActivity : AppCompatActivity(), OnItemClickListener {
 
     lateinit var recyclerView: RecyclerView
     lateinit var adapter: DailyActivityViewModel
     var arrayList = ArrayList<DataModel>()
+    lateinit var quizLogic: QuizLogic
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,8 +27,28 @@ class DailyActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.recycler_view)
         recyclerView.layoutManager = GridLayoutManager(this, 2)
+        quizLogic = QuizLogic(this)
+        addMapImagesToRecyclerView()
 
 
+        adapter = DailyActivityViewModel(this, arrayList, this)
+        recyclerView.adapter = adapter
+        adapter.notifyDataSetChanged()
+
+
+    }
+
+    override fun onItemClicked(mapPosition: Int) {
+//        PASS THE CURRENT CLICK POSITION
+        quizLogic.saveToSharedPreference(mapPosition)
+
+//        MAP ACTIVITY
+        intent = Intent(this, MapQuizActivity::class.java)
+        startActivity(intent)
+
+    }
+
+    fun addMapImagesToRecyclerView() {
         arrayList.add(DataModel(R.drawable.algeria))
         arrayList.add(DataModel(R.drawable.angola))
         arrayList.add(DataModel(R.drawable.benin))
@@ -72,12 +99,5 @@ class DailyActivity : AppCompatActivity() {
         arrayList.add(DataModel(R.drawable.uganda))
         arrayList.add(DataModel(R.drawable.zambia))
         arrayList.add(DataModel(R.drawable.zimbabwe))
-
-
-        adapter = DailyActivityViewModel(this, arrayList)
-        recyclerView.adapter = adapter
-        adapter.notifyDataSetChanged()
-
-
     }
 }

@@ -15,15 +15,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".DailyActivity"></activity>
+        <activity android:name=".MapQuizActivity"></activity>
+        <activity android:name=".ui.DailyActivity" />
         <activity
             android:name=".SignupActivity"
             android:noHistory="true" />
         <activity
             android:name=".SigninActivity"
             android:noHistory="true" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".OnboardingActivity">
+        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.OnboardingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

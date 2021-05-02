@@ -23,10 +23,8 @@ class MapQuizActivityViewModel(application: Application) : AndroidViewModel(appl
         }
     }
 
-//    fun getFlagIndex(flagPosition:Long){
-//        viewModelScope.launch(Dispatchers.IO) {
-//            repository.getFlagName(flagPosition)
-//        }
-//
-//    }
+    fun getFlagIndex(flagPosition:Long):List<FlagNameTable>{
+
+           return repository.getFlagNameByIndex(flagPosition)
+        }
 }

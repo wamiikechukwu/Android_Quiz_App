@@ -1,15 +1,19 @@
-package com.wamiikechukwukanu.quizapp
+package com.wamiikechukwukanu.quizapp.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
+import com.wamiikechukwukanu.quizapp.R
 import com.wamiikechukwukanu.quizapp.model.FlagNameTable
 import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
 import com.wamiikechukwukanu.quizapp.viewmodel.MapQuizActivityViewModel
 import kotlinx.android.synthetic.main.activity_map_quiz.*
-import java.util.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlin.collections.ArrayList
 
 class MapQuizActivity : AppCompatActivity() {
     //    HELPER CLASS
@@ -36,8 +40,9 @@ class MapQuizActivity : AppCompatActivity() {
 
         quizLogic.setButtons(currentMapPosition,first_btn,second_btn,third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
 
-        quizLogic
         getCurrentMapState(currentMapPosition)
+
+        getMapIndex(currentMapPosition.toLong())
 
 //        CHECK IF THE MAP NAME HAS BEEN ADDED TO THE DATA BASE BEFORE NOW
         if (quizLogic.checkIfSavedToDataBase()) {
@@ -46,9 +51,23 @@ class MapQuizActivity : AppCompatActivity() {
 //            SET SHARED PREF TO TRUE, BECAUSE DATABASE
             quizLogic.saveIntoDataBaseOnce(false)
         }
-//
-//        var k = mapQuizActivityViewModel.getFlagIndex(currentMapPosition.toLong())
-//        Toast.makeText(this,k.toString(),Toast.LENGTH_SHORT).show()
+
+
+    }
+
+    private fun getMapIndex(position: Long){
+        GlobalScope.launch {
+
+            var i = mapQuizActivityViewModel.getFlagIndex(position)
+            i.last()
+            Log.d("WAMI", i.last().toString())
+
+
+//        val i = mapQuizActivityViewModel.getFlagIndex(position)
+//            i.forEach {
+//                Log.d("WAMI", i[1].eighthLetter.toString())
+//            }
+        }
     }
 
     private fun getCurrentMapState(position: Int) {

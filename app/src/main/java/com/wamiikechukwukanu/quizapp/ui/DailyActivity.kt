@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.wamiikechukwukanu.quizapp.MapQuizActivity
 import com.wamiikechukwukanu.quizapp.R
 import com.wamiikechukwukanu.quizapp.adapter.DailyActivityViewModel
 import com.wamiikechukwukanu.quizapp.adapter.OnItemClickListener

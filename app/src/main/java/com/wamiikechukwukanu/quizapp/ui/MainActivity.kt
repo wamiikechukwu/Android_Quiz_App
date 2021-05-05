@@ -18,7 +18,6 @@ import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.UploadTask
 import com.wamiikechukwukanu.quizapp.R
-import com.wamiikechukwukanu.quizapp.SigninActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

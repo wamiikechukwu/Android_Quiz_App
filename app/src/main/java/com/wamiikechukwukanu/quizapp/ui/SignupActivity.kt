@@ -1,4 +1,4 @@
-package com.wamiikechukwukanu.quizapp
+package com.wamiikechukwukanu.quizapp.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.wamiikechukwukanu.quizapp.ui.MainActivity
+import com.wamiikechukwukanu.quizapp.R
 import kotlinx.android.synthetic.main.activity_signup.*
 
 class SignupActivity : AppCompatActivity() {

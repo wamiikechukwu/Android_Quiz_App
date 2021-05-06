@@ -1,15 +1,19 @@
 package com.wamiikechukwukanu.quizapp.ui
 
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.wamiikechukwukanu.quizapp.R
+import com.wamiikechukwukanu.quizapp.db.Database
 import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
 import kotlinx.android.synthetic.main.activity_map_quiz.*
 
 class MapQuizActivity : AppCompatActivity() {
     //    HELPER CLASS
     lateinit var quizLogic: QuizLogic
+    lateinit var database: Database
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,16 +23,19 @@ class MapQuizActivity : AppCompatActivity() {
         setContentView(R.layout.activity_map_quiz)
 
         quizLogic = QuizLogic(this)
+        database = Database(applicationContext)
 
         val currentMapPosition = quizLogic.getCurrentSharedPreference()
 
         quizLogic.setButtons(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
 
+
         getCurrentMapState(currentMapPosition)
+
+        insertIntoRoomDataBase()
 
 //        CHECK IF THE MAP NAME HAS BEEN ADDED TO THE DATA BASE BEFORE NOW
         if (quizLogic.checkIfSavedToDataBase()) {
-
 
 //            SET SHARED PREF TO TRUE, BECAUSE DATABASE
             quizLogic.saveIntoDataBaseOnce(false)
@@ -42,13 +49,65 @@ class MapQuizActivity : AppCompatActivity() {
         Glide.with(this).load(positionImage).into(map_image_view)
     }
 
-//    private fun insertIntoRoomDataBase() {
-//        val arrayList: ArrayList<FlagNameTable> = ArrayList()
-//        arrayList.add(FlagNameTable(1, "z", "g", "a", "i", "r", "l", "e", "a", "y", "z", "f", "f"))
-//        arrayList.add(FlagNameTable(2, "p", "a", "o", "x", "l", "n", "g", "g", "o", "g", "a", "n"))
-//        arrayList.add(FlagNameTable(3, "b", "i", "y", "n", "n", "e", "g", "y", "v", "x", "a", "n"))
-//        arrayList.add(FlagNameTable(4, "m", "o", "s", "t", "e", "a", "b", "w", "n", "w", "a", "k"))
-//        arrayList.add(FlagNameTable(5, "d", "a", "i", "b", "o", "n", "s", "a", "f", "u", "k", "r"))
+    private fun insertIntoRoomDataBase() {
+        val i = database.insertFlagNameIntoDataBase(1, "z", "g", "a", "i", "r", "l", "e", "a", "y", "z", "f", "f")
+
+        Log.d("WAMI", database.toString())
+        if (i == true) {
+            Toast.makeText(this, "INSERTED", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(this, "NOT INSERTED", Toast.LENGTH_LONG).show()
+        }
+//        database.insertFlagNameIntoDataBase("p", "a", "o", "x", "l", "n", "g", "g", "o", "g", "a", "n")
+//        database.insertFlagNameIntoDataBase( "b", "i", "y", "n", "n", "e", "g", "y", "v", "x", "a", "n")
+//        database.insertFlagNameIntoDataBase("m", "o", "s", "t", "e", "a", "b", "w", "n", "w", "a", "k")
+//        database.insertFlagNameIntoDataBase( "m", "o", "s", "t", "e", "a", "b", "w", "n", "w", "a", "k")
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//        arrayList.add(database.insertFlagNameIntoDataBase())
+//
 //        arrayList.add(FlagNameTable(6, " u ", " m ", " r ", " u ", " e ", " n ", " b ", " i ", " s ", " d ", " o ", " s "))
 //        arrayList.add(FlagNameTable(7, " a ", " r ", " m ", " o ", " c ", " t ", " m ", " o ", " n ", " n ", " r ", " e "))
 //        arrayList.add(FlagNameTable(8, " c ", " e ", " e ", " e ", " a ", " h ", " r ", " v ", " q ", " d ", " q ", " p "))
@@ -98,9 +157,8 @@ class MapQuizActivity : AppCompatActivity() {
 //
 //
 //
-//        mapQuizActivityViewModel.addFlagName(arrayList)
-//
-//        Toast.makeText(this, "INSERTED", Toast.LENGTH_LONG).show()
-//    }
+
+
+    }
 
 }

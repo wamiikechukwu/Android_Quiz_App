@@ -4,8 +4,10 @@ import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.wamiikechukwukanu.quizapp.R
+import kotlinx.android.synthetic.main.activity_intro_start_quiz.view.*
 
 class QuizLogic(val context: Context) {
 
@@ -382,5 +384,55 @@ class QuizLogic(val context: Context) {
         }
 
 
+    }
+
+    fun getTextFromButtonPressed(btnPressed: Button): CharSequence {
+        return  btnPressed.text
+    }
+
+    fun setTextFromButtonPressed(char: CharSequence, firstBtn: Button, secondBtn: Button, thirdBtn: Button, fourthBtn: Button, fifthBtn: Button, sixthBtn: Button,
+                                 seventhBtn: Button, eighthBtn: Button, ninthBtn: Button, tenthBtn: Button, eleventhBtn: Button, twelfthBbn: Button){
+
+        when {
+            firstBtn.text.isBlank() -> {
+                firstBtn.text = char
+            }
+            secondBtn.text.isBlank() -> {
+                secondBtn.text = char
+            }
+            thirdBtn.text.isBlank() -> {
+                thirdBtn.text = char
+            }
+            fourthBtn.text.isBlank() -> {
+                fourthBtn.text = char
+            }
+            fifthBtn.text.isBlank() -> {
+                fifthBtn.text = char
+            }
+            sixthBtn.text.isBlank() -> {
+                sixthBtn.text = char
+            }
+            seventhBtn.text.isBlank() -> {
+                seventhBtn.text = char
+            }
+            eighthBtn.text.isBlank() -> {
+                eighthBtn.text = char
+            }
+            ninthBtn.text.isBlank() -> {
+                ninthBtn.text = char
+            }
+            tenthBtn.text.isBlank() -> {
+                tenthBtn.text = char
+            }
+            eleventhBtn.text.isBlank() -> {
+                eleventhBtn.text = char
+            }
+            twelfthBbn.text.isBlank() -> {
+                twelfthBbn.text = char
+            }
+            else -> {
+
+            }
+        }
     }
 }

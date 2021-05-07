@@ -2,16 +2,13 @@ package com.wamiikechukwukanu.quizapp.ui
 
 import android.database.Cursor
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.wamiikechukwukanu.quizapp.R
 import com.wamiikechukwukanu.quizapp.db.Database
 import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
-import kotlinx.android.synthetic.main.activity_intro_start_quiz.view.*
 import kotlinx.android.synthetic.main.activity_map_quiz.*
 
 class MapQuizActivity : AppCompatActivity() {
@@ -19,6 +16,19 @@ class MapQuizActivity : AppCompatActivity() {
     lateinit var quizLogic: QuizLogic
     lateinit var database: Database
     lateinit var cursor: Cursor
+    lateinit var firstBtn: Button
+    lateinit var secondBtn: Button
+    lateinit var thirdBtn: Button
+    lateinit var fourthBtn: Button
+    lateinit var fifthBtn: Button
+    lateinit var sixthBtn: Button
+    lateinit var seventhBtn: Button
+    lateinit var eighthBtn: Button
+    lateinit var ninthBtn: Button
+    lateinit var tenthBtn: Button
+    lateinit var eleventhBtn: Button
+    lateinit var twelveBtn: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,13 +40,14 @@ class MapQuizActivity : AppCompatActivity() {
         quizLogic = QuizLogic(this)
         database = Database(applicationContext)
 
+        findViews()
+
         val currentMapPosition = quizLogic.getCurrentSharedPreference()
 
         quizLogic.setButtons(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
 
 //        SET THE LETTERS TO THE LOWER BUTTONS
-        getCurrentRowFromDatabase(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
-
+        getCurrentRowFromDatabase(currentMapPosition, bottom_first_btn, bottom_second_btn, bottom_third_btn, bottom_fourth_btn, bottom_fifth_btn, bottom_sixth_btn, bottom_seventh_btn, bottom_eight_btn, bottom_ninth_btn, bottom_tenth_btn, bottom_eleventh_btn, bottom_twelve_btn)
         getCurrentMapState(currentMapPosition)
 
 //        CHECK IF THE MAP NAME HAS BEEN ADDED TO THE DATA BASE BEFORE NOW
@@ -106,19 +117,84 @@ class MapQuizActivity : AppCompatActivity() {
 
     }
 
-    private fun getCurrentRowFromDatabase(position: Int, firstBtn: Button, secondBtn: Button, thirdBtn: View, fourthBtn: View, fifthBtn: View, sixthBtn: View,
-                                          seventhBtn: View, eighthBtn: View, ninthBtn: View, tenthBtn: View, eleventhBtn: View, twelfthBbn: View){
-        cursor = database.getFlagNameByIndex(position)
-                if (cursor.count == 0){
-                    //TODO add a AlertDialog
-                    Toast.makeText(this,"this database row for $position is empty",Toast.LENGTH_LONG).show()
-                }else{
-                    while (cursor.moveToNext()){
-                        firstBtn.text = cursor.getString(0).toString()
-                        secondBtn.text = cursor.getString(1).toString()
-                    }
-                }
+    private fun findViews() {
+        firstBtn = findViewById(R.id.first_btn)
+        secondBtn = findViewById(R.id.second_btn)
+        thirdBtn = findViewById(R.id.third_btn)
+        fourthBtn = findViewById(R.id.fourth_btn)
+        fifthBtn = findViewById(R.id.fifth_btn)
+        sixthBtn = findViewById(R.id.sixth_btn)
+        seventhBtn = findViewById(R.id.seventh_btn)
+        eighthBtn = findViewById(R.id.eight_btn)
+        ninthBtn = findViewById(R.id.ninth_btn)
+        tenthBtn = findViewById(R.id.tenth_btn)
+        eleventhBtn = findViewById(R.id.eleventh_btn)
+        twelveBtn = findViewById(R.id.twelve_btn)
     }
 
+    private fun getCurrentRowFromDatabase(position: Int, firstBtn: Button, secondBtn: Button, thirdBtn: Button, fourthBtn: Button, fifthBtn: Button, sixthBtn: Button,
+                                          seventhBtn: Button, eighthBtn: Button, ninthBtn: Button, tenthBtn: Button, eleventhBtn: Button, twelfthBbn: Button) {
+        cursor = database.getFlagNameByIndex((position + 1))
+        while (cursor.moveToNext()) {
+            //   THE POSITION FOR THE FLAG IMAGE IS 0 INDEX  BUT
+            //   INSERTION IN THE DATABASE IS STARTING FROM 1
 
+            firstBtn.text = cursor.getString(1).toString()
+            secondBtn.text = cursor.getString(2).toString()
+            thirdBtn.text = cursor.getString(3).toString()
+            fourthBtn.text = cursor.getString(4).toString()
+            fifthBtn.text = cursor.getString(5).toString()
+            sixthBtn.text = cursor.getString(6).toString()
+            seventhBtn.text = cursor.getString(7).toString()
+            eighthBtn.text = cursor.getString(8).toString()
+            ninthBtn.text = cursor.getString(9).toString()
+            tenthBtn.text = cursor.getString(10).toString()
+            eleventhBtn.text = cursor.getString(11).toString()
+            twelfthBbn.text = cursor.getString(12).toString()
+
+        }
+    }
+
+    fun btnClick(view: View) {
+        when (view.id) {
+            R.id.bottom_first_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_second_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_third_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_fourth_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_fifth_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_sixth_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_seventh_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_eight_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_ninth_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_tenth_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_eleventh_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            R.id.bottom_twelve_btn -> {
+                quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+            }
+            else -> {
+            }
+        }
+    }
 }

@@ -162,6 +162,7 @@
 
         <Button
             android:id="@+id/bottom_first_btn"
+            android:onClick="btnClick"
             style="@style/input_btn"
             android:textAllCaps="true"
             app:layout_constraintBottom_toTopOf="@id/bottom_seventh_btn"
@@ -173,6 +174,7 @@
         <Button
             android:id="@+id/bottom_second_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toTopOf="@id/bottom_eight_btn"
             app:layout_constraintEnd_toStartOf="@id/bottom_third_btn"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -182,6 +184,7 @@
         <Button
             android:id="@+id/bottom_third_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toTopOf="@id/bottom_ninth_btn"
             app:layout_constraintEnd_toStartOf="@id/bottom_fourth_btn"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -191,6 +194,7 @@
         <Button
             android:id="@+id/bottom_fourth_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toTopOf="@id/bottom_tenth_btn"
             app:layout_constraintEnd_toStartOf="@id/bottom_fifth_btn"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -200,6 +204,7 @@
         <Button
             android:id="@+id/bottom_fifth_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toTopOf="@id/bottom_eleventh_btn"
             app:layout_constraintEnd_toStartOf="@id/bottom_sixth_btn"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -209,6 +214,7 @@
         <Button
             android:id="@+id/bottom_sixth_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toTopOf="@id/bottom_twelve_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -218,6 +224,7 @@
         <Button
             android:id="@+id/bottom_seventh_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/bottom_eight_btn"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -227,6 +234,7 @@
         <Button
             android:id="@+id/bottom_eight_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/bottom_ninth_btn"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -236,8 +244,8 @@
         <Button
             android:id="@+id/bottom_ninth_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toBottomOf="parent"
-
             app:layout_constraintEnd_toStartOf="@id/bottom_tenth_btn"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toEndOf="@id/bottom_eight_btn"
@@ -246,6 +254,7 @@
         <Button
             android:id="@+id/bottom_tenth_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/bottom_eleventh_btn"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -255,6 +264,7 @@
         <Button
             android:id="@+id/bottom_eleventh_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/bottom_twelve_btn"
             app:layout_constraintHorizontal_chainStyle="packed"
@@ -264,6 +274,7 @@
         <Button
             android:id="@+id/bottom_twelve_btn"
             style="@style/input_btn"
+            android:onClick="btnClick"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_chainStyle="packed"

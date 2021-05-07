@@ -2,6 +2,7 @@ package com.wamiikechukwukanu.quizapp.ui
 
 import android.database.Cursor
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,7 @@ import com.wamiikechukwukanu.quizapp.R
 import com.wamiikechukwukanu.quizapp.db.Database
 import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
 import kotlinx.android.synthetic.main.activity_map_quiz.*
+import kotlin.properties.Delegates
 
 class MapQuizActivity : AppCompatActivity() {
     //    HELPER CLASS
@@ -29,6 +31,8 @@ class MapQuizActivity : AppCompatActivity() {
     lateinit var eleventhBtn: Button
     lateinit var twelveBtn: Button
 
+    //    GLOBAL VARIABLE FOR THE CURRENT FLAG POSITION
+    var currentMapPosition by Delegates.notNull<Int>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,7 +46,7 @@ class MapQuizActivity : AppCompatActivity() {
 
         findViews()
 
-        val currentMapPosition = quizLogic.getCurrentSharedPreference()
+        currentMapPosition = quizLogic.getCurrentSharedPreference()
 
         quizLogic.setButtons(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
 
@@ -56,6 +60,7 @@ class MapQuizActivity : AppCompatActivity() {
 //            SET SHARED PREF TO TRUE, BECAUSE DATABASE
             quizLogic.saveIntoDataBaseOnce(false)
         }
+
     }
 
     private fun getCurrentMapState(position: Int) {
@@ -159,41 +164,118 @@ class MapQuizActivity : AppCompatActivity() {
         when (view.id) {
             R.id.bottom_first_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_second_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_third_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_fourth_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_fifth_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_sixth_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_seventh_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_eight_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_ninth_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_tenth_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_eleventh_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             R.id.bottom_twelve_btn -> {
                 quizLogic.setTextFromButtonPressed(quizLogic.getTextFromButtonPressed(view as Button), firstBtn, secondBtn, thirdBtn, fourthBtn, fifthBtn, sixthBtn, seventhBtn, eighthBtn, ninthBtn, tenthBtn, eleventhBtn, twelveBtn)
+                quizLogic.checkCorrectFlagName(currentMapPosition, first_btn, second_btn, third_btn, fourth_btn, fifth_btn, sixth_btn, seventh_btn, eight_btn, ninth_btn, tenth_btn, eleventh_btn, twelve_btn)
             }
             else -> {
+            }
+        }
+    }
+
+    fun topBtnClick(view: View) {
+        when (view.id) {
+            R.id.first_btn -> {
+                if (firstBtn.text.isNotBlank()) {
+                    firstBtn.text = ""
+                }
+            }
+            R.id.second_btn -> {
+                if (secondBtn.text.isNotBlank()) {
+                    secondBtn.text = " "
+                }
+            }
+            R.id.third_btn -> {
+                if (thirdBtn.text.isNotBlank()) {
+                    thirdBtn.text = ""
+                }
+            }
+            R.id.fourth_btn -> {
+                if (fourthBtn.text.isNotBlank()) {
+                    fourthBtn.text = ""
+                }
+            }
+            R.id.fifth_btn -> {
+                if (fifthBtn.text.isNotBlank()) {
+                    fifthBtn.text = ""
+                }
+            }
+            R.id.sixth_btn -> {
+                if (sixthBtn.text.isNotBlank()) {
+                    sixthBtn.text = ""
+                }
+            }
+            R.id.seventh_btn -> {
+                if (seventhBtn.text.isNotBlank()) {
+                    seventhBtn.text = ""
+                }
+            }
+            R.id.eight_btn -> {
+                if (eighthBtn.text.isNotBlank()) {
+                    eighthBtn.text = ""
+                }
+            }
+            R.id.ninth_btn -> {
+                if (ninthBtn.text.isNotBlank()) {
+                    ninthBtn.text = ""
+                }
+            }
+            R.id.tenth_btn -> {
+                if (tenthBtn.text.isNotBlank()) {
+                    tenthBtn.text = ""
+                }
+            }
+            R.id.eleventh_btn -> {
+                if (eleventhBtn.text.isNotBlank()) {
+                    eleventhBtn.text = ""
+                }
+            }
+            R.id.twelve_btn -> {
+                if (eleventhBtn.text.isNotBlank()) {
+                    eleventhBtn.text = ""
+                }
             }
         }
     }

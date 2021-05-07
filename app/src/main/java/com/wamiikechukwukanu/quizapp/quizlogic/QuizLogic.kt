@@ -3,11 +3,13 @@ package com.wamiikechukwukanu.quizapp.quizlogic
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.wamiikechukwukanu.quizapp.R
-import kotlinx.android.synthetic.main.activity_intro_start_quiz.view.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 class QuizLogic(val context: Context) {
 
@@ -316,11 +318,11 @@ class QuizLogic(val context: Context) {
                 }
                 35 -> //reunion 7 letters
                 {
-                  sevenLetters()
+                    sevenLetters()
                 }
                 36 -> //rwanda 6 letters
                 {
-                   sixLetters()
+                    sixLetters()
                 }
                 37 -> //senegal 7 letters
                 {
@@ -371,11 +373,11 @@ class QuizLogic(val context: Context) {
                 }
                 48 ->//zambia 6 letters
                 {
-                  sixLetters()
+                    sixLetters()
                 }
                 49 ->//zimbabwe 8 letters
                 {
-                  eightLetters()
+                    eightLetters()
                 }
                 else ->//IN CASE
                 {
@@ -387,11 +389,11 @@ class QuizLogic(val context: Context) {
     }
 
     fun getTextFromButtonPressed(btnPressed: Button): CharSequence {
-        return  btnPressed.text
+        return btnPressed.text
     }
 
     fun setTextFromButtonPressed(char: CharSequence, firstBtn: Button, secondBtn: Button, thirdBtn: Button, fourthBtn: Button, fifthBtn: Button, sixthBtn: Button,
-                                 seventhBtn: Button, eighthBtn: Button, ninthBtn: Button, tenthBtn: Button, eleventhBtn: Button, twelfthBbn: Button){
+                                 seventhBtn: Button, eighthBtn: Button, ninthBtn: Button, tenthBtn: Button, eleventhBtn: Button, twelfthBbn: Button) {
 
         when {
             firstBtn.text.isBlank() -> {
@@ -431,8 +433,30 @@ class QuizLogic(val context: Context) {
                 twelfthBbn.text = char
             }
             else -> {
+            }
+        }
+    }
 
+    fun checkCorrectFlagName(position: Int, firstBtn: Button, secondBtn: Button, thirdBtn: Button, fourthBtn: Button, fifthBtn: Button, sixthBtn: Button,
+                             seventhBtn: Button, eighthBtn: Button, ninthBtn: Button, tenthBtn: Button, eleventhBtn: Button, twelfthBbn: Button){
+        when(position){
+
+            0 -> {
+                val correctFlagName = " algeria"
+                val userOwnNameForTheFlag = " "+ firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                Log.d("WAMI",userOwnNameForTheFlag)
+                if (correctFlagName.equals(userOwnNameForTheFlag,true)){
+                    Log.d("WAMI","CORRECT")
+                }else{
+                    Log.d("WAMI",correctFlagName)
+
+                }
+
+            }
+            else ->{
+                Log.d("WAMI", position.toString())
             }
         }
     }
 }
+

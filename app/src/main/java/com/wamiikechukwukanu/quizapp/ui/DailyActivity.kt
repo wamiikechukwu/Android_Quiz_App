@@ -2,6 +2,7 @@ package com.wamiikechukwukanu.quizapp.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -40,6 +41,8 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
     override fun onItemClicked(mapPosition: Int) {
 //        PASS THE CURRENT CLICK POSITION
         quizLogic.saveToSharedPreference(mapPosition)
+//        TODO REMOVE THIS CODE JUST FOR DEBUGGING PURPOSE
+        Toast.makeText(this, mapPosition.toString(),Toast.LENGTH_LONG).show()
 
 //        MAP ACTIVITY
         intent = Intent(this, MapQuizActivity::class.java)

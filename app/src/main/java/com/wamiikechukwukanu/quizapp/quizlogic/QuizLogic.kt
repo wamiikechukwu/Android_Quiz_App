@@ -661,7 +661,7 @@ class QuizLogic(val context: Context) {
             }
             31 -> {
                 val correctFlagName = " mozambique"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text + tenthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
@@ -675,28 +675,28 @@ class QuizLogic(val context: Context) {
             }
             33 -> {
                 val correctFlagName = " niger"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             34 -> {
                 val correctFlagName = " nigeria"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             35 -> {
                 val correctFlagName = " reunion"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             36 -> {
                 val correctFlagName = " rwanda"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
@@ -710,14 +710,14 @@ class QuizLogic(val context: Context) {
             }
             38 -> {
                 val correctFlagName = " seychlles"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text + ninthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             39 -> {
                 val correctFlagName = " sierraleone"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text + eleventhBtn.text + twelfthBbn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
@@ -731,35 +731,35 @@ class QuizLogic(val context: Context) {
             }
             41 -> {
                 val correctFlagName = " southafrica"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text  + seventhBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text + eleventhBtn.text + twelfthBbn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             42 -> {
                 val correctFlagName = " southsudan"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + seventhBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text + eleventhBtn.text + twelfthBbn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             43 -> {
                 val correctFlagName = " sudan"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             44 -> {
                 val correctFlagName = " tanzania"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             45 -> {
                 val correctFlagName = " togo"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
@@ -773,21 +773,21 @@ class QuizLogic(val context: Context) {
             }
             47 -> {
                 val correctFlagName = " uganda"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             48 -> {
                 val correctFlagName = " zambia"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }
             }
             49 -> {
                 val correctFlagName = " zimbabwe"
-                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
                 if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
                     showAlertDialog(context, "null", "null")
                 }

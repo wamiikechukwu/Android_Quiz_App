@@ -7,6 +7,14 @@ import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
+import com.google.android.gms.ads.rewarded.RewardedAd
+import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
 import com.wamiikechukwukanu.quizapp.R
 import com.wamiikechukwukanu.quizapp.db.Database
 import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
@@ -34,6 +42,10 @@ class MapQuizActivity : AppCompatActivity() {
     //    GLOBAL VARIABLE FOR THE CURRENT FLAG POSITION
     var currentMapPosition by Delegates.notNull<Int>()
 
+    //    ADs
+    private var mInterstitialAd: InterstitialAd? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -43,6 +55,11 @@ class MapQuizActivity : AppCompatActivity() {
 
         quizLogic = QuizLogic(this)
         database = Database(applicationContext)
+
+//        both in the xml file
+        MobileAds.initialize(this)
+        val adRequest = AdRequest.Builder().build()
+        banner_adView.loadAd(adRequest)
 
         findViews()
 
@@ -61,6 +78,18 @@ class MapQuizActivity : AppCompatActivity() {
             quizLogic.saveIntoDataBaseOnce(false)
         }
 
+//        ADs
+        InterstitialAd.load(this, "ca-app-pub-9646388292265496/3047776181", adRequest, object : InterstitialAdLoadCallback() {
+            override fun onAdFailedToLoad(adError: LoadAdError) {
+                Log.d("quiz", adError.message)
+                mInterstitialAd = null
+            }
+
+            override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                Log.d("quiz", "Ad was loaded.")
+                mInterstitialAd = interstitialAd
+            }
+        })
     }
 
     private fun getCurrentMapState(position: Int) {
@@ -220,61 +249,97 @@ class MapQuizActivity : AppCompatActivity() {
             R.id.first_btn -> {
                 if (firstBtn.text.isNotBlank()) {
                     firstBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.second_btn -> {
                 if (secondBtn.text.isNotBlank()) {
                     secondBtn.text = " "
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.third_btn -> {
                 if (thirdBtn.text.isNotBlank()) {
                     thirdBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.fourth_btn -> {
                 if (fourthBtn.text.isNotBlank()) {
                     fourthBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.fifth_btn -> {
                 if (fifthBtn.text.isNotBlank()) {
                     fifthBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.sixth_btn -> {
                 if (sixthBtn.text.isNotBlank()) {
                     sixthBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.seventh_btn -> {
                 if (seventhBtn.text.isNotBlank()) {
                     seventhBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.eight_btn -> {
                 if (eighthBtn.text.isNotBlank()) {
                     eighthBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.ninth_btn -> {
                 if (ninthBtn.text.isNotBlank()) {
                     ninthBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.tenth_btn -> {
                 if (tenthBtn.text.isNotBlank()) {
                     tenthBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.eleventh_btn -> {
                 if (eleventhBtn.text.isNotBlank()) {
                     eleventhBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
             R.id.twelve_btn -> {
                 if (eleventhBtn.text.isNotBlank()) {
                     eleventhBtn.text = ""
+                    if (mInterstitialAd != null) {
+                        mInterstitialAd?.show(this)
+                    }
                 }
             }
         }

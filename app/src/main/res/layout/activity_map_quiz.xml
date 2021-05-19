@@ -6,14 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.MapQuizActivity">
 
-    <RelativeLayout
-        android:id="@+id/nav"
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner_adView"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content"
+        android:translationZ="1dp"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintStart_toStartOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-9646388292265496/4392647445">
+    </com.google.android.gms.ads.AdView>
 
     <ImageView
         android:id="@+id/map_image_view"
@@ -22,7 +26,7 @@
         app:layout_constraintBottom_toTopOf="@id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nav" />
+        app:layout_constraintTop_toBottomOf="@id/banner_adView" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

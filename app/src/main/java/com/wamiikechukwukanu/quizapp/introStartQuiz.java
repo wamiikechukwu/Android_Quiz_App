@@ -1,5 +1,6 @@
 package com.wamiikechukwukanu.quizapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,13 +15,18 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.FullScreenContentCallback;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.OnPaidEventListener;
+import com.google.android.gms.ads.ResponseInfo;
+import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.material.snackbar.Snackbar;
 
 public class introStartQuiz extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
@@ -46,10 +52,54 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         overviewAd1 = findViewById(R.id.overviewAd1);
 
         //Referencing the adId from admob and initialing it
-        MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
+//        MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
 
-        interstitialAd = new InterstitialAd(this);
-        interstitialAd.setAdUnitId("ca-app-pub-9646388292265496/3047776181");
+        interstitialAd = new InterstitialAd() {
+            @NonNull
+            @Override
+            public String getAdUnitId() {
+                return null;
+            }
+
+            @Override
+            public void show(@NonNull Activity activity) {
+
+            }
+
+            @Override
+            public void setFullScreenContentCallback(@Nullable FullScreenContentCallback fullScreenContentCallback) {
+
+            }
+
+            @Nullable
+            @Override
+            public FullScreenContentCallback getFullScreenContentCallback() {
+                return null;
+            }
+
+            @Override
+            public void setImmersiveMode(boolean b) {
+
+            }
+
+            @NonNull
+            @Override
+            public ResponseInfo getResponseInfo() {
+                return null;
+            }
+
+            @Override
+            public void setOnPaidEventListener(@Nullable OnPaidEventListener onPaidEventListener) {
+
+            }
+
+            @Nullable
+            @Override
+            public OnPaidEventListener getOnPaidEventListener() {
+                return null;
+            }
+        };
+//        interstitialAd.setAdUnitId("ca-app-pub-9646388292265496/3047776181");
 
         AdRequest adRequest = new AdRequest.Builder().build();
         overviewAd.loadAd(adRequest);
@@ -215,24 +265,24 @@ public class introStartQuiz extends AppCompatActivity implements AdapterView.OnI
         }
     }
 
-    public void quizQuestions(View view) {
-        interstitialAd.loadAd(new AdRequest.Builder().build());
-
-        if (interstitialAd.isLoaded()) {
-            interstitialAd.show();
-
-            interstitialAd.setAdListener(new AdListener() {
-
-                @Override
-                public void onAdClosed() {
-                    startActivity(new Intent(introStartQuiz.this, mMainActivity.class));
-                    super.onAdClosed();
-                }
-            });
-
-        } else {
-            Intent intent = new Intent(this, mMainActivity.class);
-            startActivity(intent);
-        }
-    }
+//    public void quizQuestions(View view) {
+//        interstitialAd.loadAd(new AdRequest.Builder().build());
+//
+//        if (interstitialAd.isLoaded()) {
+//            interstitialAd.show();
+//
+//            interstitialAd.setAdListener(new AdListener() {
+//
+//                @Override
+//                public void onAdClosed() {
+//                    startActivity(new Intent(introStartQuiz.this, mMainActivity.class));
+//                    super.onAdClosed();
+//                }
+//            });
+//
+//        } else {
+//            Intent intent = new Intent(this, mMainActivity.class);
+//            startActivity(intent);
+//        }
+//    }
 }

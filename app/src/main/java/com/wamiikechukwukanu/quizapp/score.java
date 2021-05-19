@@ -43,7 +43,7 @@ public class score extends AppCompatActivity {
                 .into(imageView);
 
         //Referencing the aadId from admob and initialing it
-        MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
+//        MobileAds.initialize(this, "ca-app-pub-9646388292265496/4392647445");
 
         AdView adView0 = findViewById(R.id.overviewAd0);
         AdView adView1 = findViewById(R.id.overviewAd1);

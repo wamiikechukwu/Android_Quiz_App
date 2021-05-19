@@ -37,7 +37,7 @@ class SigninActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         sign_in_button.setOnClickListener(View.OnClickListener {
-            createRequest()
+//            createRequest()
             signIn()
         })
     }
@@ -89,16 +89,16 @@ class SigninActivity : AppCompatActivity() {
         }
     }
 
-    fun createRequest() {
-        // Configure Google Sign In
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
-                .requestEmail()
-                .build()
-
-        // Build a GoogleSignInClient with the options specified by gso.
-        GoogleSignInClient = GoogleSignIn.getClient(this, gso)
-    }
+//    fun createRequest() {
+//        // Configure Google Sign In
+//        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//                .requestIdToken(getString(R.string.default_web_client_id))
+//                .requestEmail()
+//                .build()
+//
+//        // Build a GoogleSignInClient with the options specified by gso.
+//        GoogleSignInClient = GoogleSignIn.getClient(this, gso)
+//    }
 
 
     private fun signIn() {

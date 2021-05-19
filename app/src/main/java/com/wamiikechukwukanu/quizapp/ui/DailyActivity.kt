@@ -2,15 +2,17 @@ package com.wamiikechukwukanu.quizapp.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
 import com.wamiikechukwukanu.quizapp.R
 import com.wamiikechukwukanu.quizapp.adapter.DailyActivityViewModel
 import com.wamiikechukwukanu.quizapp.adapter.OnItemClickListener
 import com.wamiikechukwukanu.quizapp.model.DataModel
 import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
+import kotlinx.android.synthetic.main.activity_main.*
 
 class DailyActivity : AppCompatActivity(), OnItemClickListener {
 
@@ -30,6 +32,10 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
         quizLogic = QuizLogic(this)
         addMapImagesToRecyclerView()
 
+//        both in the xml file
+        MobileAds.initialize(this)
+        val adRequest = AdRequest.Builder().build()
+        banner_adView.loadAd(adRequest)
 
         adapter = DailyActivityViewModel(this, arrayList, this)
         recyclerView.adapter = adapter
@@ -41,8 +47,6 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
     override fun onItemClicked(mapPosition: Int) {
 //        PASS THE CURRENT CLICK POSITION
         quizLogic.saveToSharedPreference(mapPosition)
-//        TODO REMOVE THIS CODE JUST FOR DEBUGGING PURPOSE
-        Toast.makeText(this, mapPosition.toString(),Toast.LENGTH_LONG).show()
 
 //        MAP ACTIVITY
         intent = Intent(this, MapQuizActivity::class.java)
@@ -93,7 +97,7 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
         arrayList.add(DataModel(R.drawable.sierra_leone))
         arrayList.add(DataModel(R.drawable.somalia))
         arrayList.add(DataModel(R.drawable.south_africa))
-        arrayList.add(DataModel(R.drawable.south_sudan))
+        arrayList.add(DataModel(R.draw able.south_sudan))
         arrayList.add(DataModel(R.drawable.sudan))
         arrayList.add(DataModel(R.drawable.tanzania))
         arrayList.add(DataModel(R.drawable.togo))

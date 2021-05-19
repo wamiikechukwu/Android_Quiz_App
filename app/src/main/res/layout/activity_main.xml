@@ -13,6 +13,20 @@
         android:layout_height="0dp"
         android:background="#E3E3E3">
 
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/banner_adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationZ="1dp"
+            ads:layout_constraintTop_toTopOf="parent"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-9646388292265496/4392647445">
+        </com.google.android.gms.ads.AdView>
+
+
         <View
             android:id="@+id/card_view"
             android:layout_width="match_parent"
@@ -46,6 +60,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/main_activity_button"
             android:text="How to Play?"
+            android:onClick="howToPlay"
             app:layout_constraintBottom_toTopOf="@id/guideline"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -68,7 +83,7 @@
             app:layout_constraintBottom_toTopOf="@id/box_profile_name"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banner_adView"
             app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
             app:srcCompat="@drawable/avatar"
             app:strokeColor="#fff"
@@ -79,32 +94,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gotham_bold"
-            android:text="Welcome,"
+            android:text="Welcome"
             android:textColor="#fff"
             app:layout_constraintBottom_toTopOf="@id/view_button"
-            app:layout_constraintEnd_toStartOf="@id/box_profile_name_placeholder"
             app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/box_profile_picture" />
 
-        <TextView
-            android:id="@+id/box_profile_name_placeholder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/gotham_bold"
-            android:text="John Doe"
-            android:textColor="#fff"
-            app:layout_constraintBaseline_toBaselineOf="@id/box_profile_name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/box_profile_name" />
+<!--        <TextView-->
+<!--            android:id="@+id/box_profile_name_placeholder"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:fontFamily="@font/gotham_bold"-->
+<!--            android:text="John Doe"-->
+<!--            android:textColor="#fff"-->
+<!--            app:layout_constraintBaseline_toBaselineOf="@id/box_profile_name"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@id/box_profile_name" />-->
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_begin="219dp" />
+            app:layout_constraintGuide_begin="250dp" />
 
         <View
             android:id="@+id/first_box_view"
@@ -118,14 +133,14 @@
         <TextView
             android:id="@+id/first_header_text"
             style="@style/box_header_text"
-            android:text="Test Questions "
+            android:text="Daily Quiz"
             app:layout_constraintStart_toStartOf="@id/first_box_view"
             app:layout_constraintTop_toTopOf="@id/first_box_view" />
 
         <TextView
             android:id="@+id/first_description_text"
             style="@style/box_description_text"
-            android:text="Test your brain to retrieve data and ensures that it becomes embedded for the future"
+            android:text="Studies shows that learning everyday improves the brain as well as taking daily quizzes"
             app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
             app:layout_constraintStart_toStartOf="@id/first_box_view"
             app:layout_constraintTop_toBottomOf="@id/first_header_text" />
@@ -141,7 +156,8 @@
 
         <Button
             style="@style/box_btn"
-            android:text="Start Quiz"
+            android:text="Ready"
+            android:onClick="dailyQuiz"
             app:layout_constraintStart_toStartOf="@id/first_box_view"
             app:layout_constraintTop_toBottomOf="@id/first_description_text" />
 
@@ -156,22 +172,22 @@
         <TextView
             android:id="@+id/second_header_text"
             style="@style/box_header_text"
-            android:text="Daily Quiz"
+            android:text="Test Questions "
             app:layout_constraintStart_toStartOf="@id/second_box_view"
             app:layout_constraintTop_toTopOf="@id/second_box_view" />
 
         <TextView
             android:id="@+id/second_description_text"
             style="@style/box_description_text"
-            android:text="Studies shows that learning everyday improves the brain as well as taking daily quizzes"
+            android:text="Test your brain to retrieve data and ensures that it becomes embedded for the future"
             app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
             app:layout_constraintStart_toStartOf="@id/second_box_view"
             app:layout_constraintTop_toBottomOf="@+id/second_header_text" />
 
         <Button
             style="@style/box_btn"
-            android:text="Ready"
-            android:onClick="dailyQuiz"
+            android:text="Start Quiz"
+            android:onClick="startQuiz"
             app:layout_constraintStart_toStartOf="@id/second_box_view"
             app:layout_constraintTop_toBottomOf="@id/second_description_text" />
 
@@ -220,6 +236,7 @@
         <Button
             style="@style/box_btn"
             android:text="Start"
+            android:onClick="challenge"
             app:layout_constraintStart_toStartOf="@id/third_box_view"
             app:layout_constraintTop_toBottomOf="@id/third_description_text" />
 

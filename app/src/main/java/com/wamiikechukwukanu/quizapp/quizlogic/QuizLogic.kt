@@ -2,9 +2,14 @@ package com.wamiikechukwukanu.quizapp.quizlogic
 
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
+import android.content.DialogInterface
 import android.content.SharedPreferences
+import android.util.Log
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.gurutouchlabs.kenneth.elegantdialog.ElegantActionListeners
+import com.gurutouchlabs.kenneth.elegantdialog.ElegantDialog
 import com.wamiikechukwukanu.quizapp.R
 
 class QuizLogic(val context: Context) {
@@ -314,11 +319,11 @@ class QuizLogic(val context: Context) {
                 }
                 35 -> //reunion 7 letters
                 {
-                  sevenLetters()
+                    sevenLetters()
                 }
                 36 -> //rwanda 6 letters
                 {
-                   sixLetters()
+                    sixLetters()
                 }
                 37 -> //senegal 7 letters
                 {
@@ -369,11 +374,11 @@ class QuizLogic(val context: Context) {
                 }
                 48 ->//zambia 6 letters
                 {
-                  sixLetters()
+                    sixLetters()
                 }
                 49 ->//zimbabwe 8 letters
                 {
-                  eightLetters()
+                    eightLetters()
                 }
                 else ->//IN CASE
                 {
@@ -383,4 +388,446 @@ class QuizLogic(val context: Context) {
 
 
     }
+
+    fun getTextFromButtonPressed(btnPressed: Button): CharSequence {
+        return btnPressed.text
+    }
+
+    fun setTextFromButtonPressed(char: CharSequence, firstBtn: Button, secondBtn: Button, thirdBtn: Button, fourthBtn: Button, fifthBtn: Button, sixthBtn: Button,
+                                 seventhBtn: Button, eighthBtn: Button, ninthBtn: Button, tenthBtn: Button, eleventhBtn: Button, twelfthBbn: Button) {
+
+        when {
+            firstBtn.text.isBlank() -> {
+                firstBtn.text = char
+            }
+            secondBtn.text.isBlank() -> {
+                secondBtn.text = char
+            }
+            thirdBtn.text.isBlank() -> {
+                thirdBtn.text = char
+            }
+            fourthBtn.text.isBlank() -> {
+                fourthBtn.text = char
+            }
+            fifthBtn.text.isBlank() -> {
+                fifthBtn.text = char
+            }
+            sixthBtn.text.isBlank() -> {
+                sixthBtn.text = char
+            }
+            seventhBtn.text.isBlank() -> {
+                seventhBtn.text = char
+            }
+            eighthBtn.text.isBlank() -> {
+                eighthBtn.text = char
+            }
+            ninthBtn.text.isBlank() -> {
+                ninthBtn.text = char
+            }
+            tenthBtn.text.isBlank() -> {
+                tenthBtn.text = char
+            }
+            eleventhBtn.text.isBlank() -> {
+                eleventhBtn.text = char
+            }
+            twelfthBbn.text.isBlank() -> {
+                twelfthBbn.text = char
+            }
+            else -> {
+            }
+        }
+    }
+
+    fun checkCorrectFlagName(position: Int, firstBtn: Button, secondBtn: Button, thirdBtn: Button, fourthBtn: Button, fifthBtn: Button, sixthBtn: Button,
+                             seventhBtn: Button, eighthBtn: Button, ninthBtn: Button, tenthBtn: Button, eleventhBtn: Button, twelfthBbn: Button) {
+        when (position) {
+
+            0 -> {
+                val correctFlagName = " algeria"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            1 -> {
+                val correctFlagName = " angola"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            2 -> {
+                val correctFlagName = " benin"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            3 -> {
+                val correctFlagName = " botswana"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            4 -> {
+                val correctFlagName = " burkinafaso"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + ninthBtn.text + tenthBtn.text + eleventhBtn.text + twelfthBbn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            5 -> {
+                val correctFlagName = " burundi"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            6 -> {
+                val correctFlagName = " cameroon"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            7 -> {
+                val correctFlagName = " capeverde"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            8 -> {
+                val correctFlagName = " chad"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            9 -> {
+                val correctFlagName = " comoros"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            10 -> {
+                val correctFlagName = " cotedivoire"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + sixthBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text + eleventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            11 -> {
+                val correctFlagName = " djibouti"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            12 -> {
+                val correctFlagName = " egypt"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            13 -> {
+                val correctFlagName = " eritrea"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            14 -> {
+                val correctFlagName = " eswatini"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            15 -> {
+                val correctFlagName = " ethiopia"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            16 -> {
+                val correctFlagName = " gabon"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            17 -> {
+                val correctFlagName = " gambia"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            18 -> {
+                val correctFlagName = " ghana"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            19 -> {
+                val correctFlagName = " guinea"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            20 -> {
+                val correctFlagName = " guineabissau"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text + eighthBtn.text + twelfthBbn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            21 -> {
+                val correctFlagName = " kenya"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            22 -> {
+                val correctFlagName = " lesotho"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            23 -> {
+                val correctFlagName = " liberia"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            24 -> {
+                val correctFlagName = " libya"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            25 -> {
+                val correctFlagName = " madagascar"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            26 -> {
+                val correctFlagName = " malawi"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            27 -> {
+                val correctFlagName = " mali"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            28 -> {
+                val correctFlagName = " mauritania"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            29 -> {
+                val correctFlagName = " mauritius"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text + ninthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            30 -> {
+                val correctFlagName = " morocco"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            31 -> {
+                val correctFlagName = " mozambique"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text + tenthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            32 -> {
+                val correctFlagName = " namibia"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            33 -> {
+                val correctFlagName = " niger"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            34 -> {
+                val correctFlagName = " nigeria"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            35 -> {
+                val correctFlagName = " reunion"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            36 -> {
+                val correctFlagName = " rwanda"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            37 -> {
+                val correctFlagName = " senegal"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            38 -> {
+                val correctFlagName = " seychlles"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text + ninthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            39 -> {
+                val correctFlagName = " sierraleone"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text + eleventhBtn.text + twelfthBbn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            40 -> {
+                val correctFlagName = " somalia"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            41 -> {
+                val correctFlagName = " southafrica"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text  + seventhBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text + eleventhBtn.text + twelfthBbn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            42 -> {
+                val correctFlagName = " southsudan"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + seventhBtn.text + eighthBtn.text + ninthBtn.text + tenthBtn.text + eleventhBtn.text + twelfthBbn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            43 -> {
+                val correctFlagName = " sudan"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            44 -> {
+                val correctFlagName = " tanzania"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            45 -> {
+                val correctFlagName = " togo"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            46 -> {
+                val correctFlagName = " tunisia"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            47 -> {
+                val correctFlagName = " uganda"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            48 -> {
+                val correctFlagName = " zambia"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+            49 -> {
+                val correctFlagName = " zimbabwe"
+                val userOwnNameForTheFlag = " " + firstBtn.text + secondBtn.text + thirdBtn.text + fourthBtn.text + fifthBtn.text + sixthBtn.text + seventhBtn.text + eighthBtn.text
+                if (correctFlagName.equals(userOwnNameForTheFlag, true)) {
+                    showAlertDialog(context, "null", "null")
+                }
+            }
+
+
+
+
+
+            else -> {
+                Log.d("WAMI", position.toString())
+            }
+        }
+    }
+
+    fun showAlertDialog(context: Context, title: String, msg: String) {
+        // Create Alert
+        val alertDialog = ElegantDialog(context)
+                .setCornerRadius(10.0f)
+                .setCanceledOnTouchOutside(true)
+                .setTitleHidden(true)
+                .setElegantActionClickListener(object : ElegantActionListeners {
+                    override fun onCancelListener(dialog: DialogInterface) {
+                    }
+
+                    override fun onGotItListener(dialog: ElegantDialog) {
+                        dialog.dismiss()
+                    }
+
+                    override fun onNegativeListener(dialog: ElegantDialog) {
+                        dialog.dismiss()
+                    }
+
+                    override fun onPositiveListener(dialog: ElegantDialog) {
+                        dialog.dismiss()
+                    }
+
+                }).show()
+        alertDialog.getTitleTextView()!!.text = "Info"
+
+    }
 }
+

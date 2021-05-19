@@ -76,6 +76,4 @@ public class Database extends SQLiteOpenHelper implements DatabaseHelper {
         Cursor cursor = db.rawQuery("select * from " +tableName + " where id = " +id, null);
         return cursor;
     }
-
-
 }

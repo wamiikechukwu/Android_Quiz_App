@@ -95,6 +95,9 @@ dependencies {
 
     //VIEWPAGER2
     implementation "androidx.viewpager2:viewpager2:$viewpager2"
+
+    //ElegantDialog
+    implementation 'com.github.muigukenneth:ElegantDialog:1.1.5'
 }
 repositories {
     mavenCentral()

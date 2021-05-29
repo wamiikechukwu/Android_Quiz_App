@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ui.MapQuizActivity" />
+        <activity android:name=".ui.FlagQuizActivity" />
         <activity android:name=".ui.DailyActivity" />
         <activity
             android:name=".ui.SignupActivity"

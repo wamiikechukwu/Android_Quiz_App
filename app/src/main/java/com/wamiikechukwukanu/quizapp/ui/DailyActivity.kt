@@ -49,7 +49,7 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
         quizLogic.saveToSharedPreference(mapPosition)
 
 //        MAP ACTIVITY
-        intent = Intent(this, MapQuizActivity::class.java)
+        intent = Intent(this, FlagQuizActivity::class.java)
         startActivity(intent)
 
     }
@@ -97,7 +97,7 @@ class DailyActivity : AppCompatActivity(), OnItemClickListener {
         arrayList.add(DataModel(R.drawable.sierra_leone))
         arrayList.add(DataModel(R.drawable.somalia))
         arrayList.add(DataModel(R.drawable.south_africa))
-        arrayList.add(DataModel(R.draw able.south_sudan))
+        arrayList.add(DataModel(R.drawable.south_sudan))
         arrayList.add(DataModel(R.drawable.sudan))
         arrayList.add(DataModel(R.drawable.tanzania))
         arrayList.add(DataModel(R.drawable.togo))

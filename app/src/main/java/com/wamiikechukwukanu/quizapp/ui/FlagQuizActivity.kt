@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.FullScreenContentCallback
-import com.google.android.gms.ads.LoadAdError
-import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.*
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.gms.ads.rewarded.RewardedAd
@@ -21,7 +19,7 @@ import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
 import kotlinx.android.synthetic.main.activity_map_quiz.*
 import kotlin.properties.Delegates
 
-class MapQuizActivity : AppCompatActivity() {
+class FlagQuizActivity : AppCompatActivity() {
     //    HELPER CLASS
     lateinit var quizLogic: QuizLogic
     lateinit var database: Database
@@ -44,6 +42,7 @@ class MapQuizActivity : AppCompatActivity() {
 
     //    ADs
     private var mInterstitialAd: InterstitialAd? = null
+    private var mRewardedAd: RewardedAd? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,7 +55,7 @@ class MapQuizActivity : AppCompatActivity() {
         quizLogic = QuizLogic(this)
         database = Database(applicationContext)
 
-//        both in the xml file
+//        AD LOADER FOR ALL TYPES OF ADs
         MobileAds.initialize(this)
         val adRequest = AdRequest.Builder().build()
         banner_adView.loadAd(adRequest)
@@ -88,6 +87,18 @@ class MapQuizActivity : AppCompatActivity() {
             override fun onAdLoaded(interstitialAd: InterstitialAd) {
                 Log.d("quiz", "Ad was loaded.")
                 mInterstitialAd = interstitialAd
+            }
+        })
+
+        RewardedAd.load(this, "ca-app-pub-3940256099942544/5224354917", adRequest, object : RewardedAdLoadCallback() {
+            override fun onAdFailedToLoad(adError: LoadAdError) {
+                Log.d("REWARD AD ", adError.message)
+                mRewardedAd = null
+            }
+
+            override fun onAdLoaded(rewardedAd: RewardedAd) {
+                Log.d("REWARD AD ", "Ad was loaded.")
+                mRewardedAd = rewardedAd
             }
         })
     }
@@ -342,6 +353,20 @@ class MapQuizActivity : AppCompatActivity() {
                     }
                 }
             }
+        }
+    }
+
+    fun hintButton(view: View) {
+//        GET THE POINT STORED IN THE SHARED PREF.
+       val userCurrentPoint = quizLogic.getUserPoint()
+        if (mRewardedAd != null) {
+             mRewardedAd?.show(this) {
+            Toast.makeText(this, " 2 POINT AWARDED", Toast.LENGTH_SHORT).show()
+//                 THEN ADD +2 TO THE ALREADY SAVED POINT
+            quizLogic.userPoint((userCurrentPoint + 2))
+              }
+        } else {
+            Toast.makeText(this, "REWARD NOT READY, TRY AGAIN", Toast.LENGTH_SHORT).show()
         }
     }
 }

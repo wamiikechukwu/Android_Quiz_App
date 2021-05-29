@@ -20,8 +20,9 @@ import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.gurutouchlabs.kenneth.elegantdialog.ElegantActionListeners
 import com.gurutouchlabs.kenneth.elegantdialog.ElegantDialog
 import com.wamiikechukwukanu.quizapp.R
+import com.wamiikechukwukanu.quizapp.repo.FlagQuizActivityRepo
 
-class QuizLogic(val context: Context) {
+class QuizLogic(val context: Context) : FlagQuizActivityRepo {
 
     fun saveToSharedPreference(position: Int) {
         val sharedPreferences: SharedPreferences = context.getSharedPreferences("map_position", AppCompatActivity.MODE_PRIVATE)
@@ -877,6 +878,19 @@ class QuizLogic(val context: Context) {
         alertDialog.getGotItButtonIconView()!!.setColorFilter(getColor(context, R.color.black)) //Set negative button icon drawable color
         alertDialog.getGotItButtonTextView()!!.text = "Cancel" //Set got it button text
 
+    }
+
+    override fun userPoint(point: Int) {
+        val sharedPreferences: SharedPreferences = context.getSharedPreferences("UserPoint", MODE_PRIVATE);
+        val editor: SharedPreferences.Editor = sharedPreferences.edit()
+        editor.putInt("Point", point)
+        editor.apply()
+        editor.commit()
+    }
+
+    override fun getUserPoint(): Int {
+        val sharedPreferences: SharedPreferences = context.getSharedPreferences("UserPoint", Context.MODE_PRIVATE)
+        return sharedPreferences.getInt("Point", 2)
     }
 }
 

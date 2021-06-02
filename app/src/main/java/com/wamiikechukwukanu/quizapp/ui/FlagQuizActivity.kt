@@ -1,18 +1,26 @@
 package com.wamiikechukwukanu.quizapp.ui
 
+import android.content.Context
+import android.content.DialogInterface
 import android.database.Cursor
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
-import com.google.android.gms.ads.*
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
+import com.gurutouchlabs.kenneth.elegantdialog.ElegantActionListeners
+import com.gurutouchlabs.kenneth.elegantdialog.ElegantDialog
 import com.wamiikechukwukanu.quizapp.R
 import com.wamiikechukwukanu.quizapp.db.Database
 import com.wamiikechukwukanu.quizapp.quizlogic.QuizLogic
@@ -39,6 +47,8 @@ class FlagQuizActivity : AppCompatActivity() {
 
     //    GLOBAL VARIABLE FOR THE CURRENT FLAG POSITION
     var currentMapPosition by Delegates.notNull<Int>()
+    private var userCurrentPoint by Delegates.notNull<Int>()
+    private var setUserPoint by Delegates.notNull<Int>()
 
     //    ADs
     private var mInterstitialAd: InterstitialAd? = null
@@ -90,6 +100,7 @@ class FlagQuizActivity : AppCompatActivity() {
             }
         })
 
+//        TODO CHANGE THE AD ID
         RewardedAd.load(this, "ca-app-pub-3940256099942544/5224354917", adRequest, object : RewardedAdLoadCallback() {
             override fun onAdFailedToLoad(adError: LoadAdError) {
                 Log.d("REWARD AD ", adError.message)
@@ -256,13 +267,16 @@ class FlagQuizActivity : AppCompatActivity() {
     }
 
     fun topBtnClick(view: View) {
+        userCurrentPoint = quizLogic.getUserPoint()
         when (view.id) {
             R.id.first_btn -> {
-                if (firstBtn.text.isNotBlank()) {
+                if (firstBtn.text.isNotBlank() && userCurrentPoint >= 0) {
                     firstBtn.text = ""
                     if (mInterstitialAd != null) {
                         mInterstitialAd?.show(this)
                     }
+                    quizLogic.userPoint((userCurrentPoint - 2))
+                    Toast.makeText(this,"" +userCurrentPoint,Toast.LENGTH_SHORT).show()
                 }
             }
             R.id.second_btn -> {
@@ -358,15 +372,29 @@ class FlagQuizActivity : AppCompatActivity() {
 
     fun hintButton(view: View) {
 //        GET THE POINT STORED IN THE SHARED PREF.
-       val userCurrentPoint = quizLogic.getUserPoint()
-        if (mRewardedAd != null) {
-             mRewardedAd?.show(this) {
-            Toast.makeText(this, " 2 POINT AWARDED", Toast.LENGTH_SHORT).show()
+        userCurrentPoint = quizLogic.getUserPoint()
+        showAlertDialog(this, "Watch an ad to get hint points \n\n Hint points are used to erase mistaken letters")
+
+    }
+
+    fun showAlertDialog(context: Context, msg: String) {
+        val builder = AlertDialog.Builder(context)
+        builder.setMessage(msg)
+        builder.setPositiveButton("Watch Ad"){
+            dialog, which ->
+            if (mRewardedAd != null) {
+                mRewardedAd?.show(this) {
+                    Toast.makeText(this, " 2 POINT AWARDED", Toast.LENGTH_SHORT).show()
 //                 THEN ADD +2 TO THE ALREADY SAVED POINT
-            quizLogic.userPoint((userCurrentPoint + 2))
-              }
-        } else {
-            Toast.makeText(this, "REWARD NOT READY, TRY AGAIN", Toast.LENGTH_SHORT).show()
+                    quizLogic.userPoint((userCurrentPoint + 2))
+                }
+            } else {
+                Toast.makeText(this, "Reward not available, try again after 5 sec", Toast.LENGTH_SHORT).show()
+            }
         }
+        builder.setNegativeButton("Cancel"){
+            dialog, which -> Toast.makeText(context,"You have lost your reward",Toast.LENGTH_SHORT).show()
+        }
+        builder.show()
     }
 }

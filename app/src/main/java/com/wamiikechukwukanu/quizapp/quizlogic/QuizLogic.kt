@@ -837,26 +837,6 @@ class QuizLogic(val context: Context) : FlagQuizActivityRepo {
                     }
 
                     override fun onPositiveListener(dialog: ElegantDialog) {
-                        var mInterstitialAd: InterstitialAd? = null
-                        MobileAds.initialize(context)
-                        val adRequest = AdRequest.Builder().build()
-
-                        InterstitialAd.load(context, "ca-app-pub-9646388292265496/3047776181", adRequest, object : InterstitialAdLoadCallback() {
-                            override fun onAdFailedToLoad(adError: LoadAdError) {
-                                Log.d("wami", adError.message)
-                                mInterstitialAd = null
-                            }
-
-                            override fun onAdLoaded(interstitialAd: InterstitialAd) {
-                                Log.d("wami", "Ad was loaded.")
-                                mInterstitialAd = interstitialAd
-                            }
-                        })
-
-                        if (mInterstitialAd != null) {
-                            mInterstitialAd?.show(context as Activity)
-                        }
-
                         dialog.dismiss()
                     }
 
@@ -890,7 +870,7 @@ class QuizLogic(val context: Context) : FlagQuizActivityRepo {
 
     override fun getUserPoint(): Int {
         val sharedPreferences: SharedPreferences = context.getSharedPreferences("UserPoint", Context.MODE_PRIVATE)
-        return sharedPreferences.getInt("Point", 2)
+        return sharedPreferences.getInt("Point", 0)
     }
 }
 
